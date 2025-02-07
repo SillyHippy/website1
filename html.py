@@ -1,37 +1,52 @@
 import os
+import mimetypes
 
 # Set the directory where you want to apply changes (change if needed)
 directory = "."
 
-# Step 1: Rename all .htm files to .html
+# Define a list of binary file extensions to skip
+binary_extensions = {".png", ".jpg", ".jpeg", ".gif", ".webp", ".svg", ".ico", ".eot", ".ttf", ".woff", ".woff2", ".otf", ".zip", ".gz", ".tar", ".mp3", ".mp4", ".avi", ".mov"}
+
+# Step 1: Rename all .html files to .htmll
 for root, dirs, files in os.walk(directory):
     for filename in files:
-        if filename.endswith(".htm"):
-            new_filename = filename.replace(".htm", ".html")
+        if filename.endswith(".html"):
+            new_filename = filename.replace(".html", ".htmll")
             old_path = os.path.join(root, filename)
             new_path = os.path.join(root, new_filename)
 
             os.rename(old_path, new_path)
             print(f"Renamed: {old_path} → {new_path}")
 
-print("All .htm files have been renamed to .html")
+print("All .html files have been renamed to .htmll")
 
-# Step 2: Update index.html files to replace .htm with .html in content
-def replace_extension_in_file(file_path):
-    with open(file_path, "r", encoding="utf-8") as file:
-        content = file.read()
+# Step 2: Update files to replace .html with .htmll and update domain names
+def replace_text_in_file(file_path):
+    # Check if the file is a known binary file
+    if any(file_path.lower().endswith(ext) for ext in binary_extensions):
+        return  # Skip binary files
 
-    new_content = content.replace(".htm", ".html")
+    # Check MIME type to ensure it's a text file
+    mime_type, _ = mimetypes.guess_type(file_path)
+    if mime_type and not mime_type.startswith("text"):
+        return  # Skip non-text files
+    
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            content = file.read()
+        
+        new_content = content.replace(".html", ".htmll").replace("justlegalsolutions.org", "justlegalsolutions.org")
 
-    with open(file_path, "w", encoding="utf-8") as file:
-        file.write(new_content)
-
-    print(f"Updated: {file_path}")
+        if content != new_content:
+            with open(file_path, "w", encoding="utf-8") as file:
+                file.write(new_content)
+            print(f"Updated: {file_path}")
+    except Exception as e:
+        print(f"Error updating {file_path}: {e}")
 
 for root, dirs, files in os.walk(directory):
     for filename in files:
-        if filename == "index.html":
-            file_path = os.path.join(root, filename)
-            replace_extension_in_file(file_path)
+        file_path = os.path.join(root, filename)
+        replace_text_in_file(file_path)
 
-print("All occurrences of .htm have been replaced with .html in index.html files.")
+print("All occurrences of .html have been replaced with .htmll, and domain names have been updated.")
