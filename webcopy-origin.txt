@@ -166,7 +166,7 @@ Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_ag
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738946551
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738948991
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
