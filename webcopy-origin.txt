@@ -2,18 +2,6 @@ Uri: https://ai20-templates-prod.s3.amazonaws.com/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZ
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut\logo_NaQ7yBFS.webp
 Content Type: image/webp
 
-Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css?ver=1.0.7
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\npm\bootstrap-icons@1.8.1\font\bootstrap-icons.css
-Content Type: text/css
-
-Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/fonts/bootstrap-icons.woff2?524846017b983fc8ded9325d94ed40f3
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\npm\bootstrap-icons@1.8.1\font\fonts\bootstrap-icons.woff2
-Content Type: font/woff2
-
-Uri: https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/fonts/bootstrap-icons.woff?524846017b983fc8ded9325d94ed40f3
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\npm\bootstrap-icons@1.8.1\font\fonts\bootstrap-icons.woff
-Content Type: font/woff
-
 Uri: https://fonts.googleapis.com/css2?family=Open+Sans:wght%40300%3B400%3B600%3B700%3B800&display=swap
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\css2
 Content Type: text/css
@@ -94,6 +82,10 @@ Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFg
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
 Content Type: font/ttf
 
+Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\montserrat\v29\JTUSjIg1_i6t8kCHKm459Wlhyw.woff2
+Content Type: font/woff2
+
 Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
 Content Type: font/ttf
@@ -122,13 +114,13 @@ Uri: https://justlegalsolutions.tech/comments/feed/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\comments\feed\index.htm
 Content Type: application/rss+xml
 
+Uri: https://justlegalsolutions.tech/faq/
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\faq\index.htm
+Content Type: text/html
+
 Uri: https://justlegalsolutions.tech/feed/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\feed\index.htm
 Content Type: application/rss+xml
-
-Uri: https://justlegalsolutions.tech/legal-courier-services-2/
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\legal-courier-services-2\index.htm
-Content Type: text/html
 
 Uri: https://justlegalsolutions.tech/pricing/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\pricing\index.htm
@@ -142,65 +134,41 @@ Uri: https://justlegalsolutions.tech/terms-and-conditions/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\terms-and-conditions\index.htm
 Content Type: text/html
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1738898775
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1738945530
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated.min.css
+Content Type: text/css
+
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738945530
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
+Content Type: text/css
+
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1738943901
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738898775
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738943901
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1738898776
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1738943899
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738898776
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738943899
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_193_aggregated.min.css?date=1738898773
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_193_aggregated.min.css
-Content Type: text/css
-
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_193_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738898773
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_193_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
-Content Type: text/css
-
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1738898772
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1738945528
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738898772
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738945528
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated.min.css?date=1738898606
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated.min.css
-Content Type: text/css
-
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738898606
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738944822
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
-
-Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.35.0
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.eot
-Content Type: application/vnd.ms-fontobject
-
-Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.svg?5.35.0
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.svg
-Content Type: image/svg+xml
-
-Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.ttf?5.35.0
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.ttf
-Content Type: application/octet-stream
-
-Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff2?5.35.0
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff2
-Content Type: application/octet-stream
-
-Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/eicons/fonts/eicons.woff?5.35.0
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\eicons\fonts\eicons.woff
-Content Type: application/font-woff
 
 Uri: https://justlegalsolutions.tech/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\elementor\assets\lib\font-awesome\webfonts\fa-brands-400.eot
@@ -294,28 +262,68 @@ Uri: https://justlegalsolutions.tech/wp-content/plugins/tenweb-speed-optimizer/i
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\tenweb-speed-optimizer\includes\external\js\vanilla-lazyload\two_bg_vanilla.js
 Content Type: application/javascript
 
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-ezgif-563de8ffd5926-300x154.jpg
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-ezgif-563de8ffd5926-300x154.jpg
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/assets/fonts/wprmenu.eot?p8o4s0
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\assets\fonts\wprmenu.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/assets/fonts/wprmenu.svg?p8o4s0
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\assets\fonts\wprmenu.svg
+Content Type: image/svg+xml
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/assets/fonts/wprmenu.ttf?p8o4s0
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\assets\fonts\wprmenu.ttf
+Content Type: application/octet-stream
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/assets/fonts/wprmenu.woff?p8o4s0
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\assets\fonts\wprmenu.woff
+Content Type: application/font-woff
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/inc/assets/icons/fonts/icomoon.eot?5ujmx2
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\inc\assets\icons\fonts\icomoon.eot
+Content Type: application/vnd.ms-fontobject
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/inc/assets/icons/fonts/icomoon.svg?5ujmx2
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\inc\assets\icons\fonts\icomoon.svg
+Content Type: image/svg+xml
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/inc/assets/icons/fonts/icomoon.ttf?5ujmx2
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\inc\assets\icons\fonts\icomoon.ttf
+Content Type: application/octet-stream
+
+Uri: https://justlegalsolutions.tech/wp-content/plugins/wp-responsive-menu/inc/assets/icons/fonts/icomoon.woff?5ujmx2
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\plugins\wp-responsive-menu\inc\assets\icons\fonts\icomoon.woff
+Content Type: application/font-woff
+
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-180x180.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-180x180.jpg
 Content Type: image/jpeg
 
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-ezgif-563de8ffd5926-600x307.jpg
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-ezgif-563de8ffd5926-600x307.jpg
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-192x192.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-192x192.jpg
 Content Type: image/jpeg
 
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-ezgif-563de8ffd5926-768x393.jpg
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-ezgif-563de8ffd5926-768x393.jpg
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-32x32.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-32x32.jpg
 Content Type: image/jpeg
 
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-ezgif-563de8ffd5926.jpg
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-ezgif-563de8ffd5926.jpg
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-300x154.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-300x154.jpg
+Content Type: image/jpeg
+
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-600x307.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-600x307.jpg
+Content Type: image/jpeg
+
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-768x393.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904-768x393.jpg
+Content Type: image/jpeg
+
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904.jpg
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904.jpg
 Content Type: image/jpeg
 
 Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/image_0.webp
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\image_0.webp
-Content Type: image/webp
-
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/image_4.webp
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\image_4.webp
 Content Type: image/webp
 
 Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/image_9.webp
@@ -330,21 +338,9 @@ Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/tenweb_media_S89
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\tenweb_media_S89OAR7OI.webp
 Content Type: image/webp
 
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/tenweb_media_SDAKCMIP9.webp
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\tenweb_media_SDAKCMIP9.webp
+Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/tenweb_media_SXELHG56J.webp
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\tenweb_media_SXELHG56J.webp
 Content Type: image/webp
-
-Uri: https://justlegalsolutions.tech/wp-content/uploads/2025/02/tenweb_media_szjmcesbo.webp
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\uploads\2025\02\tenweb_media_szjmcesbo.webp
-Content Type: image/webp
-
-Uri: https://justlegalsolutions.tech/wp-includes/fonts/dashicons.eot?99ac726223c749443b642ce33df8b800
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-includes\fonts\dashicons.eot
-Content Type: application/vnd.ms-fontobject
-
-Uri: https://justlegalsolutions.tech/wp-includes/fonts/dashicons.ttf?99ac726223c749443b642ce33df8b800
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-includes\fonts\dashicons.ttf
-Content Type: application/octet-stream
 
 Uri: https://justlegalsolutions.tech/wp-json/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\index.htm
@@ -358,12 +354,12 @@ Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fju
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-1
 Content Type: text/xml
 
-Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Flegal-courier-services-2%2F
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-4
+Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Ffaq%2F
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-8
 Content Type: application/json
 
-Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Flegal-courier-services-2%2F&format=xml
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-5
+Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Ffaq%2F&format=xml
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-9
 Content Type: text/xml
 
 Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fpricing%2F
@@ -375,23 +371,27 @@ File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\em
 Content Type: text/xml
 
 Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fprivacy-policy%2F
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-8
-Content Type: application/json
-
-Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fprivacy-policy%2F&format=xml
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-9
-Content Type: text/xml
-
-Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fterms-and-conditions%2F
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-6
 Content Type: application/json
 
-Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fterms-and-conditions%2F&format=xml
+Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fprivacy-policy%2F&format=xml
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-7
+Content Type: text/xml
+
+Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fterms-and-conditions%2F
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-4
+Content Type: application/json
+
+Uri: https://justlegalsolutions.tech/wp-json/oembed/1.0/embed?url=https:%2F%2Fjustlegalsolutions.tech%2Fterms-and-conditions%2F&format=xml
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\oembed\1.0\embed-5
 Content Type: text/xml
 
 Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/183
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\wp\v2\pages\183
+Content Type: application/json
+
+Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/188
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\wp\v2\pages\188
 Content Type: application/json
 
 Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/189
@@ -400,10 +400,6 @@ Content Type: application/json
 
 Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/190
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\wp\v2\pages\190
-Content Type: application/json
-
-Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/193
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-json\wp\v2\pages\193
 Content Type: application/json
 
 Uri: https://justlegalsolutions.tech/wp-json/wp/v2/pages/271
