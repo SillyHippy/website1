@@ -134,40 +134,48 @@ Uri: https://justlegalsolutions.org/terms-and-conditions/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\terms-and-conditions\index.htm
 Content Type: text/html
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1738985994
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1738990376
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_188_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738985994
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990376
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1738985992
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1738990373
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_189_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738985992
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990373
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1738985993
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1738990374
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_190_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738985993
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990374
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1738985991
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1738990372
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_271_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738985991
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990372
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738985980
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_front_page_aggregated.min.css?date=1738990347
+File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_front_page_aggregated.min.css
+Content Type: text/css
+
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990347
 File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
+Content Type: text/css
+
+Uri: https://justlegalsolutions.org/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1738990371
+File Name: C:\Downloaded Web Sites\justlegalsolutions.org\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min-1.css
 Content Type: text/css
 
 Uri: https://justlegalsolutions.org/wp-content/plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot
