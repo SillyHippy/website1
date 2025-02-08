@@ -16,7 +16,7 @@ def replace_domain_references(repo_folder, old_domain, new_domain):
         print(f"Error: '{repo_folder}' is not a valid directory.")
         return
 
-    code_extensions = ['.html', '.htm', '.css', '.js', '.py', '.php', '.xml', '.json', '.txt', '.svg', '.md', '.config', '.ini', '.yaml', '.yml'] # Add more if needed
+    code_extensions = ['.html', '.html', '.css', '.js', '.py', '.php', '.xml', '.json', '.txt', '.svg', '.md', '.config', '.ini', '.yaml', '.yml'] # Add more if needed
     domain_regex = re.compile(re.escape(old_domain)) # Regex to find the old domain, escape special chars in domain
 
     total_files_modified = 0
