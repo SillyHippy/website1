@@ -3,7 +3,7 @@ import os
 def rename_index_files(directory):
     for root, _, files in os.walk(directory):
         for file in files:
-            if file.lower() == "index.htm":
+            if file.lower() == "index.html":
                 old_path = os.path.join(root, file)
                 new_path = os.path.join(root, "index.html")
                 if not os.path.exists(new_path):  # Ensure it does not already exist
