@@ -134,39 +134,39 @@ Uri: https://justlegalsolutions.tech/terms-and-conditions/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\terms-and-conditions\index.html
 Content Type: text/html
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1739038303
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1739045983
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739038303
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739045983
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1739038304
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1739045981
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739038304
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739045981
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1739038178
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1739045982
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739038178
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739045982
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1739038177
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1739045979
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739038177
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739045979
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739038121
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739045882
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
