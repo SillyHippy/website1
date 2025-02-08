@@ -12,7 +12,7 @@ def rename_htm_to_html(repo_folder):
         print(f"Entering directory: {root}")  # DEBUG PRINT - Entering directory
         for filename in files:
             print(f"  Checking file: {filename}") # DEBUG PRINT - Checking filename
-            if filename == "index.htm":
+            if filename == "index.html":
                 old_filepath = os.path.join(root, filename)
                 new_filename = "index.html"
                 new_filepath = os.path.join(root, new_filename)
@@ -25,9 +25,9 @@ def rename_htm_to_html(repo_folder):
                     print(f"    Error renaming '{old_filepath}': {e}") # DEBUG PRINT - Error
 
     if count > 0:
-        print(f"\nSuccessfully renamed {count} files from 'index.htm' to 'index.html'.")
+        print(f"\nSuccessfully renamed {count} files from 'index.html' to 'index.html'.")
     else:
-        print("\nNo files named 'index.htm' found to rename.")
+        print("\nNo files named 'index.html' found to rename.")
 
 if __name__ == "__main__":
     repo_path = input("Enter the path to your GitHub repository folder: ")
