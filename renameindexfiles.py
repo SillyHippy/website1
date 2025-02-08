@@ -7,8 +7,9 @@ def rename_index_files(directory):
             if file.lower() == "index.html":
                 old_path = os.path.join(root, file)
                 new_path = os.path.join(root, "index.html")
-                os.rename(old_path, new_path)
-                print(f"Renamed: {old_path} -> {new_path}")
+                if not os.path.exists(new_path):  # Ensure it does not already exist
+                    os.rename(old_path, new_path)
+                    print(f"Renamed: {old_path} -> {new_path}")
 
 def update_references(directory):
     for root, _, files in os.walk(directory):
@@ -17,7 +18,7 @@ def update_references(directory):
             try:
                 with open(file_path, 'r', encoding='utf-8') as f:
                     content = f.read()
-                updated_content = re.sub(r'\.htm(\s|["\'<>])', r'.html\1', content)
+                updated_content = re.sub(r'(?<!\.html)\.html(?!l)', '.html', content)
                 if updated_content != content:
                     with open(file_path, 'w', encoding='utf-8') as f:
                         f.write(updated_content)
