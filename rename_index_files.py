@@ -2,7 +2,7 @@ import os
 
 def rename_htm_to_html(repo_folder):
     """
-    Renames all files from 'index.htm' to 'index.html' in all folders and subfolders
+    Renames all files from 'index.html' to 'index.html' in all folders and subfolders
     within the specified repository folder.
 
     Args:
@@ -16,7 +16,7 @@ def rename_htm_to_html(repo_folder):
     count = 0
     for root, _, files in os.walk(repo_folder):
         for filename in files:
-            if filename == "index.htm":
+            if filename == "index.html":
                 old_filepath = os.path.join(root, filename)
                 new_filename = "index.html"
                 new_filepath = os.path.join(root, new_filename)
@@ -29,9 +29,9 @@ def rename_htm_to_html(repo_folder):
                     print(f"Error renaming '{old_filepath}': {e}")
 
     if count > 0:
-        print(f"\nSuccessfully renamed {count} files from 'index.htm' to 'index.html'.")
+        print(f"\nSuccessfully renamed {count} files from 'index.html' to 'index.html'.")
     else:
-        print("\nNo files named 'index.htm' found to rename.")
+        print("\nNo files named 'index.html' found to rename.")
 
 if __name__ == "__main__":
     repo_path = input("Enter the path to your GitHub repository folder: ")
