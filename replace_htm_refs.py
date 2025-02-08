@@ -1,10 +1,10 @@
 import os
 import re
 
-def replace_htm_references_with_html(repo_folder):
+def replace_htm_references_with_html_skip_python(repo_folder):
     """
-    Searches all code files within the repository folder and its subfolders
-    for references to '.html' and replaces them with '.html'.
+    Searches all code files (excluding Python files) within the repository folder
+    and its subfolders for references to '.htm' and replaces them with '.html'.
 
     Args:
         repo_folder (str): The path to the root folder of your GitHub repository.
@@ -14,14 +14,20 @@ def replace_htm_references_with_html(repo_folder):
         print(f"Error: '{repo_folder}' is not a valid directory.")
         return
 
-    code_extensions = ['.html', '.html', '.css', '.js', '.py', '.php', '.xml', '.json', '.txt', '.svg', '.md', '.config', '.ini', '.yaml', '.yml'] # Add more if needed
-    htm_regex = re.compile(r'\.htm(?=["\'\s>]|$)') # Regex to find .html followed by quote, space, >, or end of line
+    code_extensions = ['.html', '.htm', '.css', '.js', '.php', '.xml', '.json', '.txt', '.svg', '.md', '.config', '.ini', '.yaml', '.yml'] # Add more if needed, remove .py
+    htm_regex = re.compile(r'\.htm(?=["\'\s>]|$)') # Regex to find .htm followed by quote, space, >, or end of line
 
     total_files_modified = 0
     total_replacements = 0
+    skipped_python_files = 0
 
     for root, _, files in os.walk(repo_folder):
         for filename in files:
+            if filename.lower().endswith(".py"): # Skip Python files
+                skipped_python_files += 1
+                print(f"Skipping Python file: '{os.path.join(root, filename)}'")
+                continue # Skip to the next file
+
             if any(filename.lower().endswith(ext) for ext in code_extensions):
                 filepath = os.path.join(root, filename)
                 modified = False
@@ -48,9 +54,13 @@ def replace_htm_references_with_html(repo_folder):
                     print(f"Error processing file '{filepath}': {e}")
 
     if total_files_modified > 0:
-        print(f"\nSuccessfully modified {total_files_modified} files and updated a total of {total_replacements} '.html' references to '.html'.")
+        print(f"\nSuccessfully modified {total_files_modified} files and updated a total of {total_replacements} '.htm' references to '.html'.")
     else:
-        print("\nNo files modified. No '.html' references found in code files.")
+        print("\nNo files modified. No '.htm' references found in code files (excluding Python files).")
+
+    if skipped_python_files > 0:
+        print(f"Skipped {skipped_python_files} Python files.")
+
 
 if __name__ == "__main__":
     repo_path = input("Enter the path to your GitHub repository folder: ")
@@ -59,4 +69,4 @@ if __name__ == "__main__":
     if not repo_path:
         print("Repository path cannot be empty.")
     else:
-        replace_htm_references_with_html(repo_path)
+        replace_htm_references_with_html_skip_python(repo_path)
