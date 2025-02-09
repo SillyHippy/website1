@@ -1,0 +1,39 @@
+{
+  "id": "orchid_pink",
+  "title": "Orchid pink",
+  "order": 3,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#E33665"
+      },
+      {
+        "_id": "secondary",
+        "color": "#898989"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#E3366526"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#89898926"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#E33665"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#E33665CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#E3366580"
+      }
+    ]
+  }
+}

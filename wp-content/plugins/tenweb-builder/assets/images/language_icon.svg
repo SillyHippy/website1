@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_48050" data-name="Rectangle 48050" width="20" height="20" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Language_Icon" opacity="0.5">
+    <g id="Mask_Group_1289" data-name="Mask Group 1289" clip-path="url(#clip-path)">
+      <g id="Layer_2" data-name="Layer 2" transform="translate(3.333 3.337)">
+        <g id="Layer_1" data-name="Layer 1" transform="translate(0 0)">
+          <g id="Group_106545" data-name="Group 106545" transform="translate(0 4.786)">
+            <path id="Path_1" data-name="Path 1" d="M.2,47.363A5.958,5.958,0,0,1,4.022,51.18a.278.278,0,0,0,.528,0,5.938,5.938,0,0,1,3.814-3.815.277.277,0,0,0,0-.528A5.938,5.938,0,0,1,4.55,43.021a.278.278,0,0,0-.528,0,5.909,5.909,0,0,1-1.449,2.366A5.907,5.907,0,0,1,.207,46.837a.278.278,0,0,0,0,.527Z" transform="translate(-0.01 -42.827)" fill="#fff" opacity="0.5"/>
+            <path id="Path_3" data-name="Path 3" d="M53.519,47.336a5.958,5.958,0,0,1,3.817,3.817.272.272,0,0,0,.242.191c0-.021.006-8.461,0-8.543a.272.272,0,0,0-.242.19,5.938,5.938,0,0,1-3.814,3.815.278.278,0,0,0,0,.531Z" transform="translate(-53.324 -42.8)" fill="#fff"/>
+          </g>
+          <g id="Group_106532" data-name="Group 106532" transform="translate(7.705)">
+            <path id="Path_2" data-name="Path 2" d="M86.282,2.9a3.913,3.913,0,0,1,2.5,2.5.179.179,0,0,0,.346,0,3.921,3.921,0,0,1,2.5-2.5.179.179,0,0,0,0-.347A3.88,3.88,0,0,1,90.084,1.6,3.9,3.9,0,0,1,89.137.049a.179.179,0,0,0-.346,0A3.913,3.913,0,0,1,87.837,1.6a3.883,3.883,0,0,1-1.556.954.179.179,0,0,0,0,.347Z" transform="translate(-86.144 0.084)" fill="#fff" opacity="0.5"/>
+            <path id="Path_4" data-name="Path 4" d="M117.738,2.981a3.913,3.913,0,0,1,2.5,2.5.179.179,0,0,0,.173.126V0a.179.179,0,0,0-.173.126,3.913,3.913,0,0,1-.954,1.555,3.883,3.883,0,0,1-1.556.954.179.179,0,0,0,0,.347Z" transform="translate(-117.6 0.008)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

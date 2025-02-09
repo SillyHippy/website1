@@ -1,0 +1,172 @@
+.elementor-element-editable .twbb-color_picker-tool-container {
+    position: relative;
+}
+
+.twbb-color_picker-tool-container-single .pickr {
+    display:flex;
+}
+
+.twbb-color_picker-tool-container.twbb-color_picker-tool-container-single .pickr .pcr-button {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    padding: 0;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+.twbb-color_picker-tool-container .pickr .pcr-button:not(.twbb-color_picker-tool-container-single .pickr .pcr-button) {
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #FFFFFF;
+    border-radius: 3px;
+}
+
+.twbb-color_picker-tool-container-single .pickr .pcr-button::after {
+    background-image: url("../images/bg_color_icon_black.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: none !important;
+    background-color: transparent !important;
+    border-radius: 0px !important;
+}
+.twbb-color_picker-tool-container .pickr .pcr-button::before{
+    background-image: unset !important;
+}
+.twbb-color_picker-tool-container button{
+    background-color: unset !important;
+}
+.pcr-app .pcr-interaction input.pcr-type.active {
+    background-color: transparent;
+    color: #fff;
+}
+
+.pcr-app .pcr-interaction input.pcr-type {
+    all: unset;
+    font-size: 10px;
+    color: #9da5ae;
+    padding-inline-start: 5px;
+    cursor: pointer;
+}
+
+.color-picker .pcr-app .pcr-interaction {
+    align-items: baseline;
+}
+
+.twbb-color_picker-tool-container .pcr-app {
+    border-radius: 6px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.twbb-color_picker-tool-container .pcr-app[data-theme='monolith'] {
+    width: 270px;
+    max-width: 95vw;
+    padding: 20px;
+    position: absolute!important;
+    top: 28px;
+    left: -240px;
+}
+
+.twbb-color_picker-tool-container .pcr-app .pcr-interaction input.pcr-result {
+    color: #000;
+    margin: 0;
+    border-radius: 4px;
+    background: #F5F5F6;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 14px;
+    font-family: 'Evergrow-Sans';
+}
+
+.twbb-color_picker-tool-content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 32px;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 212px;
+    height: auto;
+
+
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.twbb-color_picker-tool-row {
+    display: flex;
+    height: 24px;
+    align-items: center;
+    margin-bottom: 14px;
+}
+
+.twbb-color_picker-tool-row:last-child {
+    margin-bottom: 0;
+}
+
+.twbb-color_picker-tool-row .twbb-color_picker-title {
+    flex-grow:1;
+}
+
+.twbb-color_picker-tool-row .twbb-color_picker-control {
+    width: 24px;
+    height: 24px;
+}
+
+.twbb-color_picker-tool-row .twbb-color_picker-title {
+    text-align: left;
+    letter-spacing: 0.1px;
+    color: #000;
+    font-family: "Evergrow-Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 15px;
+}
+
+.twbb-color_picker-tool-content .pcr-app.visible {
+    top: 0;
+}
+
+.twbb-color_picker-tool-content .twbb-color_picker-open {
+    position:relative;
+}
+.twbb-color_picker-tool-container .twbb-color_picker-tool {
+    background-image: url("../images/bg_color_icon_black.svg");
+    width: 16px;
+    height: 16px;
+    display: block;
+    background-size: cover;
+}
+.twbb-color_picker-tool-container.twbb-color_picker-tool-container-multiple .twbb-color_picker-tool {
+    background-image: url("../images/bg_color_icon.svg");
+}
+.twbb-color_picker-tool-container.twbb-color_picker-tool-container-multiple.twbb_color_popup_active .twbb-color_picker-tool, .twbb-color_picker-tool-container.twbb-color_picker-tool-container-multiple:hover .twbb-color_picker-tool{
+    background-image: url("../images/bg_color_icon_white_1.svg");
+}
+
+
+.twbb-color_picker-tool-container.twbb-color_picker-tool-container-single:has(.pcr-app.visible) .pickr .pcr-button::after, .twbb-color_picker-tool-container.twbb-color_picker-tool-container-single:hover .pickr .pcr-button::after, .twbb-color_picker-tool-container:hover .twbb-color_picker-tool {
+    background-image: url("../images/bg_color_icon_white.svg");
+}
+
+.twbb-color_picker-tool-container{
+    width: 24px;
+    height: 24px;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.twbb-color_picker-tool-container .twbb-color_picker-tool{
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+}
+.twbb-color_picker-tool-container.twbb_color_popup_active, .twbb-color_picker-tool-container:has(.pcr-app.visible), .twbb-color_picker-tool-container:hover{
+    border-radius: 4px;
+    background-color: #000;
+}

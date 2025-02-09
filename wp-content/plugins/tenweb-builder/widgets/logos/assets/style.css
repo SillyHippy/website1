@@ -1,0 +1,27 @@
+.elementor-widget-twbb_logos .twbb-logos__item {
+    max-width: 100%;
+    margin-right: 24px;
+}
+.elementor-widget-twbb_logos .twbb-logos-slider-container {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.elementor-widget-twbb_logos .twbb-logos-slider-container .twbb-logos {
+    display: inline-block;
+    width: max-content;
+}
+.elementor-widget-twbb_logos .twbb-logos-slider-container .twbb-logos.twbb-logos-animated {
+    animation: 45s slide infinite linear;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

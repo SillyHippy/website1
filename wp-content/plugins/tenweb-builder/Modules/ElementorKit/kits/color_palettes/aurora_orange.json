@@ -1,0 +1,39 @@
+{
+  "id": "aurora_orange",
+  "title": "Aurora orange",
+  "order": 10,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#ED6744"
+      },
+      {
+        "_id": "secondary",
+        "color": "#A7A2A0"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#ED674426"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#A7A2A026"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#ED6744"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#ED6744CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#ED674480"
+      }
+    ]
+  }
+}

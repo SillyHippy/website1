@@ -1,0 +1,18 @@
+.twbb-dropdown-select-tool-container.twbb-fe-select-tool.active .twbb-fe-dropdown {
+    width: 124px;
+}
+
+.twbb-dropdown-select-tool-container.twbb-fe-select-tool.active .twbb-fe-dropdown .twbb-fe-dropdown-active {
+    color: rgba(255,255,255,0.5);
+}
+
+.twbb-dropdown-select-tool-container.twbb-fe-select-tool .twbb-fe-selected-display{
+    margin-right: 4px;
+}
+.twbb-dropdown-select-tool-container.twbb-fe-select-tool{
+    padding: 4px;
+    border-radius: 4px;
+}
+.twbb-dropdown-select-tool-container.twbb_tool_html-tag{
+    width: 36px;
+}
