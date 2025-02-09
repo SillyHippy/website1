@@ -1,0 +1,39 @@
+{
+  "id": "basque_green",
+  "title": "Basque green",
+  "order": 4,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#5A5E32"
+      },
+      {
+        "_id": "secondary",
+        "color": "#DBC75B"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#5A5E3226"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#DBC75B26"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#5A5E32"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#5A5E32CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#5A5E3280"
+      }
+    ]
+  }
+}

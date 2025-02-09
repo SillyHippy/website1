@@ -1,0 +1,34 @@
+/* File: wp-content/themes/your-theme/widgets/custom-breadcrumb-style.css */
+
+ul.twbb-breadcrumb {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.twbb-breadcrumb li {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.twbb-breadcrumb li a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.twbb-breadcrumb li a:hover {
+    text-decoration: none;
+}
+
+.twbb-breadcrumb li .breadcrumb-separator {
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.twbb-breadcrumb li:last-child .breadcrumb-separator {
+    display: none;
+}

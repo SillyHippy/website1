@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25" height="25" viewBox="0 0 25 25">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47773" data-name="Rectangle 47773" width="25" height="25" fill="#2a2f30"/>
+    </clipPath>
+  </defs>
+  <g id="Edit_Icon" clip-path="url(#clip-path)">
+    <rect id="Rectangle_54300" data-name="Rectangle 54300" width="25" height="25" fill="#eabcf9"/>
+    <g id="Group_172044" data-name="Group 172044" transform="translate(1.407 2.312)">
+      <path id="edit_1_Traced_" data-name="edit 1 (Traced)" d="M13.613.065A1.884,1.884,0,0,0,12.9.383c-.107.08-.423.376-.7.656l-.506.51,1.274,1.274L14.237,4.1l.542-.54a8.168,8.168,0,0,0,.665-.725A1.775,1.775,0,0,0,15.22.567,1.78,1.78,0,0,0,13.613.065ZM8.038,5.2a40.3,40.3,0,0,0-2.905,3c-.017.065-.142.68-.279,1.367a9.7,9.7,0,0,0-.224,1.342.351.351,0,0,0,.249.249,24.938,24.938,0,0,0,2.834-.563c.052-.033,1.37-1.337,2.93-2.9l2.835-2.838L12.213,3.591c-.7-.7-1.273-1.266-1.283-1.266S9.619,3.62,8.038,5.2Z" transform="translate(1.159 3.971)" fill-rule="evenodd"/>
+      <path id="Line_5170" data-name="Line 5170" d="M10.384.365H0V-.5H10.384Z" transform="translate(5.724 16.617)"/>
+    </g>
+  </g>
+</svg>

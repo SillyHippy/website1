@@ -1,0 +1,633 @@
+
+.elementor-widget-twbb_woocommerce-my-account {
+  font-family: Roboto, sans-serif;
+  color: #69727D;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce-MyAccount-content {
+  float: right;
+  width: 75%; /* 75% to match the design */
+  padding: 0;
+  padding-left: var(--tab-content-spacing, 6%); /* 6% to match the design */
+}
+@media (max-width: 1024px) {
+  .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce-MyAccount-content {
+    width: 100%;
+    padding: var(--tab-content-spacing, 6%) 0 0 0;
+  }
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__dashboard:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__orders .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__downloads .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-account .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-address .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce-MyAccount-content-wrapper {
+  border-style: var(--sections-border-type, solid);
+  border-color: var(--sections-border-color, #D5D8DC);
+  border-width: var(--sections-border-top-width, 1px) var(--sections-border-right-width, 1px) var(--sections-border-bottom-width, 1px) var(--sections-border-left-width, 1px);
+  border-radius: var(--sections-border-radius, 3px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__dashboard:not(.e-my-account-tab__dashboard--custom) .shop_table, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__orders .shop_table, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__downloads .shop_table, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-account .shop_table, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-address .shop_table, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .shop_table {
+  border: none;
+  margin-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__dashboard:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__orders .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__downloads .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-account .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce-MyAccount-content-wrapper {
+  background-color: var(--sections-background-color, #ffffff);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__dashboard:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-account .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce-MyAccount-content-wrapper {
+  padding: var(--sections-padding, 16px 30px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__orders .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__downloads .woocommerce-MyAccount-content-wrapper {
+  padding: var(--sections-padding, 16px 30px 3px 30px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) address {
+  background-color: var(--sections-background-color, #ffffff);
+  padding: var(--sections-padding, 16px 30px);
+  border-style: var(--sections-border-type, solid);
+  border-color: var(--sections-border-color, #D5D8DC);
+  border-width: var(--sections-border-top-width, 1px) var(--sections-border-right-width, 1px) var(--sections-border-bottom-width, 1px) var(--sections-border-left-width, 1px);
+  border-radius: var(--sections-border-radius, 3px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .woocommerce-MyAccount-content, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-address .woocommerce-MyAccount-content {
+  border: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .woocommerce-MyAccount-content-wrapper, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__edit-address .woocommerce-MyAccount-content-wrapper {
+  padding: 0;
+  border: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .order_details {
+  margin-bottom: 40px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .woocommerce-table--order-downloads,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .order_details {
+  background-color: var(--sections-background-color, #ffffff);
+  padding: var(--sections-padding, 16px 30px 3px 30px);
+  border-style: var(--sections-border-type, solid);
+  border-color: var(--sections-border-color, #D5D8DC);
+  border-width: var(--sections-border-top-width, 1px) var(--sections-border-right-width, 1px) var(--sections-border-bottom-width, 1px) var(--sections-border-left-width, 1px);
+  border-radius: var(--sections-border-radius, 3px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce .woocommerce-MyAccount-content-wrapper .button {
+  background: transparent;
+  border-style: var(--tables-buttons-border-type, solid);
+  border-color: var(--tables-buttons-border-color, #5bc0de);
+  border-radius: var(--tables-button-border-radius, 3px);
+  border-width: 2px;
+  vertical-align: middle;
+  color: var(--tables-button-normal-text-color, #69727D);
+  padding: var(--tables-button-padding, 5px 10px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce .woocommerce-MyAccount-content-wrapper .button:hover {
+  color: var(--tables-button-hover-text-color, #69727D);
+  transition-duration: var(--tables-button-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce input[type=text] {
+  color: var(--forms-fields-normal-color, #69727D);
+  border-radius: var(--forms-fields-border-radius, 0px);
+  padding: var(--forms-fields-padding, 16px);
+  background: #F9FAFA;
+  border: none;
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__payment-methods .woocommerce input[type=text]:focus {
+  color: var(--forms-fields-focus-color, #69727D);
+  border-color: #69727D;
+  transition-duration: var(--forms-fields-focus-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__add-payment-method #add_payment_method #payment {
+  background-color: var(--sections-background-color, #ffffff);
+  padding: var(--sections-padding, 16px 30px);
+  border-style: var(--sections-border-type, solid);
+  border-color: var(--sections-border-color, #D5D8DC);
+  border-width: var(--sections-border-top-width, 1px) var(--sections-border-right-width, 1px) var(--sections-border-bottom-width, 1px) var(--sections-border-left-width, 1px);
+  border-radius: var(--sections-border-radius, 3px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__add-payment-method #add_payment_method #payment .payment_methods {
+  padding: 0;
+  border-bottom-style: var(--tables-divider-border-type, solid);
+  border-bottom-width: var(--tables-divider-border-width, 1px);
+  border-bottom-color: var(--tables-divider-border-color, #D4D4D4);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__add-payment-method #add_payment_method #payment #place_order {
+  background: #5bc0de;
+  border: none;
+  color: var(--forms-buttons-normal-text-color, #ffffff);
+  border-radius: var(--forms-buttons-border-radius, 3px);
+  padding: var(--forms-buttons-padding, 12px 32px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__add-payment-method #add_payment_method #payment #place_order:hover {
+  color: var(--forms-buttons-hover-text-color, #ffffff);
+  transition-duration: var(--forms-buttons-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) {
+  /* Make select2 appear like other inputs start */
+  /* Make select2 appear like other inputs end */
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content > div > p {
+  color: var(--general-text-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default {
+  border-radius: var(--forms-fields-border-radius, 0px);
+  background-color: var(--forms-fields-normal-background-color, #F9FAFA);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default .select2-selection--single {
+  color: var(--forms-fields-normal-color, #69727D);
+  background-color: var(--forms-fields-normal-background-color, #F9FAFA);
+  border-radius: var(--forms-fields-border-radius, 0px);
+  border: none;
+  height: 45px;
+  margin: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default .select2-selection--single:focus {
+  color: var(--forms-fields-focus-color, #69727D);
+  background-color: var(--forms-fields-focus-background-color, #F9FAFA);
+  border-color: initial;
+  transition-duration: var(--forms-fields-focus-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default .select2-selection--single .select2-selection__placeholder {
+  color: var(--forms-fields-normal-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: var(--forms-fields-normal-color, #69727D);
+  line-height: 45px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 45px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .select2-container--open .select2-dropdown--below {
+  background-color: var(--forms-fields-normal-background-color, #F9FAFA);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce ::-moz-placeholder {
+  color: var(--forms-fields-normal-color, inherit);
+  font-family: inherit;
+  opacity: 0.6;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce ::placeholder {
+  color: var(--forms-fields-normal-color, inherit);
+  font-family: inherit;
+  opacity: 0.6;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-message {
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce address {
+  color: var(--general-text-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a {
+  color: var(--links-normal-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a:hover {
+  color: var(--links-hover-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a.button.alt:hover {
+  background-color: initial;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce a.button:hover {
+  background-color: initial;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce em {
+  font-size: 12px;
+  color: var(--login-messages-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row {
+  padding-left: var(--forms-columns-gap-padding-left, 0px);
+  padding-right: var(--forms-columns-gap-padding-right, 0px);
+  margin-left: var(--forms-columns-gap-margin-left, 0px);
+  margin-right: var(--forms-columns-gap-margin-right, 0px);
+  margin-bottom: var(--forms-rows-gap, 6px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row label {
+  color: var(--forms-labels-color, #69727D);
+  margin-bottom: var(--forms-label-spacing, 0px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row .input-text,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row select {
+  color: var(--forms-fields-normal-color, #69727D);
+  border-radius: var(--forms-fields-border-radius, 0px);
+  padding: var(--forms-fields-padding, 16px);
+  background: #F9FAFA;
+  border: none;
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row .input-text:focus,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .form-row select:focus {
+  color: var(--forms-fields-focus-color, #69727D);
+  border-color: #69727D;
+  transition-duration: var(--forms-fields-focus-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce #billing_address_1_field {
+  margin-bottom: 5px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login .woocommerce-privacy-policy-text,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register .woocommerce-privacy-policy-text {
+  margin-bottom: 15px;
+  color: var(--login-messages-color, #69727D);
+  font-size: 12px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login p:not([class]),
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register p:not([class]) {
+  color: var(--login-messages-color, #69727D);
+  font-size: 12px;
+  margin-top: 10px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login .woocommerce-LostPassword,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register .woocommerce-LostPassword {
+  font-size: 12px;
+  margin-bottom: 0px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword {
+  width: 50%; /* 50% to match the design - it would normally be full width */
+}
+@media (max-width: 1024px) {
+  .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword {
+    width: 100%;
+  }
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword p {
+  color: var(--general-text-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword .form-row-first {
+  width: 100%;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword {
+  background-color: var(--sections-background-color, #ffffff);
+  padding: var(--sections-padding, 16px 30px);
+  border-style: var(--sections-border-type, solid);
+  border-color: var(--sections-border-color, #D5D8DC);
+  border-width: var(--sections-border-top-width, 1px) var(--sections-border-right-width, 1px) var(--sections-border-bottom-width, 1px) var(--sections-border-left-width, 1px);
+  border-radius: var(--sections-border-radius, 3px);
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login .button,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register .button,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword .button {
+  background: #5bc0de;
+  border: none;
+  color: var(--forms-buttons-normal-text-color, #ffffff);
+  border-radius: var(--forms-buttons-border-radius, 3px);
+  padding: var(--forms-buttons-padding, 12px 32px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login .button:hover,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .register .button:hover,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-ResetPassword .button:hover {
+  color: var(--forms-buttons-hover-text-color, #ffffff);
+  transition-duration: var(--forms-buttons-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .login p:nth-child(3) {
+  margin-top: 20px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-form__input-checkbox {
+  vertical-align: middle;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce p:last-of-type {
+  margin-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-form__label-for-checkbox span {
+  color: var(--checkboxes-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tr,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce td,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce th {
+  border: none;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h2,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce h3 {
+  color: var(--typography-section-titles-color, #000000);
+  margin-top: 0;
+  margin-bottom: var(--section-title-spacing, 45px);
+  font-weight: 400;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce strong {
+  color: var(--general-text-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce strong.wc-item-meta-label {
+  color: var(--variations-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .wc-item-meta {
+  color: var(--variations-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .product-quantity {
+  font-weight: 400;
+  color: var(--tables-items-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .woocommerce-order-downloads {
+  margin-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content-wrapper {
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content p:last-of-type {
+  margin-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content h2:first-of-type {
+  margin-top: 30px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-MyAccount-content mark {
+  background-color: transparent;
+  font-weight: bold;
+  color: var(--general-text-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce caption + thead tr:first-child td,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce caption + thead tr:first-child th,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce colgroup + thead tr:first-child td,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce colgroup + thead tr:first-child th {
+  border-top: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce thead:first-child tr:first-child td,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce thead:first-child tr:first-child th {
+  border-top: 0;
+  padding-left: 0;
+  padding-top: 0;
+  padding-bottom: var(--tables-titles-spacing, 9px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody > tr:nth-child(odd) > td, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody > tr:nth-child(odd) > th,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody > tr:nth-child(even) > td,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody > tr:nth-child(even) > th {
+  background-color: transparent;
+  padding-left: 0;
+  padding-top: var(--order-summary-rows-gap-top, 9px);
+  padding-bottom: var(--order-summary-rows-gap-bottom, 9px);
+  color: var(--tables-items-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number > a {
+  color: var(--tables-links-normal-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce tbody .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-number > a:hover {
+  color: var(--tables-links-hover-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table {
+  font-size: 14px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button {
+  background: transparent;
+  border-style: var(--tables-buttons-border-type, solid);
+  border-color: var(--tables-buttons-border-color, #5bc0de);
+  border-radius: var(--tables-button-border-radius, 3px);
+  border-width: 2px;
+  vertical-align: middle;
+  color: var(--tables-button-normal-text-color, #69727D);
+  padding: var(--tables-button-padding, 5px 10px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table .button:hover {
+  transition-duration: var(--tables-button-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table td, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table th {
+  border-top-style: var(--tables-divider-border-type, solid);
+  border-top-width: var(--tables-divider-border-width, 1px);
+  border-top-color: var(--tables-divider-border-color, #D5D8DC);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table thead tr th {
+  color: var(--tables-title-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .shop_table thead tr th span {
+  color: var(--tables-title-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details tfoot th,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details tfoot td {
+  padding-left: 0;
+  color: var(--tables-title-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .download-product a,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .product-name a {
+  color: var(--tables-links-normal-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .download-product a:hover,
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .product-name a:hover {
+  color: var(--tables-links-hover-color, #5bc0de);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order_details .product-purchase-note td {
+  border-top: none;
+  padding-top: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order-again .button {
+  background: transparent;
+  border: 2px solid #5bc0de;
+  border-style: var(--tables-buttons-border-type, solid);
+  border-color: var(--tables-buttons-border-color, #5bc0de);
+  border-width: 2px;
+  border-radius: var(--tables-button-border-radius, 3px);
+  vertical-align: middle;
+  color: var(--tables-button-normal-text-color, #69727D);
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: var(--tables-button-padding, 12px 32px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .order-again .button:hover {
+  transition-duration: var(--tables-button-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Address .title h3, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Addresses .title h3 {
+  float: none;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Address address, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Addresses address {
+  padding: var(--sections-padding, 45px 30px 16px 30px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Address .edit, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-Addresses .edit {
+  float: left;
+  position: absolute;
+  margin-left: var(--edit-link-margin-start, 30px);
+  margin-top: var(--edit-link-margin-top, 10px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce .u-columns {
+  margin-top: 20px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm fieldset, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields fieldset {
+  border: none;
+  padding: 0;
+  -webkit-margin-start: 0;
+  margin-inline-start: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm fieldset legend, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields fieldset legend {
+  font-weight: 700;
+  padding: 20px 0;
+  color: var(--general-text-color, #000000);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm .button, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields .button {
+  background: #5bc0de;
+  border: none;
+  color: var(--forms-buttons-normal-text-color, #ffffff);
+  border-radius: var(--forms-buttons-border-radius, 3px);
+  padding: var(--forms-buttons-padding, 12px 32px);
+  margin-top: 20px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-EditAccountForm .button:hover, .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-address-fields .button:hover {
+  color: var(--forms-buttons-hover-text-color, #ffffff);
+  transition-duration: var(--forms-buttons-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-pagination {
+  padding: 16px 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-pagination .button {
+  background: transparent;
+  border-style: var(--tables-buttons-border-type, solid);
+  border-color: var(--tables-buttons-border-color, #5bc0de);
+  border-radius: var(--tables-button-border-radius, 3px);
+  border-width: 2px;
+  vertical-align: middle;
+  color: var(--tables-button-normal-text-color, #69727D);
+  padding: var(--tables-button-padding, 5px 10px);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-pagination .button:hover {
+  transition-duration: var(--tables-button-hover-transition-duration, 0.3s);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab:not(.e-my-account-tab__dashboard--custom) .woocommerce-OrderUpdates {
+  color: var(--general-text-color, #69727D);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation {
+  float: left;
+  width: 25%; /* 25% to match the design */
+}
+@media (max-width: 1024px) {
+  .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation {
+    width: 100%;
+  }
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul {
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li {
+  list-style-type: none;
+  display: inline-block;
+  width: var(--tab-width, 100%);
+  /* add a Divider between the tabs that is outside of the margins */
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: var(--tabs-divider-color, #69727D);
+  height: var(--tabs-divider-weight, 0px);
+  position: relative;
+  top: calc(var(--tabs-spacing, 2px) / 2);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li.is-active a {
+  color: var(--tabs-active-color, #5bc0de);
+  background: #F1F2F3;
+  border-color: var(--tabs-active-border-color, transparent);
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--tabs-normal-color, #69727D);
+  display: block;
+  padding: var(--tabs-padding, 12px 20px);
+  text-align: var(--tabs-alignment, start);
+  background: #F9FAFA;
+  border-radius: var(--tabs-border-radius, 0px);
+  border-style: var(--tabs-border-type, solid);
+  border-color: var(--tabs-border-color, transparent);
+  border-width: 0px;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li a:hover {
+  color: var(--tabs-hover-color, #5bc0de);
+  border-color: var(--tabs-hover-border-color, transparent);
+}
+@media (max-width: 1024px) {
+  .elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li a {
+    padding: var(--tabs-padding, 10px);
+  }
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout {
+  margin-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li.woocommerce-MyAccount-navigation-link--customer-logout::after {
+  display: none;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-table__line-item.order_item .woocommerce-table__product-name.product-purchase-note-is-below {
+  padding-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-table__line-item.order_item .woocommerce-table__product-total.product-total.product-purchase-note-is-below {
+  padding-bottom: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .e-my-account-tab__view-order .shop_table td {
+  vertical-align: top;
+  line-height: unset;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-MyAccount-paymentMethods .woocommerce-PaymentMethod--actions {
+  text-align: right;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-PaymentMethod .input-radio {
+  vertical-align: middle;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-PaymentMethod .input-radio + label {
+  color: var(--payment-methods-radio-buttons-color, #69727D);
+}
+
+.e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul li {
+  display: inline-block;
+}
+.e-my-account-tabs-vertical .woocommerce-MyAccount-navigation {
+  display: block;
+}
+.e-my-account-tabs-vertical .woocommerce-MyAccount-navigation li {
+  margin: calc(var(--tabs-spacing, 2px) / 2) 0 calc(var(--tabs-spacing, 2px) / 2) 0;
+}
+.e-my-account-tabs-vertical .woocommerce-MyAccount-navigation li.woocommerce-MyAccount-navigation-link--dashboard {
+  margin-top: 0;
+}
+.e-my-account-tabs-vertical .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation {
+  display: none;
+}
+.e-my-account-tabs-horizontal .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation {
+  float: none;
+  width: 100%;
+}
+.e-my-account-tabs-horizontal .e-my-account-tab .woocommerce .woocommerce-MyAccount-navigation ul li::after {
+  display: none;
+}
+.e-my-account-tabs-horizontal .e-my-account-tab .woocommerce .woocommerce-MyAccount-content {
+  float: none;
+  width: 100%;
+  padding: var(--tab-content-spacing, 50px) 0 0 0;
+}
+@media (max-width: 1024px) {
+  .e-my-account-tabs-horizontal .e-my-account-tab .woocommerce .woocommerce-MyAccount-content {
+    width: 100%;
+    padding: var(--tab-content-spacing, 6%) 0 0 0;
+  }
+}
+.e-my-account-tabs-horizontal .woocommerce-MyAccount-navigation {
+  display: none;
+}
+.e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation {
+  display: block;
+}
+.e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: var(--tabs-container-justify-content, space-between);
+}
+@media (max-width: 767px) {
+  .e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul {
+    display: block;
+  }
+}
+.e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul li {
+  display: inline-block;
+  width: var(--tab-width, 100%);
+  padding: 0 calc(var(--tabs-spacing, 2px) / 2) 0 calc(var(--tabs-spacing, 2px) / 2);
+  margin: 0;
+  border-right-color: var(--tabs-divider-color, #69727D);
+  border-right-width: var(--tabs-divider-weight, 0px);
+  border-right-style: solid;
+}
+.e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul li:first-of-type {
+  padding-left: 0;
+}
+.e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul li:last-of-type {
+  padding-right: 0;
+  border-right-width: 0;
+}
+.elementor-widget-twbb_woocommerce-my-account .woocommerce-orders-table__cell.woocommerce-orders-table__cell-order-actions {
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 767px) {
+  .e-my-account-tabs-horizontal .e-wc-account-tabs-nav .woocommerce-MyAccount-navigation ul li {
+    margin: calc(var(--tabs-spacing, 2px) / 2) 0 calc(var(--tabs-spacing, 2px) / 2) 0;
+    display: inline-block;
+    width: 100%;
+  }
+}

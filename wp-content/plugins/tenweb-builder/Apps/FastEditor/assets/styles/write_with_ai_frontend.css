@@ -1,0 +1,350 @@
+/* Editor Preview Iframe Styles */
+.twbb-ai-front {
+    z-index: 99999;
+    display: flex;
+}
+
+.twbb-ai-front.twbb-help-active {
+    right: 62px;
+}
+
+.twbb-ai-front.twbb-ai-front-open {
+    z-index: 999999;
+}
+
+.twbb-ai-front-button {
+    background: #0C0D0E url(../images/wwai_icon.svg) 14px 1px no-repeat padding-box;
+    background-size: 12px;
+    width: 25px;
+    font: normal normal 600 10px/16px Open Sans;
+    letter-spacing: 0.08px;
+    color: #FFFFFF;
+    opacity: 1;
+    cursor: pointer;
+    text-align: left;
+    display: block;
+}
+
+.elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool .twbb-ai-front-button {
+    background-position: 68px 1px;
+    width: 80px;
+}
+
+.elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool.twbb-generatin-type-image .twbb-ai-front-button,
+.elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool.twbb-generatin-type-all .twbb-ai-front-button {
+    background-position: 85px 1px;
+    width: 97px;
+}
+.twbb-ai-front.twbb-ai-front-open:not(.twbb-ai-front-open-newprompt) .twbb-ai-front-action-cont {
+    display: block;
+}
+
+.twbb-ai-generate-title,
+.twbb-a-front-suggested-propmt {
+    display: block;
+    position: relative;
+    text-align: left;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    opacity: 1;
+    padding: 0 15px 0 44px;
+    cursor: pointer;
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 21px, right 20px center;
+    margin-bottom: 8px;
+}
+
+.twbb-ai-generate-title {
+    text-align: left;
+    font: normal normal 600 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+    opacity: 1;
+    margin-bottom: 10px;
+}
+
+.twbb-ai-generate-text.twbb-ai-generate-title {
+    margin-bottom: 0px;
+}
+
+
+.twbb-ai-front-new_prompt {
+    margin-top: 14px;
+    margin-bottom: 0;
+}
+
+.twbb-ai-front-fix_spelling {
+    margin-bottom: 14px;
+}
+
+.twbb-ai-generate-title.twbb-ai-generate-image {
+    background-image:url(../images/wwai_icon.svg),
+    url(../images/right-arrow.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 20px, right 20px center;
+}
+
+.twbb-ai-generate-title.twbb-ai-generate-image:hover {
+    background-image:url(../images/wwai_icon.svg),
+    url(../images/right_arrow_white.svg);
+}
+
+.twbb-ai-generate-title.twbb-ai-generate-text {
+    background-image:url(../images/wwai_icon.svg);
+    background-size: 14px;
+    background-repeat: no-repeat;
+    background-position: 20px;
+    margin-bottom: 12px;
+    margin-top: 14px;
+    cursor: default;
+}
+
+.twbb-ai-front-simplify_language:not(.twbb-ai-front-loading) {
+    background-image: url(../../../../assets/images/domain.svg), url(../images/right-arrow.svg);
+}
+
+.twbb-ai-front-make_it_longer:not(.twbb-ai-front-loading) {
+    background-image: url(../../../../assets/images/make_longer.svg), url(../images/right-arrow.svg);
+}
+
+.twbb-ai-front-make_it_shorter:not(.twbb-ai-front-loading) {
+    background-image: url(../../../../assets/images/make_it_shorter.svg), url(../images/right-arrow.svg);
+}
+
+.twbb-ai-front-fix_spelling:not(.twbb-ai-front-loading) {
+    background-image: url(../../../../assets/images/language_icon.svg), url(../images/right-arrow.svg);
+}
+
+.twbb-ai-front-new_prompt:not(.twbb-ai-front-loading) {
+    background-image: url(../../../../assets/images/new_prompt.svg), url(../images/right-arrow.svg);
+}
+
+.twbb-ai-front-simplify_language:not(.twbb-ai-front-loading):hover {
+    background-image: url(../../../../assets/images/domain.svg), url(../images/right_arrow_white.svg);
+}
+
+.twbb-ai-front-make_it_longer:not(.twbb-ai-front-loading):hover {
+    background-image: url(../../../../assets/images/make_longer.svg), url(../images/right_arrow_white.svg);
+}
+
+.twbb-ai-front-make_it_shorter:not(.twbb-ai-front-loading):hover {
+    background-image: url(../../../../assets/images/make_it_shorter.svg), url(../images/right_arrow_white.svg);
+}
+
+.twbb-ai-front-fix_spelling:not(.twbb-ai-front-loading):hover {
+    background-image: url(../../../../assets/images/language_icon.svg), url(../images/right_arrow_white.svg);
+}
+
+.twbb-ai-front-new_prompt:not(.twbb-ai-front-loading):hover {
+    background-image: url(../../../../assets/images/new_prompt.svg), url(../images/right_arrow_white.svg);
+}
+
+.twbb-a-front-suggested-propmt.twbb-ai-front-loading .twbb-ai-front-loader {
+    display: inline-block;
+}
+
+.twbb-a-front-suggested-propmt .twbb-ai-front-loader {
+    width: 10px;
+    height: 10px;
+    display: none;
+    background-image: url(../../../../assets/images/loader_small.svg);
+    animation: rotation 1s infinite linear;
+    position: absolute;
+    left: 22px;
+    top: 4px;
+    background-size: 10px;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+
+.twbb-ai-front hr {
+    background-color: #333333;
+    color: #333333;
+    border: none;
+    margin: auto !important;
+    height: 1px;
+    width: 250px;
+}
+
+.twbb-ai-front-action-cont,
+.twbb-ai-front-new_prompt-container {
+    width: 290px;
+    position: absolute;
+    top: 20px;
+    left: -12px;
+    flex-direction: column;
+    height: auto;
+    background: #0B0D0D 0% 0% no-repeat padding-box;
+    box-shadow: 0px 5px 25px #0000004D;
+    border-radius: 3px;
+    opacity: 1;
+    box-sizing: border-box;
+    margin-top: 6px;
+    display: none;
+    z-index: 999999;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.twbb-ai-front-new_prompt-container {
+    padding: 20px;
+}
+
+.twbb-ai-front-new_prompt-title {
+    padding-left: 27px;
+    background-image: url(../../../../assets/images/new_prompt.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 0px;
+    text-align: left;
+    font: normal normal 600 12px / 18px Open Sans;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+textarea.twbb-ai-front-new_prompt-textarea {
+    width: 250px;
+    height: 120px;
+    /* UI Properties */
+    background: #252829 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    margin: 20px 0 0px 0px;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.twbb-ai-front textarea:focus {
+    border:none;
+}
+
+.twbb-ai-front-new_prompt-textarea::placeholder {
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF80;
+    opacity: 1;
+}
+
+.twbb-ai-front-new_prompt-action-button {
+    position: relative;
+    width: 180px;
+    height: 40px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    text-align: center;
+    font: normal normal 600 14px / 40px Open Sans;
+    letter-spacing: 0.12px;
+    color: #181B1C;
+    cursor: pointer;
+    margin: 20px 0 0 70px;
+}
+
+.twbb-ai-front-new_prompt-action-button-text {
+    text-align: center;
+    font: normal normal 600 14px / 40px Open Sans;
+    letter-spacing: 0.12px;
+    color: #181B1C;
+}
+
+.twbb-ai-front-new_prompt-action-button:not(.twbb-ai-front-button-disabled):hover {
+    background: rgba(255, 255, 255, 0.8) 0% 0% no-repeat padding-box;
+}
+
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-new_prompt-action-button:not(.twbb-ai-front-button-disabled):hover,
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-new_prompt-action-button {
+    background: rgba( 255 , 255 , 255 , 0.502 ) 0% 0% no-repeat padding-box;
+    cursor: default;
+}
+
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-new_prompt-textarea {
+    background: #252829 0% 0% no-repeat padding-box;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-new_prompt-action-button-text {
+    display:none;
+}
+
+.twbb-ai-front-button-disabled {
+    cursor: default;
+    background: rgba(255, 255, 255, 0.5) 0% 0% no-repeat padding-box;
+    color: rgba(24, 27, 28, 0.5);
+}
+
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-new_prompt-action-button {
+    background-color: rgba( 255 , 255 , 255 , 0.502 );
+}
+
+.twbb-ai-front-loader {
+    width: 18px;
+    height: 18px;
+    display: none;
+    background-image: url(../../../../assets/images/loader_small.svg);
+    animation: rotation 1s infinite linear;
+    position: absolute;
+    left: 82px;
+    top: 11px;
+    background-size: 18px;
+}
+
+.twbb-ai-front-new_prompt-loading .twbb-ai-front-loader {
+    display: inline-block;
+}
+
+.twbb-ai-front-layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: transparent;
+    z-index: 9999;
+}
+
+.ai-front-error {
+    font: italic normal normal 12px/18px Open Sans;
+    letter-spacing: 0;
+    color: #FD3C31;
+    opacity: 1;
+}
+
+.elementor-widget-container:hover .twbb-ai-front .twbb-ai-front-button-layer,
+.elementor-widget-container .twbb-ai-front .twbb-ai-front-button-layer.twbb-ai-front-button-layer-visible {
+    display: block !important;
+}
+/*.elementor-widget-container .twbb-ai-front .twbb-ai-front-button-layer,*/
+/*.elementor-widget-container .twbb-ai-front .twbb-ai-front-button-layer:not(.twbb-ai-front-button-layer-visible) {*/
+/*    display: none;*/
+/*}*/
+.twbb-ai-front.twbb-ai-front-open.twbb-ai-front-open-newprompt .twbb-ai-front-new_prompt-container {
+    display: block;
+}
+@media (max-width: 500px) {
+    .elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool.twbb-generatin-type-image .twbb-ai-front-button,
+    .elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool.twbb-generatin-type-all .twbb-ai-front-button,
+    .elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool .twbb-ai-front-button {
+        background-position: 12px;
+        width: 23px;
+    }
+    .elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool .twbb-hide-in-hover {
+        display: none;
+    }
+}

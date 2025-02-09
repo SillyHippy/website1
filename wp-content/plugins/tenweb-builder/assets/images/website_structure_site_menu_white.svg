@@ -1,0 +1,25 @@
+<svg id="Dropdown_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47805" data-name="Rectangle 47805" width="12" height="12" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="DropDown_Open_Icon" clip-path="url(#clip-path)">
+    <g id="Site_menu" data-name="Site menu" transform="translate(2.006 2.006)">
+      <g id="Group_171859" data-name="Group 171859" transform="translate(0.492 1.1)">
+        <g id="Group_171856" data-name="Group 171856" transform="translate(0.098)">
+          <path id="Path_171970" data-name="Path 171970" d="M8.054,4.258h-5.8a.509.509,0,1,1,0-1.018h5.8a.509.509,0,1,1,0,1.018Z" transform="translate(-1.74 -3.24)" fill="#fff"/>
+        </g>
+        <g id="Group_171857" data-name="Group 171857" transform="translate(0 2.295)">
+          <path id="Path_171971" data-name="Path 171971" d="M7.764,11.018h-5.8a.509.509,0,1,1,0-1.018h5.8a.509.509,0,1,1,0,1.018Z" transform="translate(-1.45 -10)" fill="#fff"/>
+        </g>
+        <g id="Group_171858" data-name="Group 171858" transform="translate(0 4.59)">
+          <path id="Path_171972" data-name="Path 171972" d="M7.764,17.778h-5.8a.509.509,0,0,1,0-1.018h5.8a.509.509,0,1,1,0,1.018Z" transform="translate(-1.45 -16.76)" fill="#fff"/>
+        </g>
+      </g>
+      <g id="Group_171860" data-name="Group 171860">
+        <rect id="Rectangle_53738" data-name="Rectangle 53738" width="8" height="8" transform="translate(-0.006 -0.006)" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

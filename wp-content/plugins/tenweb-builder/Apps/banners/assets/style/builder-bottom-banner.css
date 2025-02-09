@@ -1,0 +1,83 @@
+.builder-bottom-banner {
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  display: none;
+}
+.builder-bottom-banner .builder-bottom-banner-container {
+  background-color: white;
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-sizing: border-box;
+  font-weight: 600;
+  align-items: center;
+}
+.builder-bottom-banner .builder-bottom-banner-container .builder-bottom-banner_text {
+  color: #323A45;
+}
+.builder-bottom-banner .builder-bottom-banner-container .twbb_button-blue {
+  text-decoration: none;
+  min-width: 180px;
+  border-radius: 25px;
+  display: inline-block;
+  padding: 14px 0;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+  background-color: #2160B5;
+}
+.builder-bottom-banner .builder-bottom-banner-container .twbb_button-blue:hover {
+  opacity: 0.7;
+}
+
+@media (min-width: 767px) {
+  .builder-bottom-banner {
+    justify-content: center;
+    bottom: 15px;
+  }
+  .builder-bottom-banner .builder-bottom-banner-container {
+    background-image: url(../images/banner_bg_desktop.svg);
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 5px 20px rgba(50, 58, 69, 0.1019607843);
+    border: 0.5px solid #2160B5;
+    border-radius: 12px;
+    width: 566px;
+    padding: 16px 20px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+  }
+}
+@media (max-width: 1023px) {
+  .builder-bottom-banner .builder-bottom-banner-container {
+    padding: 10px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .builder-bottom-banner {
+    bottom: 0;
+    border-top: 1px solid rgba(50, 58, 69, 0.2);
+  }
+  .builder-bottom-banner .builder-bottom-banner-container {
+    background-image: url(../images/banner_bg_mobile.png);
+    width: 100%;
+    padding: 15px 20px;
+    text-align: center;
+  }
+  .builder-bottom-banner .builder-bottom-banner-container .builder-bottom-banner_text {
+    font-size: 12px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    margin-bottom: 10px;
+  }
+  .builder-bottom-banner .builder-bottom-banner-container .twbb_button-blue {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.12px;
+    padding: 10px 0;
+  }
+}
+
+/*# sourceMappingURL=builder-bottom-banner.css.map */
