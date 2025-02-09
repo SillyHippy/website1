@@ -1,0 +1,184 @@
+.elementor-panel a.twbb_install_button,
+.elementor-panel a.twbb_activate_button,
+.elementor-panel a.twbb_update_button {
+  background-color: #39b54a;
+  border: none;
+  color: white;
+  text-shadow: none;
+  box-shadow: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding: 7px 15px 7px 15px;
+  border-radius: 3px;
+  font-size: 11px;
+  opacity: 1;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+.elementor-panel a.twbb_install_button:hover,
+.elementor-panel a.twbb_activate_button:hover,
+.elementor-panel a.twbb_update_button {
+  background-color: #39b54a;
+  opacity: 0.85;
+}
+
+.spinner {
+  display: none;
+  float: none;
+  width: 15px;
+  height: 15px;
+  background: url(../../images/spinner.gif);
+  background-size: contain;
+  margin: -1px 0 -3px 8px;
+}
+
+.twbb_description {
+  line-height: 20px;
+}
+
+.elementor-editor-active.twbb_template #elementor-panel-saver-button-preview {
+  pointer-events: none;
+}
+
+.elementor-editor-active.twbb_template #elementor-panel-saver-button-preview .fa.fa-eye:before {
+  content: '\f070' !important;
+}
+.elementor-edit-template {
+  margin: 10px;
+}
+.elementor-control-carousel.elementor-control-type-gallery .twb-ai-button-layer {
+  margin-bottom: 10px;
+}
+/*TEMPLATES*/
+@media (max-width: 1439px) {
+  .elementor-template-library-template-tenweb {
+    width: -webkit-calc(25% - 30px);
+    width: calc(25% - 30px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .elementor-template-library-template-tenweb {
+    width: -webkit-calc(20% - 30px);
+    width: calc(20% - 30px);
+  }
+}
+
+@media (max-width: 1025px) {
+  .elementor-template-library-template-tenweb {
+    width: -webkit-calc(33.333% - 30px);
+    width: calc(33.333% - 30px);
+  }
+}
+
+.elementor-template-library-template-tenweb .elementor-template-library-template-body {
+  height: 200px;
+}
+
+.elementor-template-library-template-tenweb .elementor-template-library-template-preview{
+  display: none;
+}
+
+.elementor-template-library-template-remote.elementor-template-library-template-tenweb .elementor-template-library-template-screenshot{
+  cursor: default;
+}
+
+/* display none elementor pro promotion */
+.elementor-tags-list__teaser,.elementor-control-url-more-options .elementor-control-field-description a{
+  display: none;
+}
+
+.elementor-element .twbb-widget-icon:after {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  content: "\e95a";
+  font-size: 15px;
+  color: #333B46;
+}
+.elementor-element:hover .twbb-widget-icon:after{
+  color: #333B46;
+}
+
+.elementor-control-content .draggable-order-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #d5d8dc;
+  margin: 10px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.elementor-control-content .draggable-order-item .draggable-order-label {
+  flex-grow: 1;
+}
+
+/*
+* change is done in 1.27.X version
+* this is for insuring backward compatibility with the old version of the widget,
+* we remove this control and replace it's values to new one in js
+*/
+.elementor-control-order_summary_totals_color,
+.elementor-control-order_summary_items_color,
+.elementor-control-order_summary_items_typography_typography,
+.elementor-control-order_summary_totals_typography_typography {
+  display: none;
+}
+
+.elementor-control-classic_thumbnail,
+.elementor-control-classic_thumbnail_tablet,
+.elementor-control-classic_thumbnail_mobile {
+    display: none;
+}
+
+.elementor-control.elementor-control-layout_tablet.elementor-control-responsive-tablet,
+.elementor-control.elementor-control-layout_mobile.elementor-control-responsive-mobile {
+  padding-top: 15px;
+}
+
+/*
+* change is done in 1.27.X version
+* this is for insuring backward compatibility with the old version of the widget,
+* we remove this control and replace it's values to new one in js
+  */
+/*.elementor-control-tenweb-posts_include_term_ids,*/
+/*.elementor-control-tenweb-posts_exclude_term_ids {*/
+/*  display: none;*/
+/*}*/
+/*.elementor-control-query_include_term_ids,*/
+/*.elementor-control-query_exclude_term_ids {*/
+/*  display: none;*/
+/*.elementor-control-query_include {*/
+/*  display: none;*/
+/*}*/
+/*}*/
+
+/*
+* change is done in 1.27.X version
+* this is for making less code change, from background this controls are working
+  */
+/*.elementor-control-tenweb-posts_include {*/
+/*    display: none;*/
+/*}*/
+
+.elementor-control-hide_products_images,
+.elementor-control-hide_products_title,
+.elementor-control-hide_products_description,
+.elementor-control-hide_products_buttons,
+.elementor-control-hide_product_quantity,
+.elementor-control-classic_skin_hide_products_titles,
+.elementor-control-modern_skin_hide_products_titles,
+.elementor-control-classic_skin_hide_products_description,
+.elementor-control-modern_skin_hide_products_description,
+.elementor-control-classic_skin_hide_product_quantity,
+.elementor-control-modern_skin_hide_product_quantity,
+.elementor-control-classic_skin_hide_products_images,
+.elementor-control-modern_skin_hide_products_images,
+.elementor-control-classic_skin_hide_products_buttons,
+.elementor-control-modern_skin_hide_products_buttons {
+  display: none;
+}
+
+/*END TEMPLATES*/
