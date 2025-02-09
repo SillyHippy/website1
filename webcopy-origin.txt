@@ -82,10 +82,6 @@ Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUHjIg1_i6t8kCHKm4532VJOt5-QNFg
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\montserrat\v29\JTUHjIg1_i6t8kCHKm4532VJOt5-QNFgpCvr73w5aX8.ttf
 Content Type: font/ttf
 
-Uri: https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2
-File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\montserrat\v29\JTUSjIg1_i6t8kCHKm459Wlhyw.woff2
-Content Type: font/woff2
-
 Uri: https://fonts.gstatic.com/s/opensans/v40/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\s\opensans\v40\memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsg-1y4n.ttf
 Content Type: font/ttf
@@ -134,39 +130,43 @@ Uri: https://justlegalsolutions.tech/terms-and-conditions/
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\terms-and-conditions\index.html
 Content Type: text/html
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1739047135
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated.min.css?date=1739068727
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739047135
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739068727
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_188_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1739047133
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated.min.css?date=1739068725
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739047133
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739068725
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_189_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1739047134
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated.min.css?date=1739068726
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739047134
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739068726
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_190_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1739047132
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated.min.css?date=1739068724
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739047132
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739068724
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_271_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
-Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739047088
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated.min.css?date=1739068712
+File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated.min.css
+Content Type: text/css
+
+Uri: https://justlegalsolutions.tech/wp-content/cache/tw_optimize/css/two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css?date=1739068712
 File Name: C:\Downloaded Web Sites\justlegalsolutions.tech\wp-content\cache\tw_optimize\css\two_front_page_aggregated_5031697833a1b266bf9fe4d7a52cf38e_delay.min.css
 Content Type: text/css
 
