@@ -1,0 +1,18 @@
+.elementor-183 .elementor-element.elementor-element-5e4ad60 {
+    background-image: url("wp-content/uploads/2025/02/tenweb_media_SXELHG56J.webp") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@media screen and (max-height:1024px) {
+    .e-con.e-parent:nth-of-type(n+3) {
+        background-image: inherit !important;
+    }
+}
+
+#Courier {
+    background-image: url("/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
