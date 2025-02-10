@@ -15,6 +15,12 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
+    min-height: 100vh; /* Ensures it takes up full screen height */
+    display: flex; /* Helps with centering */
+    align-items: center; /* Vertically centers content */
+    justify-content: center; /* Centers text horizontally */
+    
     padding: 100px 20px;
     color: white; /* Adjust text color for readability */
 }
