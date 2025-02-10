@@ -10,21 +10,49 @@
     }
 }
 
+/* Ensure the background image covers the full area */
 #Courier {
-    background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp');
-    background-size: contain; /* Change to 'contain' if 'cover' causes issues */
+    background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp') !important;
+    background-size: cover; /* 'cover' ensures full area coverage */
     background-position: center;
     background-repeat: no-repeat;
     
-    min-height: 100vh; /* Ensure full viewport height */
-    width: 100%; /* Ensure full width */
+    min-height: 100vh; /* Full screen height */
+    width: 100%; /* Full width */
     
     display: flex;
     align-items: center;
     justify-content: center;
     
     padding: 100px 20px;
-    color: white;
+    color: white; /* Ensures readability */
 }
 
+/* Fix Parent Container Issues (ensuring visibility) */
+.elementor-element-613eeb4,
+.e-con-inner {
+    height: auto !important;
+    min-height: 100vh !important;
+    overflow: visible !important;
+    display: block !important;
+}
+
+/* Responsive Adjustments for Different Screen Sizes */
+@media screen and (max-width: 768px) {
+    #Courier {
+        background-size: contain; /* Ensure full image is visible on small screens */
+    }
+}
+
+@media screen and (max-height: 500px) {
+    #Courier {
+        min-height: 80vh; /* Adjust height for ultra-wide monitors */
+    }
+}
+
+/* Fix for Lazy Loading Conflicts */
+#Courier {
+    background-attachment: scroll !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
