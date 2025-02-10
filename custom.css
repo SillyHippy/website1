@@ -12,47 +12,13 @@
 
 /* Ensure the background image covers the full area */
 #Courier {
-    background-image: url('https://justlegalsolutions.org/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp?v=2') !important;
-    background-size: cover !important;
-    background-position: center !important;
+    background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp?v=2') !important;
     background-repeat: no-repeat !important;
-    
-    min-height: 100vh; /* Full screen height */
-    width: 100%; /* Full width */
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    padding: 100px 20px;
-    color: white;
+    background-size: cover !important;
 }
 
-/* Fix Parent Container Issues (ensuring visibility) */
-.elementor-element-613eeb4,
-.e-con-inner {
-    height: auto !important;
-    min-height: 100vh !important;
-    overflow: visible !important;
-    display: block !important;
-}
-
-/* Responsive Adjustments for Different Screen Sizes */
-@media screen and (max-width: 768px) {
-    #Courier {
-        background-size: contain !important; /* Ensure full image is visible on small screens */
+@media screen and (max-height:1024px) {
+    .e-con.e-parent:nth-of-type(n+3) {
+        background-image: none !important; /* Use 'none' instead of 'inherit' */
     }
-}
-
-@media screen and (max-height: 500px) {
-    #Courier {
-        min-height: 80vh !important; /* Adjust height for ultra-wide monitors */
-    }
-}
-
-/* Fix for Lazy Loading Conflicts */
-#Courier {
-    background-attachment: scroll !important;
-    opacity: 1 !important;
-    visibility: visible !important;
 }
