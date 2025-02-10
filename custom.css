@@ -10,15 +10,65 @@
     }
 }
 
-/* Ensure the background image covers the full area */
+/* Background Styling for #Courier */
 #Courier {
     background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp?v=2') !important;
     background-repeat: no-repeat !important;
     background-size: cover !important;
+    background-position: center !important;
+
+    min-height: 100vh !important; /* Ensures full viewport height */
+    width: 100% !important; /* Ensures full width */
+
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    padding: 100px 20px !important;
+    color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
 
-@media screen and (max-height:1024px) {
-    .e-con.e-parent:nth-of-type(n+3) {
-        background-image: none !important; /* Use 'none' instead of 'inherit' */
+/* Adjust Background for Medium Screens (Tablets & Small Laptops) */
+@media screen and (max-width: 1024px) {
+    #Courier {
+        background-size: contain !important; /* Prevents cropping */
+        background-position: top center !important;
+        min-height: 90vh !important;
+        padding: 80px 20px !important;
     }
+}
+
+/* Ensure Proper Display on Mobile Screens */
+@media screen and (max-width: 768px) {
+    #Courier {
+        background-size: cover !important; /* Ensures full coverage */
+        background-attachment: scroll !important; /* Fix mobile scrolling issue */
+        min-height: 80vh !important;
+        padding: 60px 15px !important;
+    }
+}
+
+/* Optimize Background for Extra Small Screens */
+@media screen and (max-width: 480px) {
+    #Courier {
+        background-size: cover !important;
+        min-height: 75vh !important;
+        padding: 40px 10px !important;
+    }
+}
+
+/* Hide Background on Small Screens if Needed */
+@media screen and (max-height: 1024px) {
+    .e-con.e-parent:nth-of-type(n+3) {
+        background-image: none !important; /* Prevents display issues */
+    }
+}
+
+/* Fix Lazy Loading & Visibility Issues */
+#Courier {
+    background-attachment: scroll !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }
