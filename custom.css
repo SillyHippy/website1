@@ -23,4 +23,10 @@
     
     padding: 100px 20px;
     color: white; /* Adjust text color for readability */
+
+    position: relative;
+    z-index: 10; /* Ensures it appears above other sections */
+    
+    visibility: visible !important;
+    opacity: 1 !important;
 }
