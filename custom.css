@@ -12,21 +12,19 @@
 
 #Courier {
     background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp');
-    background-size: cover;
+    background-size: contain; /* Change to 'contain' if 'cover' causes issues */
     background-position: center;
     background-repeat: no-repeat;
     
-    min-height: 100vh; /* Ensures it takes up full screen height */
-    display: flex; /* Helps with centering */
-    align-items: center; /* Vertically centers content */
-    justify-content: center; /* Centers text horizontally */
+    min-height: 100vh; /* Ensure full viewport height */
+    width: 100%; /* Ensure full width */
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     padding: 100px 20px;
-    color: white; /* Adjust text color for readability */
+    color: white;
+}
 
-    position: relative;
-    z-index: 10; /* Ensures it appears above other sections */
-    
-    visibility: visible !important;
-    opacity: 1 !important;
 }
