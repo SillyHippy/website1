@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Calendar Event</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        label, input, button {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Schedule a Reminder</h2>
+    <form id="calendarForm">
+        <label for="eventDate">Choose Date:</label>
+        <input type="date" id="eventDate" required>
+        
+        <label for="eventTime">Choose Time:</label>
+        <input type="time" id="eventTime" required>
+        
+        <button type="submit">Generate Reminder</button>
+    </form>
+
+    <script>
+        document.getElementById("calendarForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            let date = document.getElementById("eventDate").value;
+            let time = document.getElementById("eventTime").value;
+            
+            if (!date || !time) {
+                alert("Please select a date and time.");
+                return;
+            }
+
+            let dateTime = new Date(date + "T" + time);
+            let formattedStart = dateTime.toISOString().replace(/-|:|\.\d+/g, "");
+            let formattedEnd = new Date(dateTime.getTime() + (60 * 60 * 1000)).toISOString().replace(/-|:|\.\d+/g, "");
+
+            let icsContent = `BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Just Legal Solutions//Custom Reminder//EN
+BEGIN:VEVENT
+UID:custom@example.com
+DTSTAMP:${formattedStart}
+DTSTART:${formattedStart}
+DTEND:${formattedEnd}
+SUMMARY:Follow up with Just Legal Solutions
+DESCRIPTION:Reminder to connect with Joseph Iannazzi at Just Legal Solutions.
+LOCATION:Tulsa, OK
+END:VEVENT
+END:VCALENDAR`;
+
+            let blob = new Blob([icsContent], { type: "text/calendar" });
+            let link = document.createElement("a");
+            link.href = URL.createObjectURL(blob);
+            link.download = "custom-reminder.ics";
+            link.click();
+        });
+    </script>
+</body>
+</html>
