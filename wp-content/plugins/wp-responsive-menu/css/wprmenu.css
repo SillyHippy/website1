@@ -512,3 +512,34 @@ html body .wprm-overlay.active {
     top: 0;
     position: fixed;
 }
+/* Ensure smooth scrolling behavior */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Allow body to scroll even when mobile menu is open */
+html.wprmenu-body-fixed body {
+  position: relative !important;
+  overflow: auto !important;
+}
+
+/* Fix issue where menu might be blocking clicks or navigation */
+#wprmenu_menu_ul a {
+  pointer-events: auto !important;
+}
+
+/* Close mobile menu when an anchor link is clicked */
+@media only screen and (max-width: 768px) {
+  #wprmenu_menu_ul a {
+    display: block;
+    width: 100%;
+  }
+  
+  #wprmenu_bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+}
