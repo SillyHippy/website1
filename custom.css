@@ -79,13 +79,3 @@
   -moz-user-select: text !important;
   -ms-user-select: text !important;
 }
-
-/* Override specific elements with user-select: none; (like Elementor, Tenweb Builder) */
-.flatpickr-months, 
-.select2-container,
-.multiRange,
-.mceTemp,
-.wp-caption,
-.select-tool_frontend {
-  user-select: text !important;
-}
