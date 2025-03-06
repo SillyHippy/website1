@@ -8,13 +8,13 @@ window.addEventListener( 'elementor/frontend/init', () => {
     } );
 } );
 
-let twbb_slides_wrapper = document.querySelectorAll(".twbb_slides-wrapper , .e-flex.elementor-element");
-if (twbb_slides_wrapper.length > 0) {
-    window.onscroll = function() {
-        two_calculate_position(twbb_slides_wrapper);
-    }
-
-}
+// let twbb_slides_wrapper = document.querySelectorAll(".twbb_slides-wrapper , .e-flex.elementor-element");
+// if (twbb_slides_wrapper.length > 0) {
+//     window.onscroll = function() {
+//         two_calculate_position(twbb_slides_wrapper);
+//     }
+//
+// }
 
 
 function two_calculate_position(lazy_elements) {
@@ -89,4 +89,3 @@ function two_replace_backgrounds(elementor_elements = false) {
         two_lazyLoadInstance.update();
     }
 }
-
