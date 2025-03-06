@@ -2,7 +2,7 @@
  * @output wp-includes/js/wplink.js
  */
 
- /* global wpLink */
+/* global wpLink */
 
 ( function( $, wpLinkL10n, wp ) {
 	var editor, searchTimer, River, Query, correctedURL,
@@ -493,7 +493,7 @@
 				return 'mailto:' + selection;
 			} else if ( selection && urlRegexp.test( selection ) ) {
 				// Selection is URL.
-				return selection.replace( /&amp;|&#0?38;/gi, '&' );
+				return selection.replace( /&|�?38;/gi, '&' );
 			}
 
 			return '';
@@ -667,10 +667,13 @@
 			liTop = li.position().top;
 			elTop = this.element.scrollTop();
 
-			if ( liTop < 0 ) // Make first visible element.
-				this.element.scrollTop( elTop + liTop );
-			else if ( liTop + liHeight > elHeight ) // Make last visible element.
-				this.element.scrollTop( elTop + liTop - elHeight + liHeight );
+			//>> START: MODIFICATION wp-includes/js/wplink.js
+			//The below two sections were commented out to stop the page from scrolling to the top.
+// 			if ( liTop < 0 ) // Make first visible element.
+// 				this.element.scrollTop( elTop + liTop );
+// 			else if ( liTop + liHeight > elHeight ) // Make last visible element.
+// 				this.element.scrollTop( elTop + liTop - elHeight + liHeight );
+            //>> END: MODIFICATION
 
 			// Trigger the river-select event.
 			this.element.trigger( 'river-select', [ li, event, this ] );
