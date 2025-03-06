@@ -484,3 +484,4 @@ ImagesLoaded.makeJQueryPlugin();
 return ImagesLoaded;
 
 });
+
