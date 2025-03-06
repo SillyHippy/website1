@@ -13,23 +13,23 @@ function applyViewCss(cssUrl){if(!cssUrl)return;const cssNode=document.createEle
 var two_scripts_load=true;var two_load_delayed_javascript=function(event){if(two_scripts_load){two_scripts_load=false;two_connect_script(0);if(typeof two_delay_custom_js_new=="object"){document.dispatchEvent(two_delay_custom_js_new)}
 window.two_delayed_loading_events.forEach(function(event){console.log("removed event listener");document.removeEventListener(event,two_load_delayed_javascript,false)});}};
 
-function two_loading_events(event){
-    setTimeout(function(event){
-        return function(){
-            var element;
-            if(event && event.type==="touchend"){
-                var touch=event.changedTouches[0];
-                element=document.elementFromPoint(touch.clientX,touch.clientY);
+// function two_loading_events(event){
+   //  setTimeout(function(event){
+      //  return function(){
+        //    var element;
+          //  if(event && event.type==="touchend"){
+            //    var touch=event.changedTouches[0];
+              //  element=document.elementFromPoint(touch.clientX,touch.clientY);
                 // element.dispatchEvent(t('touchstart',touch.clientX,touch.clientY));
                 // element.dispatchEvent(t('touchend',touch.clientX,touch.clientY));
                 // element.dispatchEvent(t('click',touch.clientX,touch.clientY));
-            } else if(event && event.type==="click"){
-                element=document.elementFromPoint(event.clientX,event.clientY);
+            //} else if(event && event.type==="click"){
+              //  element=document.elementFromPoint(event.clientX,event.clientY);
                 // element.dispatchEvent(t(event.type,event.clientX,event.clientY));
-            }
-        };
-    }(event), 150);
-}
+          //  }
+    //    };
+  //  }(event), 150);
+//}
 </script><script data-pagespeed-no-defer="" data-two-no-delay="" type="text/javascript">window.two_delayed_loading_attribute="data-twodelayedjs";window.two_delayed_js_load_libs_first="";window.two_delayed_loading_events=["mousemove","keydown","wheel","touchmove","touchend"];window.two_event_listeners=[];</script><script data-pagespeed-no-defer="" data-two-no-delay="" type="text/javascript">document.onreadystatechange=function(){if(document.readyState==="interactive"){
 	if(window.two_delayed_loading_attribute!==undefined){
     window.two_delayed_loading_events.forEach(function(ev){
