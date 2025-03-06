@@ -4,7 +4,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Legal Solutions Process Serving</title>
     <meta name="description" content="In the business to provide process service state-wide at competitive prices.">
+	<script>
+		const lazyloadRunObserver = ( () => {
+		 const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded):not(.e-no-lazyload)` );
+		 const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+		   entries.forEach( ( entry ) => {
+		   if ( entry.isIntersecting ) {
+			 let lazyloadBackground = entry.target;
+			 if ( lazyloadBackground ) {
+			   lazyloadBackground.classList.add( 'e-lazyloaded' );
+			 }
+			 lazyloadBackgroundObserver.unobserve( entry.target );
+		   }
+		 } );
+	   }, { rootMargin: '200px 0px 200px 0px' } );
+	   lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+		 lazyloadBackgroundObserver.observe( lazyloadBackground );
+	   } );
+	 } );
 
+   </script>
+       <script>
+		const events = [
+		  'DOMContentLoaded',
+		  'elementor/lazyload/observe',
+		];
+		events.forEach( ( event ) => {
+		  document.addEventListener( event, lazyloadRunObserver );
+		} );
+	  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 			<script data-pagespeed-no-defer="" data-two-no-delay="" type="text/javascript">window.addEventListener("load",function(){window.two_page_loaded=true;});function logLoaded(){console.log("window is loaded");}
