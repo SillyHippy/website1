@@ -1,0 +1,158 @@
+.elementor-widget-twbb-pricing-table .elementor-widget-container {
+  overflow: hidden;
+}
+.twbb-price-table {
+  text-align: center;
+}
+.twbb-price-table .twbb-price-table__header {
+  background: var(--e-price-table-header-background-color, #555);
+  padding: 20px 0;
+}
+.twbb-price-table .twbb-price-table__heading {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+.twbb-price-table .twbb-price-table__subheading {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+.twbb-price-table .twbb-price-table__original-price {
+  margin-right: 15px;
+  text-decoration: line-through;
+  font-size: 0.5em;
+  line-height: 1;
+  font-weight: 400;
+  align-self: center;
+}
+.twbb-price-table .twbb-price-table__original-price .elementor-price-table__currency {
+  font-size: 1em;
+  margin: 0;
+}
+.twbb-price-table .twbb-price-table__price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  color: #555;
+  font-weight: 800;
+  font-size: 65px;
+  padding: 40px 0;
+}
+.twbb-price-table .twbb-price-table__price .elementor-typo-excluded {
+  line-height: initial;
+  letter-spacing: initial;
+  text-transform: initial;
+  font-weight: initial;
+  font-size: initial;
+  font-style: initial;
+}
+.twbb-price-table .twbb-price-table__after-price {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.twbb-price-table .twbb-price-table__integer-part {
+  line-height: 0.8;
+}
+.twbb-price-table .twbb-price-table__currency, .twbb-price-table .twbb-price-table__fractional-part {
+  line-height: 1;
+  font-size: 0.3em;
+}
+.twbb-price-table .twbb-price-table__currency {
+  margin-right: 3px;
+}
+.twbb-price-table .twbb-price-table__period {
+  width: 100%;
+  font-size: 13px;
+  font-weight: 400;
+}
+.twbb-price-table .twbb-price-table__features-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  color: var(--e-price-table-features-list-color);
+}
+.twbb-price-table .twbb-price-table__features-list li {
+  font-size: 14px;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.twbb-price-table .twbb-price-table__features-list li .twbb-price-table__feature-inner {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+.twbb-price-table .twbb-price-table__features-list li:not(:first-child):before {
+  content: "";
+  display: block;
+  border: 0 solid rgba(122, 122, 122, 0.3);
+  margin: 10px 12.5%;
+}
+.twbb-price-table .twbb-price-table__features-list i {
+  margin-right: 10px;
+  font-size: 1.3em;
+}
+.twbb-price-table .twbb-price-table__features-list svg {
+  margin-right: 10px;
+  fill: var(--e-price-table-features-list-color);
+  height: 1.3em;
+  width: 1.3em;
+}
+.twbb-price-table .twbb-price-table__features-list svg ~ * {
+  vertical-align: text-top;
+}
+.twbb-price-table .twbb-price-table__footer {
+  padding: 30px 0;
+}
+.twbb-price-table .twbb-price-table__additional_info {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.4;
+}
+.twbb-price-table__ribbon {
+  position: absolute;
+  top: 0;
+  left: auto;
+  right: 0;
+  transform: rotate(90deg);
+  width: 150px;
+  overflow: hidden;
+  height: 150px;
+}
+.twbb-price-table__ribbon-inner {
+  text-align: center;
+  left: 0;
+  width: 200%;
+  transform: translateY(-50%) translateX(-50%) translateX(35px) rotate(-45deg);
+  margin-top: 35px;
+  font-size: 13px;
+  line-height: 2;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: #000;
+}
+.twbb-price-table__ribbon.elementor-ribbon-left {
+  transform: rotate(0);
+  left: 0;
+  right: auto;
+}
+.twbb-price-table__ribbon.elementor-ribbon-right {
+  transform: rotate(90deg);
+  left: auto;
+  right: 0;
+}
+
+.elementor-widget-price-table .elementor-widget-container {
+  overflow: hidden;
+  background-color: #F9FAFA;
+}

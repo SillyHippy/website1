@@ -1,0 +1,17 @@
+.twbb-font-family-tool-container .twbb-fe-dropdown {
+    width: 204px;
+}
+.twbb-font-family-tool-container.twbb-fe-select-tool.active ul.twbb-fe-dropdown {
+    padding-top: 50px;
+}
+/*.twbb-font-family-tool-container.twbb-fe-select-tool.active .twbb-fe-dropdown input {*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*}*/
+.twbb-fe-dropdown.twbb-select-tool-search-input {
+    z-index: 999;
+}
+
+.twbb-font-family-tool-container .twbb-fet-tooltip {
+    left: -22px;
+}

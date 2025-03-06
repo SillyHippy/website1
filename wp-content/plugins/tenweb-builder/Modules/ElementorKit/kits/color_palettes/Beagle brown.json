@@ -1,0 +1,39 @@
+{
+  "id": "beagle_brown",
+  "title": "Beagle brown",
+  "order": 8,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#8D6D36"
+      },
+      {
+        "_id": "secondary",
+        "color": "#9EBD59"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#8D6D3626"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#9EBD5926"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#8D6D36"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#8D6D36CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#8D6D3680"
+      }
+    ]
+  }
+}

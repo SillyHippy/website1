@@ -1,0 +1,39 @@
+{
+  "id": "chinese_plant",
+  "title": "Chinese plant",
+  "order": 9,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#9EBD59"
+      },
+      {
+        "_id": "secondary",
+        "color": "#DEBF15"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#9EBD5926"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#DEBF1526"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#9EBD59"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#9EBD59CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#9EBD5980"
+      }
+    ]
+  }
+}

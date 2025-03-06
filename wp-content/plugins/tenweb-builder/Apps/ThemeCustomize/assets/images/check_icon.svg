@@ -1,0 +1,10 @@
+<svg id="Checkmark_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_48069" data-name="Rectangle 48069" width="14" height="14" fill="#3339f1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_1297" data-name="Mask Group 1297" clip-path="url(#clip-path)">
+    <path id="design_system_icons-29" data-name="design system icons-29" d="M24.494,17.662a.749.749,0,0,0-1.16,0L19.409,21.7a.656.656,0,0,1-.4.183.479.479,0,0,1-.4-.183l-1.784-1.834a.675.675,0,0,0-.58-.229.835.835,0,0,0-.58.229.876.876,0,0,0,0,1.192L18.428,23.9a.925.925,0,0,0,.58.229.835.835,0,0,0,.58-.229l4.906-5.044A.8.8,0,0,0,24.494,17.662Z" transform="translate(-13.095 -13.498)" fill="#3339f1"/>
+  </g>
+</svg>

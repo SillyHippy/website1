@@ -1,0 +1,16 @@
+<svg id="Settings_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47758" data-name="Rectangle 47758" width="18" height="18" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Settings_Icon-2" data-name="Settings_Icon" clip-path="url(#clip-path)">
+    <g id="Group_93606" data-name="Group 93606" transform="translate(3 7.6)">
+      <circle id="Ellipse_12599" data-name="Ellipse 12599" cx="1.418" cy="1.418" r="1.418" transform="translate(4.582)" fill="#fff"/>
+      <g id="Group_93605" data-name="Group 93605">
+        <circle id="Ellipse_12600" data-name="Ellipse 12600" cx="1.418" cy="1.418" r="1.418" fill="#fff"/>
+        <circle id="Ellipse_12601" data-name="Ellipse 12601" cx="1.418" cy="1.418" r="1.418" transform="translate(9.164)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>
