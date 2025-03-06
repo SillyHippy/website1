@@ -707,11 +707,11 @@ onStylesLoadEvent=new Event("two_css_loaded");window.dispatchEvent(onStylesLoadE
                                 }else{
                                      two_lazyLoadInstance.update();
                                 }
-                                window.addEventListener("scroll", function() {
-                                   if(two_lazyLoadInstance.toLoadCount>0){
-                                      two_lazyLoadInstance.update();
-                                   }
-                                });
+                                // window.addEventListener("scroll", function() {
+//     if (two_lazyLoadInstance.toLoadCount > 0) {
+//         two_lazyLoadInstance.update();
+//     }
+// });
                                 /*
                                  * Updates lazy-load instance from every ajax request
                                  * When we use Ajax requests and get pictures back, we need to update lazy-load instance
