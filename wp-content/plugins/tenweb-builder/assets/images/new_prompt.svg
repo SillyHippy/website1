@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <g id="Custom_prompt" data-name="Custom prompt" opacity="0.5">
+    <rect id="Rectangle_54181" data-name="Rectangle 54181" width="20" height="20" fill="none"/>
+    <g id="Group_171977" data-name="Group 171977" transform="translate(4.235 4.46)">
+      <g id="Group_171976" data-name="Group 171976">
+        <path id="Path_171984" data-name="Path 171984" d="M18.08,20.8H10.39a2.723,2.723,0,0,1-2.72-2.72V10.84a2.723,2.723,0,0,1,2.72-2.72h7.685a2.723,2.723,0,0,1,2.72,2.72v7.24A2.713,2.713,0,0,1,18.08,20.8ZM10.39,9.72a1.121,1.121,0,0,0-1.12,1.12v7.24a1.121,1.121,0,0,0,1.12,1.12h7.69A1.113,1.113,0,0,0,19.2,18.084V10.84a1.121,1.121,0,0,0-1.12-1.12Z" transform="translate(-8.47 -8.92)" fill="#fff"/>
+        <path id="Line_5167" data-name="Line 5167" d="M11.53.8H0A.8.8,0,0,1-.8,0,.8.8,0,0,1,0-.8H11.53a.8.8,0,0,1,.8.8A.8.8,0,0,1,11.53.8Z" transform="translate(0 3.335)" fill="#fff"/>
+      </g>
+      <path id="Path_171985" data-name="Path 171985" d="M8.47,15.59v5.82a1.92,1.92,0,0,0,1.92,1.92h7.685A1.92,1.92,0,0,0,20,21.41V15.59Zm2.63,6.625a.61.61,0,0,1-.43-1.04l1.715-1.715L10.67,17.745a.608.608,0,1,1,.86-.86L14.1,19.46,11.53,22.035A.6.6,0,0,1,11.1,22.215Zm6.27-.22h-3.1a.61.61,0,1,1,0-1.22h3.1a.61.61,0,0,1,0,1.22Z" transform="translate(-8.47 -12.255)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

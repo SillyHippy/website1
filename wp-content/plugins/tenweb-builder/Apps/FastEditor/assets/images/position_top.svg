@@ -1,0 +1,13 @@
+<svg id="Up_align_Icon" data-name="Up align_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47765" data-name="Rectangle 47765" width="18" height="18" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Copy_Icon" clip-path="url(#clip-path)">
+    <g id="Group_172573" data-name="Group 172573" transform="translate(0 17.609) rotate(-90)">
+      <path id="Path_171980" data-name="Path 171980" d="M10.494,4.393h0a.631.631,0,0,0-.35-.351h0A.608.608,0,0,0,9.893,4H6.822a.649.649,0,0,0,0,1.3h1.5L4.143,9.477A.649.649,0,0,0,4.6,10.585a.643.643,0,0,0,.458-.19L9.245,6.2V7.7a.648.648,0,1,0,1.3,0V4.627A.611.611,0,0,0,10.494,4.393Z" transform="translate(7.297 -1.125) rotate(45)" fill="#fff"/>
+      <line id="Line_5393" data-name="Line 5393" y1="10" transform="translate(14.609 4)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

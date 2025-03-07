@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Copy_Icon">
+<g id="Copy_Icon_2">
+<mask id="mask0_3133_6572" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="17" height="16">
+<path id="Rectangle 47765" fill-rule="evenodd" clip-rule="evenodd" d="M0.00195312 0H16.002V16H0.00195312V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3133_6572)">
+<g id="Group 172692">
+<path id="upload_FILL0_wght400_GRAD0_opsz24" fill-rule="evenodd" clip-rule="evenodd" d="M4.00033 13.3314C3.63367 13.3314 3.31978 13.2008 3.05867 12.9397C2.79757 12.6786 2.66699 12.3648 2.66699 11.998V9.99805H4.00033V11.998H12.0003V9.99805H13.3337V11.998C13.3337 12.3647 13.2031 12.6786 12.942 12.9397C12.6809 13.2008 12.367 13.3314 12.0003 13.3314H4.00033Z" fill="#1F2124"/>
+<path id="upload_FILL0_wght400_GRAD0_opsz24_2" fill-rule="evenodd" clip-rule="evenodd" d="M8.66781 10.665V5.23169L10.4011 6.96501L11.3345 5.99837L8.00114 2.66504L4.66781 5.99837L5.60115 6.96501L7.33447 5.23169V10.665H8.66781Z" fill="#1F2124"/>
+</g>
+</g>
+</g>
+</g>
+</svg>
