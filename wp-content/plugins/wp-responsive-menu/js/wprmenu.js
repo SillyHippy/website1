@@ -208,7 +208,6 @@ jQuery( document ).ready( function( $ ) {
 	}
 	if( wprmenu.parent_click == 'yes' ) {
 		$('a.wprmenu_parent_item').on('click', function(e){
-			e.preventDefault();
 			$(this).prev('.wprmenu_icon_par').trigger('click');
 		});
 	}
