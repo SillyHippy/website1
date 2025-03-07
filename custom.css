@@ -1,4 +1,3 @@
-
 .elementor-183 .elementor-element.elementor-element-5e4ad60 {
     background-image: url("/wp-content/uploads/2025/02/tenweb_media_SXELHG56J.webp") !important;
     background-repeat: no-repeat !important;
@@ -114,11 +113,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
-    // Override the mousemove and wheel event handling completely
-    ['mousemove', 'wheel', 'touchmove', 'touchend'].forEach(function(eventName) {
+    // Override various mouse-related events that might be interfering
+    ['mousemove', 'wheel', 'touchmove', 'touchend', 'mousedown', 'mouseup', 'dragstart', 'drag', 'dragend'].forEach(function(eventName) {
         const originalAddEventListener = document.addEventListener;
         document.addEventListener = function(type, listener, options) {
-            if (type === eventName && listener && listener.toString().includes('two_load_delayed')) {
+            if (type === eventName && listener && (listener.toString().includes('two_load_delayed') || listener.toString().includes('two_loading_events'))) {
                 // Skip adding these problematic event listeners
                 return;
             }
@@ -126,14 +125,29 @@ document.addEventListener('DOMContentLoaded', function() {
         };
     });
     
-    // Ensure text selection is enabled
+    // Handle mousedown/mouseup specifically to prevent drag issues
+    document.addEventListener('mousedown', function(e) {
+        // Allow text selection to work normally
+        e.stopPropagation();
+    }, true);
+    
+    // Ensure all elements allow text selection
     document.querySelectorAll('*').forEach(function(el) {
         el.style.userSelect = 'auto';
         el.style.webkitUserSelect = 'auto';
         el.style.mozUserSelect = 'auto';
         el.style.msUserSelect = 'auto';
+        // Prevent pointer events from getting in the way
+        el.style.pointerEvents = 'auto';
+        // Remove any drag-related attributes
+        el.setAttribute('draggable', 'false');
     });
     
-    console.log("Selection fix applied");
+    // Completely disable the problematic event handler
+    window.two_loading_events = function() {};
+    window.two_event = null;
+    window.two_load_delayed_javascript = function() {};
+    
+    console.log("Enhanced selection and drag fix applied");
 });
 </script>
