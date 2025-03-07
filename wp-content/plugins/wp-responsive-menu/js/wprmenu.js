@@ -223,12 +223,12 @@ jQuery( document ).ready( function( $ ) {
 			swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 				menu_el = $('.wprmenu_bar .hamburger, .wprmenu_bar .wpr-custom-menu');
 				if( direction =='left' && menu_el.hasClass('is-active') ) {
-					//event.preventDefault();  REMOVE THIS LINE
+					//event.preventDefault();
 					menu_el.trigger('click');
 				}
 				
 				if( direction =='right' && !menu_el.hasClass('is-active') ) {
-					//event.preventDefault();  REMOVE THIS LINE
+					//event.preventDefault();
 					menu_el.trigger('click');
 				}
     		}
