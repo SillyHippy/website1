@@ -1,3 +1,4 @@
+
 .elementor-183 .elementor-element.elementor-element-5e4ad60 {
     background-image: url("/wp-content/uploads/2025/02/tenweb_media_SXELHG56J.webp") !important;
     background-repeat: no-repeat !important;
@@ -84,30 +85,55 @@
 /* Prevent unwanted scrolling on text selection */
 html, body {
     scroll-behavior: auto !important;
+    overflow-anchor: none !important;
 }
 
 /* Disable problematic event listeners */
 .elementor * {
-    pointer-events: auto;
+    pointer-events: auto !important;
 }
 
-
-/* Script to fix text selection and scrolling issues */
+/* Completely disable the two_loading_events function */
+<script type="text/javascript">
+// Override the problematic functions on page load
 document.addEventListener('DOMContentLoaded', function() {
-    // Remove problematic event listeners
-    if (window.two_loading_events) {
-        window.two_loading_events = function() {};
+    // Override the event handling functions completely
+    if (typeof window.two_loading_events !== 'undefined') {
+        window.two_loading_events = function() { return true; };
     }
     
-    // Ensure mousemove doesn't trigger unwanted actions
-    window.two_delayed_loading_events.forEach(function(event) {
-        if (event === 'mousemove' || event === 'wheel') {
+    if (typeof window.two_load_delayed_javascript !== 'undefined') {
+        window.two_load_delayed_javascript = function() { return true; };
+    }
+    
+    // Remove all listeners for the problematic events
+    if (typeof window.two_delayed_loading_events !== 'undefined') {
+        window.two_delayed_loading_events.forEach(function(event) {
             document.removeEventListener(event, window.two_load_delayed_javascript, false);
-        }
+            window.removeEventListener(event, window.two_load_delayed_javascript, false);
+        });
+    }
+    
+    // Override the mousemove and wheel event handling completely
+    ['mousemove', 'wheel', 'touchmove', 'touchend'].forEach(function(eventName) {
+        const originalAddEventListener = document.addEventListener;
+        document.addEventListener = function(type, listener, options) {
+            if (type === eventName && listener && listener.toString().includes('two_load_delayed')) {
+                // Skip adding these problematic event listeners
+                return;
+            }
+            originalAddEventListener.call(this, type, listener, options);
+        };
     });
     
-    // Fix text selection
+    // Ensure text selection is enabled
     document.querySelectorAll('*').forEach(function(el) {
         el.style.userSelect = 'auto';
+        el.style.webkitUserSelect = 'auto';
+        el.style.mozUserSelect = 'auto';
+        el.style.msUserSelect = 'auto';
     });
+    
+    console.log("Selection fix applied");
 });
+</script>
