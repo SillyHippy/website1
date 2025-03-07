@@ -232,9 +232,9 @@
         };
 
         var unstick = function() {
-           unstickElement();
+            unstickElement();
 
-           // removeSpacer();
+            removeSpacer();
 
             isSticky = false;
 
