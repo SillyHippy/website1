@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Just Legal Solutions//Calendar Reminder//EN
+BEGIN:VEVENT
+UID:12345678@example.com
+DTSTAMP:20250227T120000Z
+DTSTART:20250302T090000Z
+DTEND:20250302T100000Z
+SUMMARY:Follow up with Just Legal Solutions
+DESCRIPTION:Reminder to connect with Joseph Iannazzi at Just Legal Solutions.
+LOCATION:Tulsa, OK
+END:VEVENT
+END:VCALENDAR

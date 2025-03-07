@@ -1,0 +1,20 @@
+.elementor-panel #elementor-panel-header-wrapper #elementor-panel-header #elementor-panel-header-title img {
+  background-image: url(../../images/white_label_logo.svg);
+}
+.elementor-element .twbb-widget-icon:after {
+  content: '';
+}
+
+/*remove builder logo and link to dashboard from editing page header menu*/
+.twbb-top-bar-icon-parent {
+  opacity: 0;
+  width: 0;
+}
+.twbb-main-menu-10web-dashboard {
+  display: none !important;
+}
+#elementor-editor-wrapper-v2 .MuiGrid-root:nth-child(1) div:nth-child(2) {
+  position: unset !important;
+  top: unset !important;
+  opacity: 1 !important;
+}

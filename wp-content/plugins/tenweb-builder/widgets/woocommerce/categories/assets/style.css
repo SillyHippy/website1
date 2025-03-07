@@ -1,0 +1,398 @@
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products {
+  grid-template-columns: repeat(4, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-1 ul.products {
+  grid-template-columns: repeat(1, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-2 ul.products {
+  grid-template-columns: repeat(2, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-3 ul.products {
+  grid-template-columns: repeat(3, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-4 ul.products {
+  grid-template-columns: repeat(4, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-5 ul.products {
+  grid-template-columns: repeat(5, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-6 ul.products {
+  grid-template-columns: repeat(6, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-7 ul.products {
+  grid-template-columns: repeat(7, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-8 ul.products {
+  grid-template-columns: repeat(8, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-9 ul.products {
+  grid-template-columns: repeat(9, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-10 ul.products {
+  grid-template-columns: repeat(10, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-11 ul.products {
+  grid-template-columns: repeat(11, 1fr);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-12 ul.products {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products {
+  display: grid;
+  margin: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products:after,
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products:before {
+  content: none;
+  display: none;
+}
+
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products li.product,
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products[class*=columns-] li.product {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  float: none;
+  overflow: hidden;
+  display: block;
+  height: fit-content;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products li.product .elementor-button-content-wrapper,
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products[class*=columns-] li.product .elementor-button-content-wrapper {
+  align-items: center;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products li.product .elementor-button-content-wrapper .elementor-button-icon,
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products[class*=columns-] li.product .elementor-button-content-wrapper .elementor-button-icon {
+  line-height: 0;
+}
+
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products li.product .onsale {
+  padding: 0;
+  display: none;
+}
+
+.elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products li.product a.woocommerce-loop-product__link {
+  display: block;
+  position: relative;
+}
+
+.elementor-wc-products:not(.show-heading-yes):not(.products-heading-show) .products > h2 {
+  display: none;
+}
+
+.elementor-wc-products nav.woocommerce-pagination {
+  margin-top: 40px;
+}
+
+.elementor-wc-products:not(.elementor-show-pagination-border-yes) nav.woocommerce-pagination ul {
+  border: 0 none;
+}
+.elementor-wc-products:not(.elementor-show-pagination-border-yes) nav.woocommerce-pagination ul li {
+  border-right: 0 none;
+  border-left: 0 none;
+}
+
+.elementor-wc-products ul.products li.product span.onsale {
+  padding: 0;
+  display: none;
+}
+
+.twbb-woocommerce_category_content_container {
+  z-index: 9;
+}
+
+.elementor-widget-twbb_woocommerce-categories.twbb-category-title-position-inside ul.products li.product {
+  position: relative;
+}
+
+.elementor-widget-twbb_woocommerce-categories.twbb-category-title-position-inside ul.products li.product .twbb-woocommerce_category_content_container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.elementor-widget-twbb_woocommerce-categories.twbb-category-title-position-inside-bottom ul.products li.product .twbb-woocommerce_category_content_container {
+  justify-content: flex-end;
+}
+
+.elementor-widget-twbb_woocommerce-categories.twbb-category-title-position-inside-top ul.products li.product .twbb-woocommerce_category_content_container {
+  justify-content: flex-start;
+}
+
+.elementor-widget-twbb_woocommerce-categories.twbb-category-title-position-inside-center ul.products li.product .twbb-woocommerce_category_content_container {
+  justify-content: center;
+}
+
+.twbb-woocommerce_category_content_container {
+  z-index: 1;
+}
+
+.elementor-widget-twbb_woocommerce-categories .woocommerce-loop-category__title {
+  color: var(--e-global-color-twbb_primary_inv);
+  display: none;
+}
+
+.elementor-widget-twbb_woocommerce-categories .elementor-button {
+  color: var(--e-global-twbb_button_inv);
+  fill: var(--e-global-twbb_button_inv);
+}
+
+.elementor-widget-twbb_woocommerce-categories .elementor-button {
+  background-color: var(--e-global-twbb_bg_inv);
+}
+
+/*---------------------------------------------------------------------------*/
+/*  IMAGE ANIMATION */
+.elementor-widget-twbb_woocommerce-categories {
+  --translate: 0, 0;
+  --scale-grow: 1.1;
+  --scale-shrink: 0.85;
+  --scale-normal: 1;
+  --scale-enter-zoom-in: 0.2;
+  --scale-enter-zoom-out: 2;
+  --scale-exit-zoom-out: 0.2;
+  --scale-exit-zoom-in: 2;
+  --translate-right: 1000px;
+  --translate-left: -1000px;
+  --translate-top: -600px;
+  --translate-bottom: 600px;
+  --translate-small: 30px;
+  --translate-contained: 8%;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--grow ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--grow ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-grow));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-shrink));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink-contained ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink-contained ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-normal));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-in ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-in ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-normal));
+  opacity: 1;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-out ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-out ul.products[class*=columns-] li.product:hover img {
+  opacity: 0;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-exit-zoom-out));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product:hover img {
+  transform: scale(var(--scale-exit-zoom-in));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product:hover img {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-right ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-right ul.products[class*=columns-] li.product:hover img {
+  transform: translateX(var(--translate-right));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-left ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-left ul.products[class*=columns-] li.product:hover img {
+  transform: translateX(var(--translate-left));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-top ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-top ul.products[class*=columns-] li.product:hover img {
+  transform: translateY(var(--translate-top));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-bottom ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-bottom ul.products[class*=columns-] li.product:hover img {
+  transform: translateY(var(--translate-bottom));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-right ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-right ul.products[class*=columns-] li.product:hover img {
+  transform: translateX(var(--translate-small));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-left ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-left ul.products[class*=columns-] li.product:hover img {
+  transform: translateX(calc(-1 * var(--translate-small)));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-up ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-up ul.products[class*=columns-] li.product:hover img {
+  transform: translateY(calc(-1 * var(--translate-small)));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-down ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-down ul.products[class*=columns-] li.product:hover img {
+  transform: translateY(var(--translate-small));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-right ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-right ul.products[class*=columns-] li.product:hover img {
+  --translate: var(--translate-contained), 0;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-left ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-left ul.products[class*=columns-] li.product:hover img {
+  --translate: calc(-1 * var(--translate-contained)), 0;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-top ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-top ul.products[class*=columns-] li.product:hover img {
+  --translate: 0, calc(-1 * var(--translate-contained));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-bottom ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-bottom ul.products[class*=columns-] li.product:hover img {
+  --translate: 0, var(--translate-contained);
+}
+.elementor-widget-twbb_woocommerce-categories*[class^=elementor-animated-item] ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories*[class^=elementor-animated-item] ul.products[class*=columns-] li.product img {
+  will-change: transform, opacity;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink-contained ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--shrink-contained ul.products[class*=columns-] li.product img {
+  transform: scale(1.17);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product img {
+  transform: scale(var(--scale-enter-zoom-in));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product img {
+  transform: scale(var(--scale-enter-zoom-out));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product:hover .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-in ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-out ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-zoom-in ul.products[class*=columns-] li.product:hover img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-in ul.products[class*=columns-] li.product img {
+  opacity: 0;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-out ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-out ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-zoom-in ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--fade-out ul.products[class*=columns-] li.product img {
+  opacity: 1;
+  transform: scale(var(--scale-normal));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product img {
+  transform: translateX(var(--translate-right));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product img {
+  transform: translateX(var(--translate-left));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product img {
+  transform: translateY(var(--translate-top));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product img {
+  transform: translateY(var(--translate-bottom));
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-right ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-left ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-top ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--enter-from-bottom ul.products[class*=columns-] li.product img {
+  opacity: 0;
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-right ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-left ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-top ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-bottom ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-right ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-left ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-top ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--exit-to-bottom ul.products[class*=columns-] li.product img {
+  opacity: 1;
+  transform: translateY(0) translateX(0);
+}
+.elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-right ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-left ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-top ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-bottom ul.products[class*=columns-] li.product .twbb-category-image, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-right ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-left ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-top ul.products[class*=columns-] li.product img, .elementor-widget-twbb_woocommerce-categories.elementor-animated-item--move-contained-bottom ul.products[class*=columns-] li.product img {
+  transform: scale(1.2) translate(var(--translate));
+}
+
+.elementor-widget-twbb_woocommerce-categories:not(.twbb-category-regulate-image-height-yes) .twbb-category-image-wrapper {
+  line-height: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.elementor-widget-twbb_woocommerce-categories:not(.twbb-category-regulate-image-height-yes) .twbb-category-image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+.elementor-widget-twbb_woocommerce-categories .twbb-category-image-wrapper {
+  overflow: hidden;
+}
+.elementor-widget-twbb_woocommerce-categories.twbb-category-regulate-image-height-yes .twbb-category-image {
+  overflow: hidden;
+  line-height: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.elementor-widget-twbb_woocommerce-categories.twbb-category-regulate-image-height-yes .twbb-category-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Black overlay with 50% opacity */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+@media (max-width: 1024px) {
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-1 ul.products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-2 ul.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-3 ul.products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-4 ul.products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-5 ul.products {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-6 ul.products {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-7 ul.products {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-8 ul.products {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-9 ul.products {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-10 ul.products {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-11 ul.products {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-tablet-12 ul.products {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+@media (max-width: 767px) {
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products ul.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-1 ul.products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-2 ul.products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-3 ul.products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-4 ul.products {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-5 ul.products {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-6 ul.products {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-7 ul.products {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-8 ul.products {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-9 ul.products {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-10 ul.products {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-11 ul.products {
+    grid-template-columns: repeat(11, 1fr);
+  }
+  .elementor-widget-twbb_woocommerce-categories.elementor-wc-products.elementor-products-columns-mobile-12 ul.products {
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
