@@ -212,12 +212,9 @@ jQuery( document ).ready( function( $ ) {
 			$(this).prev('.wprmenu_icon_par').trigger('click');
 		});
 	}
-	$('#wprmenu_menu_ul a').click(function(e){
-		const bar = $('.wprmenu_bar .hamburger, .wprmenu_bar .wpr-custom-menu')
-		if( wprmenu.parent_click !='yes' || (wprmenu.parent_click == 'yes' && !$(this).hasClass('wprmenu_parent_item')) ){
-			e.preventDefault();
-			bar.trigger('click');
-		}
+	$('#wprmenu_menu_ul a').click(function(){
+		if( wprmenu.parent_click !='yes' || (wprmenu.parent_click == 'yes' && !$(this).hasClass('wprmenu_parent_item')) )
+			$('.hamburger.is-active').trigger('click');
 	});
 	if( wprmenu.swipe == 'yes' ) {
 		$('body').swipe({
@@ -226,12 +223,12 @@ jQuery( document ).ready( function( $ ) {
 			swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
 				menu_el = $('.wprmenu_bar .hamburger, .wprmenu_bar .wpr-custom-menu');
 				if( direction =='left' && menu_el.hasClass('is-active') ) {
-					event.preventDefault();
+					//event.preventDefault();  REMOVE THIS LINE
 					menu_el.trigger('click');
 				}
 				
 				if( direction =='right' && !menu_el.hasClass('is-active') ) {
-					event.preventDefault();
+					//event.preventDefault();  REMOVE THIS LINE
 					menu_el.trigger('click');
 				}
     		}
