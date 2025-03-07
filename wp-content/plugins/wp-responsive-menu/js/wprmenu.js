@@ -231,4 +231,8 @@ jQuery( document ).ready( function( $ ) {
 		});
 	}
 
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> 8f883939b19bd25c60ecaf926a50b8313707711f
