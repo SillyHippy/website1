@@ -163,6 +163,62 @@ if(window.two_load_delayed_iframe!==undefined){window.two_delayed_loading_iframe
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }</style></head>
 <body class="home page-template-default page page-id-183 wp-custom-logo elementor-default elementor-kit-214 elementor-page elementor-page-183">
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Force enable text selection
+    document.body.style.userSelect = 'text';
+    document.body.style.webkitUserSelect = 'text';
+    document.body.style.mozUserSelect = 'text';
+    document.body.style.msUserSelect = 'text';
+
+    // Override and remove problematic event listeners
+    const stopPropagation = function(e) {
+        // Allow default text selection behavior
+        if (e.type === 'selectstart' || e.type === 'select') {
+            return true;
+        }
+
+        // Only stop propagation for drag-related events
+        if (e.type === 'mousedown' || e.type === 'mousemove' || e.type === 'drag') {
+            // Check if we're selecting text
+            const selection = window.getSelection();
+            if (selection && selection.toString().length > 0) {
+                e.stopPropagation();
+            }
+        }
+    };
+
+    // Add passive event listeners that can't be overridden
+    const events = ['mousedown', 'mousemove', 'selectstart', 'drag'];
+    events.forEach(function(event) {
+        document.addEventListener(event, stopPropagation, {
+            passive: true,
+            capture: true // This ensures our handler runs first
+        });
+    });
+
+    // Monitor and prevent any scripts from disabling text selection
+    const observer = new MutationObserver(function(mutations) {
+        mutations.forEach(function(mutation) {
+            if (mutation.attributeName === 'style') {
+                const element = mutation.target;
+                if (element.style.userSelect === 'none') {
+                    element.style.userSelect = 'text';
+                }
+                if (element.style.webkitUserSelect === 'none') {
+                    element.style.webkitUserSelect = 'text';
+                }
+            }
+        });
+    });
+
+    observer.observe(document.body, {
+        attributes: true,
+        subtree: true,
+        attributeFilter: ['style']
+    });
+});
+</script>
         <script data-pagespeed-no-defer="" data-two-no-delay="" type="text/javascript">
 
         </script>
