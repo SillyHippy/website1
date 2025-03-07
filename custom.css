@@ -15,15 +15,15 @@
     background-repeat: no-repeat !important;
     background-size: cover !important;
     background-position: center !important;
-    
+
     min-height: auto !important; /* Allows dynamic height */
     height: auto !important; /* Prevents unnecessary full-screen scaling */
     width: 100% !important;
-    
+
     display: flex !important;
     align-items: flex-start !important; /* Aligns content to the top */
     justify-content: center !important;
-    
+
     padding: 60px 20px !important; /* Reduced padding for better scaling */
     color: white !important;
     opacity: 1 !important;
@@ -96,58 +96,68 @@ html, body {
 <script type="text/javascript">
 // Override the problematic functions on page load
 document.addEventListener('DOMContentLoaded', function() {
-    // Override the event handling functions completely
+    // Completely disable the two_loading_events function
     if (typeof window.two_loading_events !== 'undefined') {
-        window.two_loading_events = function() { return true; };
+        window.two_loading_events = function() { return false; };
     }
-    
+
+    // Neutralize the event handler that causes scrolling issues
+    if (typeof window.two_event !== 'undefined') {
+        window.two_event = null;
+    }
+
+    // Disable the delayed javascript loading function
     if (typeof window.two_load_delayed_javascript !== 'undefined') {
-        window.two_load_delayed_javascript = function() { return true; };
+        window.two_load_delayed_javascript = function() { return false; };
     }
-    
-    // Remove all listeners for the problematic events
-    if (typeof window.two_delayed_loading_events !== 'undefined') {
-        window.two_delayed_loading_events.forEach(function(event) {
-            document.removeEventListener(event, window.two_load_delayed_javascript, false);
-            window.removeEventListener(event, window.two_load_delayed_javascript, false);
-        });
-    }
-    
-    // Override various mouse-related events that might be interfering
-    ['mousemove', 'wheel', 'touchmove', 'touchend', 'mousedown', 'mouseup', 'dragstart', 'drag', 'dragend'].forEach(function(eventName) {
+
+    // Remove ALL event listeners for mouse events
+    ['mousemove', 'mousedown', 'mouseup', 'click', 'wheel', 'touchmove', 'touchstart', 'touchend', 'selectstart', 'dragstart'].forEach(function(eventType) {
+        // Get all existing listeners and remove them
+        const eventListeners = window.getEventListeners && window.getEventListeners(document)[eventType];
+        if (eventListeners) {
+            eventListeners.forEach(function(listener) {
+                if (listener.listener.toString().includes('two_')) {
+                    document.removeEventListener(eventType, listener.listener, listener.useCapture);
+                }
+            });
+        }
+
+        // Override the addEventListener method to block problematic listeners
         const originalAddEventListener = document.addEventListener;
         document.addEventListener = function(type, listener, options) {
-            if (type === eventName && listener && (listener.toString().includes('two_load_delayed') || listener.toString().includes('two_loading_events'))) {
-                // Skip adding these problematic event listeners
+            if ((type === eventType) && 
+                (listener && (
+                    (typeof listener.toString === 'function' && listener.toString().includes('two_')) ||
+                    /two_(load|event|loading)/.test(listener.toString())
+                ))) {
+                console.log('Blocked problematic event listener for:', type);
                 return;
             }
-            originalAddEventListener.call(this, type, listener, options);
+            return originalAddEventListener.call(this, type, listener, options);
         };
     });
-    
-    // Handle mousedown/mouseup specifically to prevent drag issues
-    document.addEventListener('mousedown', function(e) {
-        // Allow text selection to work normally
-        e.stopPropagation();
-    }, true);
-    
-    // Ensure all elements allow text selection
+
+    // Force all elements to allow text selection
     document.querySelectorAll('*').forEach(function(el) {
-        el.style.userSelect = 'auto';
-        el.style.webkitUserSelect = 'auto';
-        el.style.mozUserSelect = 'auto';
-        el.style.msUserSelect = 'auto';
-        // Prevent pointer events from getting in the way
+        el.style.userSelect = 'auto !important';
+        el.style.webkitUserSelect = 'auto !important';
+        el.style.mozUserSelect = 'auto !important';
+        el.style.msUserSelect = 'auto !important';
+
+        // Prevent any elements from capturing pointer events that might interfere
         el.style.pointerEvents = 'auto';
-        // Remove any drag-related attributes
+
+        // Remove any draggable attributes that might interfere
         el.setAttribute('draggable', 'false');
     });
-    
-    // Completely disable the problematic event handler
-    window.two_loading_events = function() {};
-    window.two_event = null;
-    window.two_load_delayed_javascript = function() {};
-    
-    console.log("Enhanced selection and drag fix applied");
+
+    // Fix scrolling issues
+    document.body.style.overscrollBehavior = 'auto';
+    document.documentElement.style.overscrollBehavior = 'auto';
+    document.body.style.scrollBehavior = 'auto';
+    document.documentElement.style.scrollBehavior = 'auto';
+
+    console.log("Enhanced text selection and mouse behavior fix applied");
 });
 </script>
