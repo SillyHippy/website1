@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14" height="14" viewBox="0 0 14 14">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54473" data-name="Rectangle 54473" width="14" height="14" transform="translate(0.098 0.098)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Edit_Icon" transform="translate(-0.098 -0.098)" opacity="0.3" clip-path="url(#clip-path)">
+    <path id="upload_FILL0_wght400_GRAD0_opsz24" d="M2.453,0V5L.859,3.4,0,4.293,3.066,7.359,6.133,4.293,5.274,3.4,3.68,5V0Z" transform="translate(3.418 10.165) rotate(-90)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_54233" data-name="Rectangle 54233" width="20" height="20" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_95670" data-name="Mask Group 95670" clip-path="url(#clip-path)">
+    <g id="Group_172015" data-name="Group 172015" transform="translate(3.333 3.333)">
+      <path id="Success_Done_Checkmark_Icon" d="M24.833,18.167A6.667,6.667,0,1,1,18.167,11.5,6.675,6.675,0,0,1,24.833,18.167Z" transform="translate(-11.5 -11.5)" fill="rgba(33,96,181,0.1)"/>
+      <path id="Success_Done_Checkmark_Icon-2" data-name="Success_Done_Checkmark_Icon" d="M20.076,15.6a.5.5,0,0,0-.762,0l-2.579,2.579a.436.436,0,0,1-.264.117.318.318,0,0,1-.264-.117l-1.172-1.172a.45.45,0,0,0-.381-.147.557.557,0,0,0-.381.147.549.549,0,0,0,0,.762l1.817,1.817a.617.617,0,0,0,.381.147.557.557,0,0,0,.381-.147l3.224-3.224A.5.5,0,0,0,20.076,15.6Z" transform="translate(-10.505 -10.57)" fill="#2160b5"/>
+    </g>
+  </g>
+</svg>

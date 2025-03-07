@@ -1,0 +1,23 @@
+.elementor-panel #elementor-panel-header-wrapper #elementor-panel-header {
+    background-color: #124383;
+    height: 60px;
+}
+
+#elementor-mode-switcher:hover {
+    background-color: #124383;
+}
+
+.elementor-panel #elementor-panel-header-wrapper #elementor-panel-header #elementor-panel-header-title img {
+    background: url(../../images/10webLogo.svg) no-repeat;
+    background-position: center;
+    width: 80%;
+    height: 57px;
+    vertical-align: middle;
+    padding-left: 80%;
+    background-size: 100% 60%;
+    box-sizing: border-box;
+}
+
+body .elementor-panel .elementor-panel-navigation .elementor-panel-navigation-tab.elementor-active {
+    border-bottom: 3px solid #0C3974;
+}

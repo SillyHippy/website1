@@ -1,0 +1,658 @@
+.twbb-pu-bottom-bar {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 1000px;
+    height: 64px;
+    border-radius: 6px;
+    justify-content: left;
+    padding: 2px;
+    font: normal normal 600 16px/28px Open Sans;
+    letter-spacing: 0.13px;
+    color: #FFFFFF;
+    align-items: center;
+    background: transparent linear-gradient(264deg, #22B339 0%, #4285F4 100%) 0% 0% no-repeat padding-box;
+    z-index: 100000;
+}
+
+.twbb-pu-bottom-bar > div {
+    background-color: #2A2F30;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+}
+
+.twbb-pu-bottom-bar span {
+    flex-grow: 1;
+}
+
+.twbb-pu-button.twbb-button-blue,
+.twbb-pu-button.twbb-button-blue:hover {
+    background: #2160B5 0% 0% no-repeat padding-box;
+    border-color: #2160B5;
+    border-radius: 6px;
+    opacity: 1;
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 0;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-layout {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top: 0;
+    background-color: #000000;
+    opacity: 0.5;
+    z-index: 1000004;
+}
+
+.twbb-pu-upgrade-container {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 1180px;
+    height: 600px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    z-index: 1000005;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-close {
+    position: fixed;
+    width: 24px;
+    height: 24px;
+    background: url("../images/close_icon_grey.svg") no-repeat 0 0;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 99;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-close:hover {
+    background: url("../images/close_circle.svg") no-repeat 0 0;
+    background-size: 24px;
+}
+
+.twbb-pu-upgrade-left {
+    width: 440px;
+    padding: 30px 40px;
+    box-sizing: border-box;
+}
+
+.twbb-pu-upgrade-right {
+    width: 740px;
+    background: #2A2F3008 0% 0% no-repeat padding-box;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+    text-align: left;
+    font: normal normal 800 18px/28px Open Sans;
+    letter-spacing: 0.15px;
+    color: #2A2F30;
+    margin-bottom: 10px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+    text-align: left;
+    font: normal normal normal 14px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #2A2F30;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-item {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    padding-left: 0px;
+    margin-bottom: 8px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-item span {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: url(../images/check_video_icon.svg) no-repeat #2160B50D;
+    background-size: 18px;
+    border-radius: 8px;
+    padding: 2px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+
+.twbb-pu-upgrade-container p.twbb-pu-upgrade-subtitle {
+    text-align: left;
+    font: normal normal bold 14px/20px Open Sans;
+    letter-spacing: 0px;
+    color: #2A2F30;
+    margin: 18px 0 12px 0;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-subdescr {
+    text-align: left;
+    font: normal normal normal 12px/20px Open Sans;
+    letter-spacing: 0.1px;
+    color: #2A2F30;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-subdescr.twbb-pu-cancel-row {
+    margin-top: 24px;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button {
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    color: #FFFFFF;
+    width: 100%;
+    display: block;
+    height: 40px;
+    text-align: center;
+    margin-top: 30px;
+    text-align: center;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    background: #000000 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-button-down-contianer {
+    display: flex;
+    justify-content: center;
+}
+.twbb-pu-upgrade-container span.twbb-pu-upgrade-button-down-text {
+    background-image: url(../images/money-back-guarantee.svg);
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: center left;
+    font: normal normal 600 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #2A2F30;
+    padding-left: 19px;
+    margin-top: 15px;
+}
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:active,
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    font: normal normal 600 14px/40px Open Sans;
+    letter-spacing: 0.12px;
+}
+
+.twbb-pu-upgrade-videos {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.twbb-pu-upgrade-videos li {
+    display: flex;
+    text-align: left;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity:1;
+    margin-bottom: 12px;
+    cursor: pointer;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li span {
+    background: url(../images/check_video_icon.svg) #2160B50D no-repeat;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    margin-right: 8px;
+    background-size: 18px;
+}
+
+/*
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active span,
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li:hover:not(.twbb-pu-video-item-text) span {
+    background: url(../images/check_video_icon.svg) #2160B50D no-repeat;
+    background-size: 18px;
+}
+*/
+
+/*
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active,
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-active:hover {
+    font: normal normal 600 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+}
+*/
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li:hover {
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+}
+
+.twbb-pu-upgrade-container .twbb-pu-upgrade-videos li.twbb-pu-video-item-text {
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+    cursor: default;
+}
+
+.twbb-pu-upgrade-container a.twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobile {
+    width: 260px;
+    height: 40px;
+    background: #000000 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 20px 0 30px 0;
+    display: none;
+    text-transform: none;
+}
+
+.twbb-pu-hidden {
+    display: none!important;
+}
+
+.twbb-pu-info-container-mobile {
+    display: none;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .twbb-pu-upgrade-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: none;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+        justify-content: flex-start;
+    }
+
+    .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 30px 20px 10px 20px;
+    }
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 30px 20px 10px 20px;
+    }
+
+    .twbb-pu-upgrade-right {
+        width: 100%;
+        padding: 0px 20px;
+        height: 226px;
+    }
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        height: auto;
+    }
+
+    .twbb-pu-upgrade-right video {
+        height: 226px!important;
+        width:100%!important;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-title {
+        font: normal normal 800 16px/26px Open Sans;
+        letter-spacing: 0.13px;
+        color: #2A2F30;
+        margin-bottom: 5px;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-subtitle {
+        margin: 20px 0 8px 0;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-button.twbb-pu-upgrade-button-desktop,
+    .twbb-pu-upgrade-button-down-contianer.twbb-pu-upgrade-button-down-contianer-desktop {
+        display: none;
+    }
+    .twbb-pu-upgrade-button-down-contianer.twbb-pu-upgrade-button-down-contianer-mobile {
+        display: flex;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobil {
+        display: block;
+        margin: 30px auto;
+        width: 260px;
+        height: 40px;
+    }
+
+    .twbb-pu-info-container {
+        display: none;
+    }
+    .twbb-pu-info-container-mobile {
+        display: block;
+    }
+
+    .twbb-pu-upgrade-container a.twbb-pu-upgrade-button.twbb-pu-upgrade-button-mobile {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .twbb-pu-bar {
+        font: normal normal 600 14px/22px Open Sans;
+        letter-spacing: 0.12px;
+        width: 90%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .twbb-pu-upgrade-title {
+        padding-right: 40px;
+    }
+
+    .twbb-pu-upgrade-right {
+        background-color: #FFFFFF
+    }
+
+    .twbb-pu-upgrade-right video,
+    .twbb-pu-countdown {
+        display: none;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-video-item > span {
+        display: block;
+    }
+
+    .twbb-pu-video-item .twbb-pu-countdown svg {
+        transform: none;
+    }
+
+    /*
+    .twbb-pu-upgrade-videos li.twbb-pu-video-active,
+    .twbb-pu-upgrade-videos li.twbb-pu-video-active:hover,
+    .twbb-pu-upgrade-videos li:hover {
+        font: normal normal normal 12px/18px Open Sans;
+    }
+    */
+
+    .twbb-pu-bar {
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        font: normal normal 600 14px/22px Open Sans;
+        letter-spacing: 0.12px;
+        padding: 10px 15px;
+        box-sizing: border-box;
+
+    }
+
+    .twbb-pu-bottom-bar > div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .twbb-pu-bottom-bar {
+        width: 100%;
+        bottom: 0;
+        border-radius: 0;
+        background: #2A2F30;
+    }
+
+    .twbb-pu-button.twbb-button-blue, .twbb-pu-button.twbb-button-blue:hover {
+        width: 150px;
+        height: 30px;
+        margin: 15px 0 0 0;
+        font: normal normal 600 12px/16px Open Sans;
+        letter-spacing: 0.1px;
+    }
+
+    .twbb-pu-upgrade-container .twbb-pu-bar>span {
+        width: 285px;
+        text-align: center;
+    }
+}
+
+.twbb-pu-upgrade-videos li.twbb-pu-item-text-domain {
+    color: #3339F1;
+}
+
+.twbb-pu-upgrade-videos li.twbb-pu-item-text-domain.twbb-pu-item-text-gradient {
+    background: transparent -webkit-linear-gradient(264deg, #22B339 0%, #5966D9 100%) 0% 0% no-repeat padding-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font: normal normal normal 12px/18px Open Sans;
+    letter-spacing: 0.1px;
+    color: #000000;
+    opacity: 1;
+    font-weight:600;
+}
+
+
+svg circle {
+    stroke-dasharray: 38px;
+    stroke-dashoffset: 0px;
+    stroke-linecap: round;
+    stroke-width: 2px;
+    stroke: #2160B5;
+    fill: none;
+}
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0px;
+    }
+    to {
+        stroke-dashoffset: 40px;
+    }
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-close {
+    background: url("../images/close_circle_grey.svg") no-repeat 0 0;
+    background-size: 24px;
+    width: 24px;
+    height: 24px;
+}
+
+.twbb-pu-ecommerce .twbb-pu-upgrade-close:hover {
+    background: url("../images/close_circle.svg") no-repeat 0 0;
+    background-size: 24px;
+}
+
+
+.twbb-pu-ecommerce .twbb-pu-upgrade-left {
+    width: 470px;
+    padding: 0 0 0 50px;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-left-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #000000 url(../images/shopping_bag.svg) 13px 10px no-repeat;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+    font: normal normal 800 36px/50px Open Sans;
+    letter-spacing: 0.3px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+    font: normal normal normal 22px/36px Open Sans;
+    letter-spacing: 0;
+    color: #000000;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a {
+    background-color: #3339F1;
+    border-radius: 6px;
+    width: 260px;
+    padding: 10px 0;
+    font: normal normal 600 14px/20px Open Sans;
+    letter-spacing: 0.12px;
+    color: #FFFFFF;
+    text-transform: none;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-button a:hover {
+    opacity: 80%;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right {
+    color: #FFFFFF;
+    width: 630px;
+    margin: 5px;
+    padding: 35px 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 40px;
+    background: url(../images/pu-ecommerce-bg.svg) no-repeat;
+    background-size: cover;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+    font: normal normal 800 16px/26px Open Sans;
+    letter-spacing: 0;
+    margin-bottom: 15px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list  .twbb-pu-ecommerce-ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    gap: 14px;
+}
+.twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list  .twbb-pu-ecommerce-ul li {
+    font: normal normal normal 14px/20px Open Sans;
+    letter-spacing: 0.12px;
+    padding-left: 24px;
+    list-style-type: none;
+    background: url(../images/mark_grey.svg) 0 center no-repeat;
+}
+
+.twbb-pu-ecommerce  .twbb-transparent-row {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 40px 20px 10px 20px;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-title {
+        width: 290px;
+        letter-spacing: 0.15px;
+        color: #000000;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-descr {
+        text-align: left;
+        font: normal normal normal 14px/20px Open Sans;
+        letter-spacing: 0px;
+        color: #000000;
+        width: 345px;
+    }
+
+    .twbb-pu-upgrade-container p.twbb-pu-upgrade-subtitle {
+        font: normal normal 800 14px / 24px Open Sans;
+    }
+
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container .twbb-pu-upgrade-left {
+        width: 100%;
+        padding: 40px 20px 0 20px;
+    }
+
+    .twbb-pu-ecommerce.twbb-pu-upgrade-container {
+        background-color: #000000;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-left-icon {
+        display: none;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        background: none;
+        padding: 29px 20px 20px 20px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: 1px 0 0 0;
+        overflow-y: auto;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-heading h1 {
+        text-align: left;
+        font: normal normal 800 24px/35px Open Sans;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-left .twbb-pu-ecommerce-description p {
+        text-align: left;
+        font: normal normal normal 18px/30px Open Sans;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-button.twbb-pu-upgrade-button-desktop {
+         display: block;
+        margin-top: 20px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-list-heading {
+        font: normal normal 800 14px/24px Open Sans;
+        letter-spacing: 0;
+        margin-bottom: 8px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right .twbb-pu-ecommerce-list .twbb-pu-ecommerce-ul li {
+        font: normal normal normal 12px / 18px Open Sans;
+        letter-spacing: 0.12px;
+        padding-right: 25px;
+        background-position: 0 1px;
+    }
+
+    .twbb-pu-ecommerce .twbb-pu-upgrade-right {
+        gap: 30px;
+    }
+
+    .twbb-pu-ecommerce  .twbb-transparent-row {
+        position: fixed;
+        top: 256px;
+        height: 20px;
+        width: 100%;
+        display: block;
+        opacity: 1;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+    }
+
+    .twbb-pu-ecommerce  .twbb-transparent-row-active {
+        border-bottom: 1px solid rgba(255,255,255, 0.1);
+    }
+}
+
+

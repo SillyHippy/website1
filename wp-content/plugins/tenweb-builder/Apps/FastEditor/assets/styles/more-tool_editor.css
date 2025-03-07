@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Evergrow-Sans';
+    src:
+            url('../fonts/Evergrow Sans/Evergrow Sans TTF/EvergrowSans-Medium.ttf') format('truetype'),
+            url('../fonts/Evergrow Sans/Evergrow Sans WOFF/EvergrowSans-Medium.woff') format('woff');
+    font-display: swap;
+}
+.elementor-context-menu {
+    background-color: #1f2124 !important;
+    color: #d5d8dc;
+}
+.elementor-context-menu-list__group:not(:last-child) {
+    border-block-end: 1px solid #333438 !important;
+}
+.elementor-context-menu-list__item__shortcut {
+    color: #9da5ae !important;
+}
+.elementor-context-menu-list__item:not(.elementor-context-menu-list__item--disabled):hover, .elementor-context-menu-list__item:not(.elementor-context-menu-list__item--disabled):focus {
+    background-color: #2b2c31 !important;
+    color: #d5d8dc !important;
+}

@@ -1,0 +1,41 @@
+2.0.14
+  Added: Elementor Settings changes in theme change.
+  Fixed: Body full width Conflict with elementor containers.
+  Fixed: minor bugs.
+
+2.0.13
+  Fixed: Conflict with RTL setting and Photo Gallery plugin.
+  Changed: Theme Name.
+
+2.0.12
+  Fixed: Conflict with SO Critical CSS feature.
+
+2.0.11
+  Fixed: Conflict With 10Web Builder Form Widget.
+
+2.0.10
+  Fixed: Minor issue.
+
+2.0.9
+  Fixed: Minor bugs.
+
+2.0.8
+  Fixed: Bug on installing 10Web Builder plugin.
+
+2.0.7
+  Fixed: Products widget styles.
+
+2.0.6
+  Fixed: Minor bug.
+
+2.0.5
+  Fixed: Minor bug.
+
+2.0.4
+  Improved: Minify styles/scripts.
+
+2.0.3
+  Added: Woocommerce compatibility.
+
+2.0.2
+  Fixed: Animation bug on Firefox.

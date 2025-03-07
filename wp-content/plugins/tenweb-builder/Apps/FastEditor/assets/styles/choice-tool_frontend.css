@@ -1,0 +1,65 @@
+.twbb-fe-tools .twbb-choice-tool-container.twbb-fe-onedit-tool {
+    display: flex;
+}
+
+.twbb-choice-tool-container .twbb-choice-tool {
+    display: flex;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    margin-right: 12px;
+    align-items: center;
+    opacity: 0.5;
+}
+.twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool {
+    width: 24px;
+    height: 24px;
+}
+.twbb-choice-tool-container .twbb-choice-tool:last-child{
+    margin-right: 0px;
+}
+.twbb-choice-tool-container .twbb-choice-tool:hover {
+    opacity: 1;
+}
+
+.twbb-choice-tool-container .twbb-choice-tool.twbb-choice-active {
+    opacity: 1;
+}
+.twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool.twbb-choice-active, .twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool:hover {
+    border-radius: 4px;
+    background: #000;
+}
+.twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool.twbb-choice-active img, .twbb_tool_position.twbb-choice-tool-container .twbb-choice-tool:hover img{
+    filter: invert(1);
+}
+
+.twbb_tool_align.twbb-choice-tool-container .twbb-choice-tool.twbb-choice-active, .twbb_tool_align.twbb-choice-tool-container .twbb-choice-tool:hover{
+    border-radius: 4px;
+    background-color: #000;
+}
+.twbb_tool_align.twbb-choice-tool-container .twbb-choice-tool {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    margin-right: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.twbb_tool_align.twbb-choice-tool-container .twbb-choice-tool.twbb-choice-active img , .twbb_tool_align.twbb-choice-tool-container .twbb-choice-tool:hover img{
+    filter: invert(1);
+}
+
+
+.twbb-choice-tool-container .twbb-fet-tooltip.twbb-fet-tooltip-align,
+.twbb-choice-tool-container .twbb-fet-tooltip.twbb-fet-tooltip-view {
+    left: 14px;
+}
+
+.twbb-choice-tool-container .twbb-fet-tooltip.twbb-fet-tooltip-position {
+    left: 0px;
+}
