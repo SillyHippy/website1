@@ -72,3 +72,42 @@
     opacity: 1 !important;
     visibility: visible !important;
 }
+
+/* Fix text selection issues */
+* {
+    -webkit-user-select: auto !important;
+    -moz-user-select: auto !important;
+    -ms-user-select: auto !important;
+    user-select: auto !important;
+}
+
+/* Prevent unwanted scrolling on text selection */
+html, body {
+    scroll-behavior: auto !important;
+}
+
+/* Disable problematic event listeners */
+.elementor * {
+    pointer-events: auto;
+}
+
+
+/* Script to fix text selection and scrolling issues */
+document.addEventListener('DOMContentLoaded', function() {
+    // Remove problematic event listeners
+    if (window.two_loading_events) {
+        window.two_loading_events = function() {};
+    }
+    
+    // Ensure mousemove doesn't trigger unwanted actions
+    window.two_delayed_loading_events.forEach(function(event) {
+        if (event === 'mousemove' || event === 'wheel') {
+            document.removeEventListener(event, window.two_load_delayed_javascript, false);
+        }
+    });
+    
+    // Fix text selection
+    document.querySelectorAll('*').forEach(function(el) {
+        el.style.userSelect = 'auto';
+    });
+});
