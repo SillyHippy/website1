@@ -25,4 +25,9 @@ img {
 .twbb_section,
 .e-con {
     overflow-x: hidden; /* Ensure these sections don't cause horizontal overflow */
+    overflow-y: auto; /* Let vertical scroll be automatic if needed */
+}
+
+html {
+    overflow-y: auto; /* Let vertical scroll be automatic for the whole page */
 }
