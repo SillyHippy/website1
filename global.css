@@ -2,32 +2,33 @@
 
 /* Fix for horizontal scrollbar issue */
 body {
-    overflow-x: hidden; /* Prevent horizontal scrollbar */
-    max-width: 100%; /* Ensure body doesn't exceed viewport width */
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 img {
-    max-width: 100%; /* Make images responsive */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Prevent inline spacing issues */
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 
 .elementor-section,
 .elementor-container,
 .elementor-column,
 .elementor-widget-wrap {
-    max-width: 100%; /* Ensure Elementor containers are within viewport */
-    box-sizing: border-box; /* Include padding and border in element's total width */
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
-/* You might need to adjust these further depending on your specific layout */
-/* Example for potentially problematic elements - adjust selectors as needed */
 .twbb_section,
 .e-con {
-    overflow-x: hidden; /* Ensure these sections don't cause horizontal overflow */
-    overflow-y: auto; /* Let vertical scroll be automatic if needed */
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-html, body {
-    overflow-y: auto !important; /* Override inline style, allow vertical scroll when needed */
+/* Fix for text selection issue - ADD THESE LINES */
+html, body, div, section, article, aside, nav, footer, header, p, span, a, button, input, textarea, select, li, ul, ol, h1, h2, h3, h4, h5, h6 {
+    user-select: auto !important;
+    -webkit-user-select: auto !important; /* For Safari, Chrome, etc. */
+    -moz-user-select: auto !important;    /* For Firefox */
 }
