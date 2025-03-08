@@ -1,0 +1,251 @@
+.twbb-posts-widget-container {
+  min-height: 1px;
+}
+
+.twbb-posts-widget-container.empty-posts {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.elementor-widget-twbb-posts .elementor-widget-container {
+  min-height: 80px;
+}
+
+/*block style*/
+.twbb-posts-grid-container {
+  display: grid;
+  /*display: -ms-grid;*/
+}
+
+.twbb-posts-grid-container .twbb-posts-item {
+  display: -webkit-flex; /* Safari */
+  display: flex;
+  -webkit-flex: 1; /* Safari 6.1+ */
+  flex: 1;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  word-break: break-all;
+  word-break: break-word;
+  overflow: hidden;
+}
+
+.elementor-msie .twbb-posts-grid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.elementor-msie .twbb-posts-grid-container .twbb-posts-item {
+  flex: none;
+}
+
+.twbb-posts-item {
+  border: 0px solid;
+}
+
+.twbb-posts-meta-data {
+  border-top: 1px solid;
+}
+
+.twbb-posts-item > div {
+  width: 100%;
+}
+
+.twbb-posts-meta-separator {
+  margin: 0 5px;
+}
+
+.twbb-posts-content,
+.twbb-posts-read-more,
+.twbb-posts-meta-data {
+  font-size: 14px;
+}
+
+.twbb-posts-grid-container h1,
+.twbb-posts-grid-container h2,
+.twbb-posts-grid-container h3,
+.twbb-posts-grid-container h4,
+.twbb-posts-grid-container h5,
+.twbb-posts-grid-container h6,
+.twbb-posts-grid-container img {
+  margin: 0;
+  padding: 0;
+}
+
+.twbb-posts-image img {
+  width: 100%;
+}
+
+.twbb-posts-meta-data {
+  padding: 10px 0;
+}
+
+.twbb-posts-masonry-container {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.twbb-posts-item {
+  box-sizing: border-box;
+}
+
+.twbb-posts-meta-separator:not(.twbb-posts-active-meta-separator) {
+  display: none;
+}
+
+.twbb-posts-pagination {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.twbb-posts-pagination .twbb-posts-page:not(.twbb-posts-page-deactive) {
+  cursor: pointer;
+}
+
+.twbb-posts-pagination .twbb-posts-page.twbb-posts-page-deactive {
+  cursor: default;
+}
+
+.twbb-posts-loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.twbb-posts-loading i {
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 20px);
+  display: inline-block;
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.twbb-posts-loading i.twbb-spinner-solid {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3C!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) --%3E%3Cpath d='M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z'/%3E%3C/svg%3E");
+  animation: loading-spinner 2s linear infinite;
+}
+
+@keyframes loading-spinner {
+  0% { transform: rotate(0deg); }
+  100% {  transform: rotate(359deg); }
+}
+
+
+.twbb-posts-widget-container .twbb-posts-title,
+.twbb-posts-widget-container .twbb-posts-title .twbb-posts-title-tag {
+  font-size: 22px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.twbb-posts-widget-container .twbb-posts-read-more a {
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.6px;
+}
+
+.twbb-posts-widget-container .twbb-posts-content {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+}
+
+.twbb-posts-widget-container .twbb-posts-meta-data * {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+.twbb-posts-pagination a.twbb-posts-page {
+  font-size: 14px;
+  letter-spacing: 0.6px;
+}
+
+.twbb-posts-title-tag a {
+  color: inherit;
+}
+
+.elementor-msie .twbb-posts-grid-1 .twbb-posts-grid-container .twbb-posts-item {
+  width: 100%;
+}
+
+.elementor-msie .twbb-posts-grid-2 .twbb-posts-grid-container .twbb-posts-item {
+  width: 50%;
+}
+
+.elementor-msie .twbb-posts-grid-3 .twbb-posts-grid-container .twbb-posts-item {
+  width: 33.3%;
+}
+
+.elementor-msie .twbb-posts-grid-4 .twbb-posts-grid-container .twbb-posts-item {
+  width: 25%;
+}
+
+.elementor-msie .twbb-posts-grid-5 .twbb-posts-grid-container .twbb-posts-item {
+  width: 20%;
+}
+
+.elementor-msie .twbb-posts-grid-6 .twbb-posts-grid-container .twbb-posts-item {
+  width: 16.666%;
+}
+
+@media (max-width: 1024px) {
+
+  .elementor-msie .twbb-posts-grid-tablet-1 .twbb-posts-grid-container .twbb-posts-item {
+    width: 100%;
+  }
+
+  .elementor-msie .twbb-posts-grid-tablet-2 .twbb-posts-grid-container .twbb-posts-item {
+    width: 50%;
+  }
+
+  .elementor-msie .twbb-posts-grid-tablet-3 .twbb-posts-grid-container .twbb-posts-item {
+    width: 33.3%;
+  }
+
+  .elementor-msie .twbb-posts-grid-tablet-4 .twbb-posts-grid-container .twbb-posts-item {
+    width: 25%;
+  }
+
+  .elementor-msie .twbb-posts-grid-tablet-5 .twbb-posts-grid-container .twbb-posts-item {
+    width: 20%;
+  }
+
+  .elementor-msie .twbb-posts-grid-tablet-6 .twbb-posts-grid-container .twbb-posts-item {
+    width: 16.666%;
+  }
+
+}
+
+@media (max-width: 767px) {
+  .elementor-msie .twbb-posts-grid-mobile-1 .twbb-posts-grid-container .twbb-posts-item {
+    width: 100%;
+  }
+
+  .elementor-msie .twbb-posts-grid-mobile-2 .twbb-posts-grid-container .twbb-posts-item {
+    width: 50%;
+  }
+
+  .elementor-msie .twbb-posts-grid-mobile-3 .twbb-posts-grid-container .twbb-posts-item {
+    width: 33.3%;
+  }
+
+  .elementor-msie .twbb-posts-grid-mobile-4 .twbb-posts-grid-container .twbb-posts-item {
+    width: 25%;
+  }
+
+  .elementor-msie .twbb-posts-grid-mobile-5 .twbb-posts-grid-container .twbb-posts-item {
+    width: 20%;
+  }
+
+  .elementor-msie .twbb-posts-grid-mobile-6 .twbb-posts-grid-container .twbb-posts-item {
+    width: 16.666%;
+  }
+
+}

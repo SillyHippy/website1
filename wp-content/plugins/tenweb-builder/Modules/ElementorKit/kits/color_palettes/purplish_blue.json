@@ -1,0 +1,39 @@
+{
+  "id": "purplish_blue",
+  "title": "Purplish blue",
+  "order": 6,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#5833F1"
+      },
+      {
+        "_id": "secondary",
+        "color": "#898989"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#5833F126"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#89898926"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#5833F1"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#5833F1CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#5833F180"
+      }
+    ]
+  }
+}

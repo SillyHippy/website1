@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Copy_Icon">
+<g id="Copy_Icon_2">
+<mask id="mask0_3509_4242" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path id="Rectangle 47765" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3509_4242)">
+<path id="videocam_FILL1_wght400_GRAD0_opsz24" fill-rule="evenodd" clip-rule="evenodd" d="M3.37821 12.7992C3.06043 12.7992 2.7884 12.686 2.56211 12.4597C2.3358 12.2334 2.22266 11.9614 2.22266 11.6436V4.71029C2.22266 4.39247 2.3358 4.12045 2.56211 3.89415C2.7884 3.66786 3.06043 3.55469 3.37821 3.55469H10.3115C10.6293 3.55469 10.9014 3.66786 11.1277 3.89415C11.354 4.12045 11.4671 4.39247 11.4671 4.71029V7.31023L13.7782 4.99913V11.3547L11.4671 9.04361V11.6435C11.4671 11.9614 11.354 12.2334 11.1277 12.4597C10.9014 12.686 10.6293 12.7991 10.3115 12.7991L3.37821 12.7992Z" fill="black"/>
+</g>
+</g>
+</g>
+</svg>
