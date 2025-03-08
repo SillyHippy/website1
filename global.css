@@ -24,3 +24,10 @@ img {
 .e-con {
     overflow-x: hidden; /* Ensure these sections don't cause horizontal overflow */
 }
+/* global.css or custom.css */
+
+/* ... your existing CSS ... */
+
+html {
+    overflow-y: scroll; /* Force vertical scrollbar if needed, but prevent horizontal */
+}
