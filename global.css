@@ -1,4 +1,6 @@
-/* Global CSS Fixes (for horizontal scrollbar, etc.) */
+/* global.css */
+
+/* Fix for horizontal scrollbar issue */
 body {
     overflow-x: hidden; /* Prevent horizontal scrollbar */
     max-width: 100%; /* Ensure body doesn't exceed viewport width */
@@ -23,11 +25,4 @@ img {
 .twbb_section,
 .e-con {
     overflow-x: hidden; /* Ensure these sections don't cause horizontal overflow */
-}
-/* global.css or custom.css */
-
-/* ... your existing CSS ... */
-
-html {
-    overflow-y: scroll; /* Force vertical scrollbar if needed, but prevent horizontal */
 }
