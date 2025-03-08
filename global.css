@@ -1,0 +1,26 @@
+/* Global CSS Fixes (for horizontal scrollbar, etc.) */
+body {
+    overflow-x: hidden; /* Prevent horizontal scrollbar */
+    max-width: 100%; /* Ensure body doesn't exceed viewport width */
+}
+
+img {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline spacing issues */
+}
+
+.elementor-section,
+.elementor-container,
+.elementor-column,
+.elementor-widget-wrap {
+    max-width: 100%; /* Ensure Elementor containers are within viewport */
+    box-sizing: border-box; /* Include padding and border in element's total width */
+}
+
+/* You might need to adjust these further depending on your specific layout */
+/* Example for potentially problematic elements - adjust selectors as needed */
+.twbb_section,
+.e-con {
+    overflow-x: hidden; /* Ensure these sections don't cause horizontal overflow */
+}
