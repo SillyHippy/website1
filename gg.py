@@ -1,9 +1,9 @@
 import os
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, NavigableString
 
-def replace_payment_text_in_html_tag_class(html_file_path):
+def add_payment_link_to_html_tag_class(html_file_path):
     """
-    Replaces specific text within <p class='elementor-icon-box-description'> tags in the HTML file.
+    Adds a hyperlink to 'electronic payments' within <p class='elementor-icon-box-description'> tags.
     """
     try:
         with open(html_file_path, 'r', encoding='utf-8') as file:
@@ -14,21 +14,35 @@ def replace_payment_text_in_html_tag_class(html_file_path):
         # Target <p> tags with class "elementor-icon-box-description"
         paragraph_tags = soup.find_all('p', class_='elementor-icon-box-description')
 
-        text_to_replace = """At this time, we accept electronic payments,, cash, checks, or money orders. Payments should be made payable to Joseph Iannazzi and mailed to: 564 E 138th Pl, Glenpool, OK 74033. Please ensure that payment is made in full within 10 days of the invoice date."""
-        replacement_text = """At this time, we accept electronic payments, cash, checks, or money orders. Payments should be made payable to Joseph Iannazzi and mailed to: 564 E 138th Pl, Glenpool, OK 74033. Please ensure that payment is made in full within 10 days of the invoice date."""
-
-        tags_modified_count = 0
+        link_added_count = 0
         for p_tag in paragraph_tags:
-            if p_tag.string and p_tag.string.strip() == text_to_replace.strip():
-                p_tag.string.replace_with(replacement_text)
-                tags_modified_count += 1
+            if p_tag.string and "At this time, we accept electronic payments" in p_tag.string:
+                text_content = p_tag.string
+                link_text = "electronic payments"
+                replacement_link = soup.new_tag("a", href="https://buy.stripe.com/3cs17SbHS6h95nGaEE", target="_blank") # Added target="_blank"
+                replacement_link.string = link_text
 
-        if tags_modified_count > 0:
+                # Split the text content around "electronic payments"
+                parts = text_content.split(link_text, 1) # Split only once
+
+                # Clear existing contents of the <p> tag
+                p_tag.clear()
+
+                # Append the parts and the link tag back to the <p> tag
+                p_tag.append(NavigableString(parts[0])) # Add text before the link
+                p_tag.append(replacement_link)        # Add the link
+                p_tag.append(NavigableString(parts[1])) # Add text after the link
+
+                link_added_count += 1
+
+
+        if link_added_count > 0:
             with open(html_file_path, 'w', encoding='utf-8') as file:
                 file.write(str(soup.prettify()))
-            print(f"Successfully replaced payment text in {tags_modified_count} tag(s) in: {html_file_path}")
+            print(f"Successfully added hyperlink to 'electronic payments' in {link_added_count} tag(s) in: {html_file_path}")
         else:
-            print(f"No matching <p class='elementor-icon-box-description'> tags with text found in: {html_file_path} - skipping.")
+            print(f"No matching <p class='elementor-icon-box-description'> tags with payment text found in: {html_file_path} - skipping.")
+
 
     except FileNotFoundError:
         print(f"Error: File not found: {html_file_path}")
@@ -42,13 +56,13 @@ def process_directory(repo_path):
         for file in files:
             if file == 'index.html':
                 html_file_path = os.path.join(root, file)
-                replace_payment_text_in_html_tag_class(html_file_path)
+                add_payment_link_to_html_tag_class(html_file_path)
 
 if __name__ == "__main__":
     repo_directory = input("Enter the path to your GitHub repository's root directory: ")
     if not os.path.isdir(repo_directory):
         print(f"Error: '{repo_directory}' is not a valid directory.")
     else:
-        print(f"Processing index.html files for payment text replacement in <p class='elementor-icon-box-description'> tags in: {repo_directory}")
+        print(f"Processing index.html files to add hyperlink to 'electronic payments' in <p class='elementor-icon-box-description'> tags in: {repo_directory}")
         process_directory(repo_directory)
         print("Finished processing index.html files.")
