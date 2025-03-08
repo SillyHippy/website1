@@ -28,6 +28,6 @@ img {
     overflow-y: auto; /* Let vertical scroll be automatic if needed */
 }
 
-html {
-    overflow-y: auto; /* Let vertical scroll be automatic for the whole page */
+html, body {
+    overflow-y: auto !important; /* Override inline style, allow vertical scroll when needed */
 }
