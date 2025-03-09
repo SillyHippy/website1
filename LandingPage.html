@@ -53,7 +53,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 15px 20px;
+            padding: 20px 25px;  /*  Increased padding for thicker buttons */
             background-color: #1c2a38;
             color: #fff;
             text-decoration: none;
@@ -62,7 +62,7 @@
             transition: background-color 0.3s;
             border: none;
             cursor: pointer;
-            position: relative; /*  Important for icon positioning */
+            position: relative;
         }
 
         .btn:hover {
@@ -70,39 +70,34 @@
         }
 
         .btn-icon {
-            /* Remove background styles */
-            /* width, height, border-radius, display, align-items, justify-content, margin-right, flex-shrink REMOVED */
-           position: absolute; /*  Position absolutely within the button */
-            left: -5px; /*  Overlap the left edge */
-            top: 50%;  /*  Center vertically */
-            transform: translateY(-50%); /*  Adjust for perfect centering */
-            z-index: 1; /* Ensure icon is above the button */
+           position: absolute;
+            left: -15px; /*  Increased overlap */
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
 
         }
         .btn-icon img {
-            width: 45px; /*  Control icon size directly */
-            height: 45px;
-            /* Remove max-width and max-height */
+            width: 55px; /*  Increased icon size */
+            height: 55px;
         }
 
         .btn-text {
             flex-grow: 1;
             text-align: left;
-            padding-left: 45px; /*  Add padding to prevent text overlap */
+            padding-left: 50px; /*  Adjusted padding for larger icon */
         }
 
         .btn-arrow {
             color: #fff;
             font-size: 20px;
             transition: transform 0.3s;
-             z-index: 2; /* Arrow above the button content */
+             z-index: 2;
         }
 
         .btn:hover .btn-arrow {
             transform: translateX(5px);
         }
-
-         /* Remove btn-icon-contact, btn-icon-mail, etc.  No longer needed */
     </style>
 </head>
 <body>
