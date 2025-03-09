@@ -25,12 +25,15 @@
             width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
-        .card img {
-            width: 100%;
-            max-width: 150px;
-            margin-bottom: 20px;
-            cursor: pointer;
-        }
+        /* Style for the JLS logo */
+        .jls-logo {
+            font-size: 48px; /* Large font size */
+            font-weight: bold;
+            color: #000; /* Black color */
+            margin-bottom: 20px; /* Space below the logo */
+            text-decoration: none; /* Remove underline from link */
+            display: block; /* Make it a block element to center it */
+          }
         .card h1 {
             font-size: 28px;
             color: #1a237e;
@@ -44,52 +47,96 @@
         .btn-container {
             display: flex;
             flex-direction: column;
-            gap: 10px;
+            gap: 12px;
         }
-        .btn {
+       .btn {
             display: flex;
             align-items: center;
-            justify-content: start;
-            padding: 15px;
-            background: #1a237e;
+            justify-content: space-between;
+            padding: 15px 20px;
+            background-color: #1c2a38;
             color: #fff;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 18px;
-            transition: 0.3s;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            position: relative; /*  Important for icon positioning */
         }
-        .btn img {
-            margin-right: 10px;
-            width: 24px;
-            height: 24px;
-        }
+
         .btn:hover {
-            background: #0d153a;
+            background-color: #2a4158;
         }
+
+        .btn-icon {
+            /* Remove background styles */
+            /* width, height, border-radius, display, align-items, justify-content, margin-right, flex-shrink REMOVED */
+           position: absolute; /*  Position absolutely within the button */
+            left: -5px; /*  Overlap the left edge */
+            top: 50%;  /*  Center vertically */
+            transform: translateY(-50%); /*  Adjust for perfect centering */
+            z-index: 1; /* Ensure icon is above the button */
+
+        }
+        .btn-icon img {
+            width: 45px; /*  Control icon size directly */
+            height: 45px;
+            /* Remove max-width and max-height */
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 45px; /*  Add padding to prevent text overlap */
+        }
+
+        .btn-arrow {
+            color: #fff;
+            font-size: 20px;
+            transition: transform 0.3s;
+             z-index: 2; /* Arrow above the button content */
+        }
+
+        .btn:hover .btn-arrow {
+            transform: translateX(5px);
+        }
+
+         /* Remove btn-icon-contact, btn-icon-mail, etc.  No longer needed */
     </style>
 </head>
 <body>
     <div class="card">
-        <a href="https://justlegalsolutions.org/">
-            <img src="https://raw.githubusercontent.com/SillyHippy/website1/main/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/logo_NaQ7yBFS.webp" alt="Just Legal Solutions Logo">
+        <a href="https://justlegalsolutions.org/" class = "jls-logo">
+            JLS
         </a>
         <h1>Joseph Iannazzi</h1>
         <p>Professional Process Server at Just Legal Solutions</p>
         <div class="btn-container">
             <a href="/contact-details.vcf" download class="btn">
-                <img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon">Download my contact details
+               <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon"></span>
+                <span class="btn-text">Download my contact details</span>
+                 <span class="btn-arrow">→</span>
             </a>
             <a href="mailto:Info@JustLegalSolutions.org" class="btn">
-                <img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/mail.svg" alt="Mail Icon">Email Me
+                 <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/mail.svg" alt="Mail Icon"></span>
+                <span class="btn-text">Email Me</span>
+                 <span class="btn-arrow">→</span>
             </a>
             <a href="tel:+15393676832" class="btn">
-                <img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/phone.svg" alt="Phone Icon">Call Me
+               <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/phone.svg" alt="Phone Icon"></span>
+                <span class="btn-text">Call Me</span>
+                <span class="btn-arrow">→</span>
             </a>
             <a href="calendar.html" class="btn">
-                <img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/calendar-reminder-icon.svg" alt="Calendar Icon">Add a Reminder
+                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/calendar-reminder-icon.svg" alt="Calendar Icon"></span>
+                <span class="btn-text">Add a Reminder</span>
+               <span class="btn-arrow">→</span>
             </a>
             <a href="https://justlegalsolutions.org/" class="btn">
-                <img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/website1.svg" alt="Website Icon">Website
+                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/website1.svg" alt="Website Icon"></span>
+                <span class="btn-text">Website</span>
+                <span class="btn-arrow">→</span>
             </a>
         </div>
     </div>
