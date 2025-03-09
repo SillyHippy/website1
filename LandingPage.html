@@ -16,44 +16,70 @@
             min-height: 100vh;
             background: linear-gradient(135deg, #3f3f3f, #1a1a1a);
         }
-        .card {
-            background: #fff;
+       .card {
+            background-color: #e0e0e0; /*  GRAY background for the entire card - CHANGED! */
             padding: 25px;
             border-radius: 10px;
             text-align: center;
             max-width: 400px;
             width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            display: flex;          /* Keep flexbox for vertical layout */
+            flex-direction: column; /* Stack elements vertically */
         }
         /* Style for the JLS logo */
         .jls-logo {
-            font-size: 48px; /* Large font size */
+            font-size: 48px;
             font-weight: bold;
-            color: #000; /* Black color */
-            margin-bottom: 20px; /* Space below the logo */
-            text-decoration: none; /* Remove underline from link */
-            display: block; /* Make it a block element to center it */
+            color: #000;
+            margin-bottom: -5px;
+            text-decoration: none;
+            display: block;
+            position: relative;
+            z-index: 2;
           }
-        .card h1 {
-            font-size: 28px;
-            color: #1a237e;
-            margin-bottom: 10px;
-        }
-        .card p {
-            font-size: 18px;
+
+        /* Style for the business name */
+        .business-name {
+            font-size: 22px;
+            font-weight: bold;
             color: #000;
             margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+
         }
+      /* Top section wrapper - WHITE BACKGROUND - CHANGED! */
+        .top-section {
+            background-color: #fff; /* WHITE background for top section - CHANGED! */
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .top-section h1 {
+            font-size: 28px;
+            color: #1a237e;
+            margin-bottom: 2px;
+        }
+
+        .top-section p {
+            font-size: 18px;
+            color: #000;
+            margin-bottom: 0;
+        }
+
         .btn-container {
             display: flex;
             flex-direction: column;
             gap: 12px;
         }
-       .btn {
+       .btn { /*  BUTTON STYLES - COPIED DIRECTLY FROM YOUR LAST PASTE */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 25px;  /*  Increased padding for thicker buttons */
+            padding: 20px 25px;
             background-color: #1c2a38;
             color: #fff;
             text-decoration: none;
@@ -71,21 +97,21 @@
 
         .btn-icon {
            position: absolute;
-            left: -15px; /*  Increased overlap */
+            left: -15px;
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
 
         }
         .btn-icon img {
-            width: 55px; /*  Increased icon size */
+            width: 55px;
             height: 55px;
         }
 
         .btn-text {
             flex-grow: 1;
             text-align: left;
-            padding-left: 50px; /*  Adjusted padding for larger icon */
+            padding-left: 50px;
         }
 
         .btn-arrow {
@@ -101,12 +127,16 @@
     </style>
 </head>
 <body>
-    <div class="card">
+    <div class="card">  <!--  CARD IS NOW GRAY -->
+      <div class = "top-section">  <!--  TOP SECTION IS WHITE -->
         <a href="https://justlegalsolutions.org/" class = "jls-logo">
             JLS
         </a>
-        <h1>Joseph Iannazzi</h1>
-        <p>Professional Process Server at Just Legal Solutions</p>
+        <div class="business-name">Just Legal Solutions</div>
+              </div> <!-- End top-section -->
+<h1>Joseph Iannazzi</h1>
+        <p>Process Server</p>
+        <!--  NO btn-container-wrapper ANYMORE -->
         <div class="btn-container">
             <a href="/contact-details.vcf" download class="btn">
                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon"></span>
@@ -115,12 +145,12 @@
             </a>
             <a href="mailto:Info@JustLegalSolutions.org" class="btn">
                  <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/mail.svg" alt="Mail Icon"></span>
-                <span class="btn-text">Email Me</span>
+                <span class="btn-text">Email</span>
                  <span class="btn-arrow">→</span>
             </a>
             <a href="tel:+15393676832" class="btn">
                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/phone.svg" alt="Phone Icon"></span>
-                <span class="btn-text">Call Me</span>
+                <span class="btn-text">Call</span>
                 <span class="btn-arrow">→</span>
             </a>
             <a href="calendar.html" class="btn">
@@ -133,7 +163,7 @@
                 <span class="btn-text">Website</span>
                 <span class="btn-arrow">→</span>
             </a>
-        </div>
-    </div>
+        </div> <!-- End btn-container -->
+    </div> <!-- End card -->
 </body>
 </html>
