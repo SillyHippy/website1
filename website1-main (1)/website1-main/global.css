@@ -31,7 +31,3 @@ img {
 html, body {
     overflow-y: auto !important; /* Override inline style, allow vertical scroll when needed */
 }
-/* global.css */
-
-/* ... your existing CSS for scrollbar fixes ... */
-
