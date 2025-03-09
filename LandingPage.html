@@ -58,8 +58,11 @@
             font-size: 18px;
             transition: 0.3s;
         }
-        .btn i {
+        .btn svg {
             margin-right: 10px;
+            width: 24px;
+            height: 24px;
+            fill: #fff;
         }
         .btn:hover {
             background: #0d153a;
@@ -74,12 +77,31 @@
         <h1>Joseph Iannazzi</h1>
         <p>Professional Process Server at Just Legal Solutions</p>
         <div class="btn-container">
-            <a href="/contact-details.vcf" download class="btn"><i class="fas fa-id-card"></i>Download my contact details</a>
-            <a href="mailto:Info@JustLegalSolutions.org" class="btn"><i class="fas fa-envelope"></i>Email Me</a>
-            <a href="tel:+15393676832" class="btn"><i class="fas fa-phone"></i>Call Me</a>
-            <a href="calendar.html" class="btn"><i class="fas fa-calendar"></i>Add a Reminder</a>
-            <a href="https://justlegalsolutions.org/" class="btn"><i class="fas fa-globe"></i>Website</a>
+            <a href="/contact-details.vcf" download class="btn"><svg><use href="#add-contact-icon"></use></svg>Download my contact details</a>
+            <a href="mailto:Info@JustLegalSolutions.org" class="btn"><svg><use href="#mail-icon"></use></svg>Email Me</a>
+            <a href="tel:+15393676832" class="btn"><svg><use href="#phone-icon"></use></svg>Call Me</a>
+            <a href="calendar.html" class="btn"><svg><use href="#calendar-icon"></use></svg>Add a Reminder</a>
+            <a href="https://justlegalsolutions.org/" class="btn"><svg><use href="#website-icon"></use></svg>Website</a>
         </div>
     </div>
+
+    <!-- SVG Icons -->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <symbol id="add-contact-icon" viewBox="0 0 24 24">
+            <!-- SVG path for add-contact-icon -->
+        </symbol>
+        <symbol id="mail-icon" viewBox="0 0 24 24">
+            <!-- SVG path for mail-icon -->
+        </symbol>
+        <symbol id="phone-icon" viewBox="0 0 24 24">
+            <!-- SVG path for phone-icon -->
+        </symbol>
+        <symbol id="calendar-icon" viewBox="0 0 24 24">
+            <!-- SVG path for calendar-icon -->
+        </symbol>
+        <symbol id="website-icon" viewBox="0 0 24 24">
+            <!-- SVG path for website-icon -->
+        </symbol>
+    </svg>
 </body>
 </html>
