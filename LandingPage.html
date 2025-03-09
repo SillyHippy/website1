@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Legal Solutions</title>
+    <title>Just Legal Solutions - Process Server</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <style>
         body {
@@ -14,92 +14,112 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background: linear-gradient(135deg, #3f3f3f, #1a1a1a);
+            background-color: #0B132B; /* Darker background like the example */
         }
        .card {
-            background-color: #e0e0e0; /* Default card background is GRAY */
-            padding-top: 0; /* No top padding - white section goes to top */
-            padding-bottom: 25px; /* Keep bottom padding */
-            padding-left: 25px; /* Keep left padding */
-            padding-right: 25px; /* Keep right padding */
-            border-radius: 10px;
-            border-top-left-radius: 0; /* No top-left radius */
-            border-top-right-radius: 0; /* No top-right radius */
-            text-align: center;
-            max-width: 400px;
+            background-color: #1C2541; /* Darker card background, slightly lighter than body */
+            padding: 25px;
+            border-radius: 15px;
+            text-align: left; /* Align text to the left */
+            max-width: 420px;
             width: 100%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
             display: flex;
             flex-direction: column;
             overflow: hidden;
         }
-        /* --- WHITE TOP SECTION - Logo and Business Name --- */
-        .logo-section {
-            background-color: #fff; /* WHITE background for logo section */
-            border-radius: 14px; /* Rounded corners - for the white box itself */
-            border-top-left-radius: 0; /* Align top-left with card edge */
-            border-top-right-radius: 0; /* Align top-right with card edge */
-            padding: 15px;
-            margin-left: -25px; /* Shift left to cover card's left padding */
-            margin-right: -25px; /* Shift right to cover card's right padding */
+
+        /* --- TOP PROFILE SECTION - Logo and Business Name in Row --- */
+        .top-profile-section {
+            display: flex; /* Flex container for logo and business info */
+            align-items: center; /* Vertically align logo and business info */
+            margin-bottom: 15px; /* Spacing between top profile and name/title */
         }
 
-        .jls-logo {
-            font-size: 48px;
-            font-weight: bold;
-            color: #000;
-            margin-bottom: -5px;
-            text-decoration: none;
+        .logo-container {
+            width: 90px; /* Adjusted logo container size */
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px; /* Spacing between logo and business name */
+            flex-shrink: 0; /* Prevent shrinking */
+            background-color: white; /* **WHITE BACKGROUND ADDED HERE** */
+        }
+
+        .business-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* **OBJECT-FIT CHANGED TO CONTAIN TO FIT LOGO IN WHITE AREA** */
             display: block;
         }
 
+        .business-info {
+            text-align: left; /* Align business name to the left */
+        }
+
         .business-name {
-            font-size: 22px;
+            font-size: 26px; /* Adjusted business name size */
             font-weight: bold;
-            color: #000;
-            margin-bottom: -1px; /* Reduced margin */
+            color: #FFFFFF; /* White business name */
+            margin-bottom: 3px; /* Reduced margin */
         }
 
+        .business-title {
+            font-size: 16px;
+            color: #A8A8A8; /* Light gray title */
+        }
 
-        /* --- GRAY MIDDLE SECTION - Name and Title --- */
+        /* --- INFO SECTION - Name and Title - Below Logo Section --- */
         .info-section {
-            background-color: #e0e0e0; /* GRAY background for info section (same as card) */
-            padding: 0; /* No extra padding for info section */
-            margin-bottom: 1px; /* Spacing below info section */
-            text-align: center; /* Center text in info section */
+            text-align: left; /* Align name and title to the left */
+            padding-left: 5px; /* Slight left padding for alignment */
+            margin-bottom: 10px; /* Reduced margin below name section */
         }
 
-        .info-section h1 { /* Style for Joseph Iannazzi */
-            font-size: 28px;
-            color: #1a237e;
-            margin-bottom: -10px;
-        }
-
-        .info-section p { /* Style for Process Server */
-            font-size: 18px;
-            color: #000;
-            margin-bottom: 10px;
+        .info-section h1 {
+            font-size: 28px; /* Adjusted name size */
+            color: #FFFFFF; /* White name */
+            margin-bottom: 0px; /* Reduced margin */
         }
 
 
-        /* --- GRAY BUTTON SECTION - Buttons --- */
+        /* --- TAG SECTION - Labels under Name (Non-Clickable) --- */
+        .tag-section {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 5px; /* Align tags with name */
+            margin-bottom: 20px; /* Spacing below tags */
+        }
+
+        .tag-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #374151;
+            color: #E5E7EB;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+
+        /* --- BUTTON SECTION - Buttons with Overlap - ORIGINAL SIZES --- */
         .button-section {
-            background-color: #e0e0e0; /* GRAY background for button section (same as card) */
-            padding: 0; /* No extra padding for button section */
-             /* No margin below button section - it's at the bottom */
+            padding: 0;
         }
 
         .btn-container {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 12px; /* Original gap */
         }
-       .btn { /*  BUTTON STYLES - as in your preferred code */
+       .btn { /*  BUTTON STYLES - ORIGINAL SIZES REINTRODUCED */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding: 20px 25px;
-            background-color: #1c2a38;
+            padding: 20px 25px; /* **ORIGINAL PADDING** - for original button size */
+            background-color: #2D3748;
             color: #fff;
             text-decoration: none;
             border-radius: 10px;
@@ -110,29 +130,32 @@
             position: relative;
             height: auto;
             min-height: 0;
+            text-align: left; /* Align button text to left */
         }
 
         .btn:hover {
-            background-color: #2a4158;
+            background-color: #4A5568;
         }
 
         .btn-icon {
            position: absolute;
-            left: -20px;
+            left: -20px; /* **ORIGINAL OVERLAP** - negative left value */
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
         }
 
         .btn-icon img {
-            width: 60px;
-            height: 60px;
+            width: 60px; /* **ORIGINAL ICON WIDTH** - for original icon size */
+            height: 60px; /* **ORIGINAL ICON HEIGHT** - for original icon size */
+            display: block;
         }
 
         .btn-text {
             flex-grow: 1;
             text-align: left;
-            padding-left: 50px;
+            padding-left: 50px; /* Original text padding for icon position */
+            font-size: 16px; /* Original text size */
         }
 
         .btn-arrow {
@@ -146,65 +169,32 @@
             transform: translateX(5px);
         }
 
-        /* --- ADJUSTMENTS MADE BELOW --- */
 
-        /* Increase size of "Add Reminder" button text */
-        .btn-container a:nth-child(4) .btn-text { /* Targets the 4th link in btn-container (Add Reminder) */
-            font-size: 18px; /* Slightly larger text */
-        }
-
-        /* Increase size of "Add Reminder" button icon if needed - currently set to same size */
-        .btn-container a:nth-child(4) .btn-icon img { /* Targets the icon in the 4th button */
-           width: 63px;  /* Same size as other icons, adjust if you want larger */
-           height: 63px; /* Same size as other icons, adjust if you want larger */
-        }
-         /* --- ADJUSTMENTS FOR WEBSITE BUTTON --- */
-
-        /* Increase size of "Website" button text */
-        .btn-container a:nth-child(5) .btn-text { /* Targets the 5th link in btn-container (Website) */
-            font-size: 18px; /* Slightly larger text - same as "Add Reminder" */
-        }
-
-        /* Increase size of "Website" button icon if needed - currently set to same size */
-        .btn-container a:nth-child(5) .btn-icon img { /* Targets the icon in the 5th button */
-           width: 65px;  /* Same size as other icons, adjust if you want larger */
-           height: 65px; /* Same size as other icons, adjust if you want larger */
-        }
-
-        /* --- ADJUSTMENTS FOR FULL WHITE TOP SECTION - CORRECTED SIDE GRAY --- */
-
-        .card {
-            padding-top: 0; /* Remove top padding of the card */
-            padding-left: 25px; /* Keep side padding */
-            padding-right: 25px; /* Keep side padding */
-            padding-bottom: 25px; /* Keep bottom padding */
-            border-top-left-radius: 0; /* Make top corners square */
-            border-top-right-radius: 0; /* Make top corners square */
-        }
-
-        .logo-section {
-            margin-left: -25px; /* Extend white section to card's left edge */
-            margin-right: -25px; /* Extend white section to card's right edge */
-            border-top-left-radius: 0; /* Align white section top-left corner */
-            border-top-right-radius: 0; /* Align white section top-right corner */
-        }
     </style>
 </head>
 <body>
-    <div class="card">  <!--  ENTIRE CARD IS GRAY -->
-      <div class = "logo-section">  <!--  WHITE TOP SECTION - LOGO & BUSINESS NAME -->
-        <a href="https://justlegalsolutions.org/" class = "jls-logo">
-            JLS
-        </a>
-        <div class="business-name">Just Legal Solutions</div>
-      </div> <!-- End logo-section -->
+    <div class="card">
+      <div class="top-profile-section"> <!-- TOP PROFILE SECTION -->
+        <div class="logo-container">
+            <img src="https://github.com/SillyHippy/website1/blob/main/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/logo_NaQ7yBFS.webp?raw=true" alt="Just Legal Solutions Logo" class="business-logo"> <!-- **LOGO URL UPDATED HERE!** -->
+        </div>
+        <div class="business-info">
+            <div class="business-name">Just Legal Solutions</div> <!-- Business Name -->
+            <p class="business-title">Process Server</p>  <!-- Business Title -->
+        </div>
+      </div> <!-- End top-profile-section -->
 
-      <div class = "info-section"> <!-- GRAY MIDDLE SECTION - NAME & TITLE -->
-        <h1>Joseph Iannazzi</h1>
-        <p>Process Server</p>
+      <div class="info-section"> <!-- INFO SECTION - Name & Title BELOW -->
+        <h1>Joseph Iannazzi</h1>   <!-- User's Name -->
+          <div class="tag-section"> <!-- TAG SECTION - Moved under Name, Non-Clickable -->
+            <span class="tag-btn">Process Server</span>
+            <span class="tag-btn">Legal Support</span>
+            <span class="tag-btn">Document Retrieval</span>
+        </div> <!-- End tag-section -->
       </div> <!-- End info-section -->
 
-       <div class="button-section">  <!-- GRAY BUTTON SECTION - BUTTONS -->
+
+       <div class="button-section">
         <div class="btn-container">
             <a href="/contact-details.vcf" download class="btn">
                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon"></span>
@@ -233,6 +223,8 @@
             </a>
         </div> <!-- End btn-container -->
        </div> <!-- End button-section -->
+
+
     </div> <!-- End card -->
 </body>
 </html>
