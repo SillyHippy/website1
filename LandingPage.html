@@ -17,17 +17,25 @@
             background: linear-gradient(135deg, #3f3f3f, #1a1a1a);
         }
        .card {
-            background-color: #e0e0e0; /*  GRAY background for the entire card - CHANGED! */
+            background-color: #e0e0e0; /* Default card background is GRAY */
             padding: 25px;
             border-radius: 10px;
             text-align: center;
             max-width: 400px;
             width: 100%;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            display: flex;          /* Keep flexbox for vertical layout */
-            flex-direction: column; /* Stack elements vertically */
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
         }
-        /* Style for the JLS logo */
+        /* --- WHITE TOP SECTION - Logo and Business Name --- */
+        .logo-section {
+            background-color: #fff; /* WHITE background for logo section */
+            border-radius: 14px; /* Rounded corners */
+            padding: 15px;
+            margin-bottom: 1px; /* Spacing below logo section */
+        }
+
         .jls-logo {
             font-size: 48px;
             font-weight: bold;
@@ -35,39 +43,42 @@
             margin-bottom: -5px;
             text-decoration: none;
             display: block;
-            position: relative;
-            z-index: 2;
-          }
+        }
 
-        /* Style for the business name */
         .business-name {
             font-size: 22px;
             font-weight: bold;
             color: #000;
-            margin-bottom: 1px;
-            position: relative;
-            z-index: 1;
-
-        }
-      /* Top section wrapper - WHITE BACKGROUND - CHANGED! */
-        .top-section {
-            background-color: #fff; /* WHITE background for top section - CHANGED! */
-            border-radius: 10px;
-            padding: 1px;
-            margin-bottom: 1px;
-            text-align: center;
+            margin-bottom: -1px; /* Reduced margin */
         }
 
-        .top-section h1 {
+
+        /* --- GRAY MIDDLE SECTION - Name and Title --- */
+        .info-section {
+            background-color: #e0e0e0; /* GRAY background for info section (same as card) */
+            padding: 0; /* No extra padding for info section */
+            margin-bottom: 1px; /* Spacing below info section */
+            text-align: center; /* Center text in info section */
+        }
+
+        .info-section h1 { /* Style for Joseph Iannazzi */
             font-size: 28px;
             color: #1a237e;
-            margin-bottom: 2px;
+            margin-bottom: -10px;
         }
 
-        .top-section p {
+        .info-section p { /* Style for Process Server */
             font-size: 18px;
             color: #000;
-            margin-bottom: 0;
+            margin-bottom: 10px;
+        }
+
+
+        /* --- GRAY BUTTON SECTION - Buttons --- */
+        .button-section {
+            background-color: #e0e0e0; /* GRAY background for button section (same as card) */
+            padding: 0; /* No extra padding for button section */
+             /* No margin below button section - it's at the bottom */
         }
 
         .btn-container {
@@ -75,7 +86,7 @@
             flex-direction: column;
             gap: 12px;
         }
-       .btn { /*  BUTTON STYLES - COPIED DIRECTLY FROM YOUR LAST PASTE */
+       .btn { /*  BUTTON STYLES - as in your preferred code */
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -89,6 +100,8 @@
             border: none;
             cursor: pointer;
             position: relative;
+            height: auto;
+            min-height: 0;
         }
 
         .btn:hover {
@@ -101,8 +114,8 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 1;
-
         }
+
         .btn-icon img {
             width: 55px;
             height: 55px;
@@ -127,16 +140,20 @@
     </style>
 </head>
 <body>
-    <div class="card">  <!--  CARD IS NOW GRAY -->
-      <div class = "top-section">  <!--  TOP SECTION IS WHITE -->
+    <div class="card">  <!--  ENTIRE CARD IS GRAY -->
+      <div class = "logo-section">  <!--  WHITE TOP SECTION - LOGO & BUSINESS NAME -->
         <a href="https://justlegalsolutions.org/" class = "jls-logo">
             JLS
         </a>
         <div class="business-name">Just Legal Solutions</div>
-              </div> <!-- End top-section -->
-<h1>Joseph Iannazzi</h1>
+      </div> <!-- End logo-section -->
+
+      <div class = "info-section"> <!-- GRAY MIDDLE SECTION - NAME & TITLE -->
+        <h1>Joseph Iannazzi</h1>
         <p>Process Server</p>
-        <!--  NO btn-container-wrapper ANYMORE -->
+      </div> <!-- End info-section -->
+
+       <div class="button-section">  <!-- GRAY BUTTON SECTION - BUTTONS -->
         <div class="btn-container">
             <a href="/contact-details.vcf" download class="btn">
                <span class="btn-icon"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon"></span>
@@ -164,6 +181,7 @@
                 <span class="btn-arrow">→</span>
             </a>
         </div> <!-- End btn-container -->
+       </div> <!-- End button-section -->
     </div> <!-- End card -->
 </body>
 </html>
