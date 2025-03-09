@@ -18,8 +18,13 @@
         }
        .card {
             background-color: #e0e0e0; /* Default card background is GRAY */
-            padding: 25px;
+            padding-top: 0; /* No top padding - white section goes to top */
+            padding-bottom: 25px; /* Keep bottom padding */
+            padding-left: 25px; /* Keep left padding */
+            padding-right: 25px; /* Keep right padding */
             border-radius: 10px;
+            border-top-left-radius: 0; /* No top-left radius */
+            border-top-right-radius: 0; /* No top-right radius */
             text-align: center;
             max-width: 400px;
             width: 100%;
@@ -31,9 +36,12 @@
         /* --- WHITE TOP SECTION - Logo and Business Name --- */
         .logo-section {
             background-color: #fff; /* WHITE background for logo section */
-            border-radius: 14px; /* Rounded corners */
+            border-radius: 14px; /* Rounded corners - for the white box itself */
+            border-top-left-radius: 0; /* Align top-left with card edge */
+            border-top-right-radius: 0; /* Align top-right with card edge */
             padding: 15px;
-            margin-bottom: 1px; /* Spacing below logo section */
+            margin-left: -25px; /* Shift left to cover card's left padding */
+            margin-right: -25px; /* Shift right to cover card's right padding */
         }
 
         .jls-logo {
@@ -136,6 +144,49 @@
 
         .btn:hover .btn-arrow {
             transform: translateX(5px);
+        }
+
+        /* --- ADJUSTMENTS MADE BELOW --- */
+
+        /* Increase size of "Add Reminder" button text */
+        .btn-container a:nth-child(4) .btn-text { /* Targets the 4th link in btn-container (Add Reminder) */
+            font-size: 18px; /* Slightly larger text */
+        }
+
+        /* Increase size of "Add Reminder" button icon if needed - currently set to same size */
+        .btn-container a:nth-child(4) .btn-icon img { /* Targets the icon in the 4th button */
+           width: 63px;  /* Same size as other icons, adjust if you want larger */
+           height: 63px; /* Same size as other icons, adjust if you want larger */
+        }
+         /* --- ADJUSTMENTS FOR WEBSITE BUTTON --- */
+
+        /* Increase size of "Website" button text */
+        .btn-container a:nth-child(5) .btn-text { /* Targets the 5th link in btn-container (Website) */
+            font-size: 18px; /* Slightly larger text - same as "Add Reminder" */
+        }
+
+        /* Increase size of "Website" button icon if needed - currently set to same size */
+        .btn-container a:nth-child(5) .btn-icon img { /* Targets the icon in the 5th button */
+           width: 65px;  /* Same size as other icons, adjust if you want larger */
+           height: 65px; /* Same size as other icons, adjust if you want larger */
+        }
+
+        /* --- ADJUSTMENTS FOR FULL WHITE TOP SECTION - CORRECTED SIDE GRAY --- */
+
+        .card {
+            padding-top: 0; /* Remove top padding of the card */
+            padding-left: 25px; /* Keep side padding */
+            padding-right: 25px; /* Keep side padding */
+            padding-bottom: 25px; /* Keep bottom padding */
+            border-top-left-radius: 0; /* Make top corners square */
+            border-top-right-radius: 0; /* Make top corners square */
+        }
+
+        .logo-section {
+            margin-left: -25px; /* Extend white section to card's left edge */
+            margin-right: -25px; /* Extend white section to card's right edge */
+            border-top-left-radius: 0; /* Align white section top-left corner */
+            border-top-right-radius: 0; /* Align white section top-right corner */
         }
     </style>
 </head>
