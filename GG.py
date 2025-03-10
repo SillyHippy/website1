@@ -1,61 +1,65 @@
 import os
 
-file_path = r"C:\Users\ianna\OneDrive\Desktop\GitHub\website1\wp-content\plugins\elementor\assets\js\editor.min.js"  # Raw string for Windows path
-
-def modify_javascript_file(filepath):
+def remove_favicon_references(repo_path):
     """
-    Modifies the editor.min.js file to disable favicon processing.
+    Searches all HTML files in a repository and removes lines containing
+    favicon references at the bottom of the <head> section that match
+    a specific URL pattern.
 
-    This script will:
-    1. Comment out the 'if(T.headFavicon...' line.
-    2. Change 'headFavicon: !0' to 'headFavicon: !1' in the Oe object.
-
-    WARNING: This modifies the file directly. Back up your file before running.
+    Args:
+        repo_path: The path to the root directory of your GitHub repository.
     """
 
-    try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
+    target_url_pattern = "wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926"
 
-        modified_lines = []
-        favicon_if_line_found = False
-        oe_headfavicon_line_found = False
+    for root, dirs, files in os.walk(repo_path):
+        for file in files:
+            if file.lower().endswith((".html", ".htm")):
+                filepath = os.path.join(root, file)
+                print(f"Processing file: {filepath}")
 
-        for line in lines:
-            # 1. Comment out the if(T.headFavicon... line
-            if not favicon_if_line_found and line.strip().startswith('if(T.headFavicon&&("link"===C.tagName'):
-                modified_lines.append(f'// {line}')  # Comment out the line
-                favicon_if_line_found = True
-            # 2. Change headFavicon: !0 to headFavicon: !1 in Oe object
-            elif not oe_headfavicon_line_found and 'headFavicon:!0' in line:
-                modified_lines.append(line.replace('headFavicon:!0', 'headFavicon:!1'))
-                oe_headfavicon_line_found = True
-            else:
-                modified_lines.append(line)
+                try:
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        html_content = f.readlines()
 
-        if not favicon_if_line_found:
-            print("Warning: 'if(T.headFavicon...' line not found. It might already be modified or absent.")
-        if not oe_headfavicon_line_found:
-            print("Warning: 'headFavicon:!0' line in Oe object not found. It might already be modified or absent.")
+                    new_html_lines = []
+                    in_head = False
+                    head_section_ended = False # Flag to ensure we only process within <head>
 
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.writelines(modified_lines)
+                    for line in html_content:
+                        line_lower = line.strip().lower()
 
-        print(f"Successfully modified '{filepath}'. Favicon processing should be disabled.")
+                        if "<head" in line_lower and not head_section_ended:
+                            in_head = True
+                            new_html_lines.append(line)
+                            continue
+                        if "</head" in line_lower:
+                            in_head = False
+                            head_section_ended = True # Mark head section as ended
+                            new_html_lines.append(line)
+                            continue
 
-    except FileNotFoundError:
-        print(f"Error: File not found at '{filepath}'. Please check the file path.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        print("File modification may have failed. Please check the file manually.")
+                        if in_head and not head_section_ended:
+                            if target_url_pattern in line_lower and ("link" in line_lower or "meta" in line_lower):
+                                # Skip lines containing the target favicon references within <head>
+                                print(f"  Removed line: {line.strip()}")
+                                continue  # Do not append this line to new_html_lines
+
+                        new_html_lines.append(line)
+
+                    # Write the modified content back to the file
+                    with open(filepath, 'w', encoding='utf-8') as f:
+                        f.writelines(new_html_lines)
+                    print(f"  Successfully cleaned: {filepath}")
+
+                except Exception as e:
+                    print(f"  Error processing file: {filepath} - {e}")
 
 if __name__ == "__main__":
-    backup_filepath = file_path + ".backup"
-    try:
-        import shutil
-        shutil.copy2(file_path, backup_filepath)
-        print(f"Backup created at: '{backup_filepath}'")
-    except Exception as backup_err:
-        print(f"Warning: Backup creation failed: {backup_err}. Please manually back up '{file_path}' before proceeding.")
-
-    modify_javascript_file(file_path)
+    repo_path = input("Enter the path to your GitHub repository: ")
+    if not os.path.isdir(repo_path):
+        print("Error: Invalid repository path.")
+    else:
+        print(f"Searching for favicon references in HTML files within: {repo_path}")
+        remove_favicon_references(repo_path)
+        print("Favicon reference removal process complete.")
