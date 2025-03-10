@@ -1,0 +1,94 @@
+.elementor-widget-twbb-team.tenweb-team--align-right .tenweb-team-member {
+  text-align: right;
+}
+
+.elementor-widget-twbb-team.tenweb-team--align-left .tenweb-team-member {
+  text-align: left;
+}
+
+.elementor-widget-twbb-team.tenweb-team--align-center .tenweb-team-member {
+  text-align: center;
+}
+
+.elementor-widget-twbb-team .tenweb-team-member {
+  display: flex;
+  height: 100%;
+  border-style: solid;
+  border-width: 0;
+  overflow: hidden;
+}
+
+.elementor-widget-twbb-team .tenweb-team-member__content {
+  flex-grow: 1;
+}
+
+.elementor-widget-twbb-team.tenweb-team--image-position-left .tenweb-team-member {
+  flex-direction: row;
+}
+
+.elementor-widget-twbb-team.tenweb-team--image-position-top .tenweb-team-member {
+  flex-direction: column;
+}
+
+.elementor-widget-twbb-team.tenweb-team--image-position-right .tenweb-team-member {
+  flex-direction: row-reverse;
+}
+
+.elementor-widget-twbb-team.tenweb-team--image-position-bottom .tenweb-team-member {
+  flex-direction: column-reverse;
+}
+
+.elementor-widget-twbb-team  .tenweb-team-member__name {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.elementor-widget-twbb-team .tenweb-team-member__title {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.6px;
+}
+
+.elementor-widget-twbb-team .tenweb-team-member__description {
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.6px;
+}
+
+.tenweb-team-member__image_container {
+  width: 100%;
+}
+.tenweb-team-member__image_wrap {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+.elementor-widget-twbb-team .tenweb-team-member__image {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.elementor-widget-twbb-team.tenweb-team--image-shape-square .tenweb-team-member__image_wrap {
+  padding-top: 100%;
+}
+.elementor-widget-twbb-team .tenweb-team-member__image img {
+  border-width: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.elementor-widget-twbb-team .elementor-social-icons-wrapper {
+  display: inline-flex;
+}
+
+.elementor-widget-twbb-team .elementor-social-icons-wrapper > span {
+  line-height: 0;
+}
+
+.elementor-widget-twbb-team .elementor-social-icons-wrapper > span > a {
+  display: inline-flex;
+}

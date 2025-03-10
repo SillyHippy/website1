@@ -1,0 +1,39 @@
+{
+  "id": "obsidian_shell",
+  "title": "Obsidian shell",
+  "order": 7,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#821FA0"
+      },
+      {
+        "_id": "secondary",
+        "color": "#F4C730"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#821FA026"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#F4C73026"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#821FA0"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#821FA0CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#821FA080"
+      }
+    ]
+  }
+}

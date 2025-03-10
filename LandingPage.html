@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/png" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon.svg" />
+<link rel="shortcut icon" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/apple-touch-icon.png" />
+<link rel="manifest" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/site.webmanifest" />
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Legal Solutions</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #0B132B; /* Darker background like the example */
+        }
+       .card {
+            background-color: #1C2541; /* Darker card background, slightly lighter than body */
+            padding: 25px;
+            border-radius: 15px;
+            text-align: left; /* Align text to the left */
+            max-width: 420px;
+            width: 100%;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        /* --- TOP PROFILE SECTION - Logo and Business Name in Row --- */
+        .top-profile-section {
+            display: flex; /* Flex container for logo and business info */
+            align-items: center; /* Vertically align logo and business info */
+            margin-bottom: 15px; /* Spacing between top profile and name/title */
+        }
+
+        .logo-container {
+            width: 90px; /* Adjusted logo container size */
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px; /* Spacing between logo and business name */
+            flex-shrink: 0; /* Prevent shrinking */
+            background-color: white; /* **WHITE BACKGROUND ADDED HERE** */
+        }
+
+        .business-logo {
+            width: 100%;
+            height: 100%;
+            object-fit: contain; /* **OBJECT-FIT CHANGED TO CONTAIN TO FIT LOGO IN WHITE AREA** */
+            display: block;
+        }
+
+        .business-info {
+            text-align: left; /* Align business name to the left */
+        }
+
+        .business-name {
+            font-size: 26px; /* Adjusted business name size */
+            font-weight: bold;
+            color: #FFFFFF; /* White business name */
+            margin-bottom: -15px; /* Reduced margin */
+        }
+
+        .business-title {
+            font-size: 16px;
+            color: #A8A8A8; /* Light gray title */
+        }
+
+        /* --- INFO SECTION - Name and Title - Below Logo Section --- */
+        .info-section {
+            text-align: left; /* Align name and title to the left */
+            padding-left: 4px; /* Slight left padding for alignment */
+            margin-bottom: 10px; /* Reduced margin below name section */
+        }
+
+        .info-section h1 {
+            font-size: 28px; /* Adjusted name size */
+            color: #FFFFFF; /* White name */
+            margin-bottom: 11px; /* Reduced margin */
+        }
+
+
+        /* --- TAG SECTION - Labels under Name (Non-Clickable) --- */
+        .tag-section {
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            padding-left: 5px; /* Align tags with name */
+            margin-bottom: 1px; /* Spacing below tags */
+        }
+
+        .tag-btn {
+            display: inline-block;
+            padding: 6px 12px;
+            background-color: #374151;
+            color: #E5E7EB;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+
+        /* --- BUTTON SECTION - Buttons with Overlap - ORIGINAL SIZES --- */
+        .button-section {
+            padding: 0;
+        }
+
+        .btn-container {
+            display: flex;
+            flex-direction: column;
+            gap: 12px; /* Original gap */
+        }
+       .btn { /*  BUTTON STYLES - ORIGINAL SIZES REINTRODUCED */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 25px; /* **ORIGINAL PADDING** - for original button size */
+            background-color: #2D3748;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 10px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            height: auto;
+            min-height: 0;
+            text-align: left; /* Align button text to left */
+        }
+
+        .btn:hover {
+            background-color: #4A5568;
+        }
+
+        .btn-icon {
+           position: absolute;
+            left: -20px; /* **ORIGINAL OVERLAP** - negative left value */
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+
+        .btn-icon img {
+            width: 60px; /* **ORIGINAL ICON WIDTH** - for original icon size */
+            height: 60px; /* **ORIGINAL ICON HEIGHT** - for original icon size */
+            display: block;
+        }
+
+        .btn-text {
+            flex-grow: 1;
+            text-align: left;
+            padding-left: 50px; /* Original text padding for icon position */
+            font-size: 16px; /* Original text size */
+        }
+
+        .btn-arrow {
+            color: #fff;
+            font-size: 20px;
+            transition: transform 0.3s;
+             z-index: 2;
+        }
+
+        .btn:hover .btn-arrow {
+            transform: translateX(5px);
+        }
+
+
+        /* -------- ICON SIZE ADJUSTMENTS -------- */
+
+        /* Default Icon Size (if no specific class is applied) - CURRENT SIZE */
+        .btn-icon img {
+            width: 60px;
+            height: 60px;
+            display: block;
+        }
+
+        /* --- INDIVIDUAL ICON SIZE ADJUSTMENTS --- */
+
+        /* Example: Adjust Contact Icon Size */
+        .icon-contact img {
+            width: 65px; /* Set contact icon to 60px */
+            height: 65px;
+        }
+
+        /* Example: Adjust Mail Icon Size */
+        .icon-mail img {
+            width: 60px; /* Set mail icon to 60px */
+            height: 60px;
+        }
+
+        /* Example: Keep Phone Icon at Default Size (or adjust) */
+        .icon-phone img {
+            width: 56px; /* Set phone icon to 60px */
+            height: 66px;
+        }
+
+        /* Example: Adjust Calendar Icon Size */
+        .icon-calendar img {
+            width: 62px; /* Set calendar icon to 60px */
+            height: 62px;
+        }
+
+        /* Example: Adjust Website Icon Size */
+        .icon-website img {
+            width: 65px; /* Set website icon to 60px */
+            height: 65px;
+        }
+
+        /* -------- END ICON SIZE ADJUSTMENTS -------- */
+
+
+    </style>
+
+
+
+
+
+</head>
+<body>
+    <div class="card">
+      <div class="top-profile-section"> <!-- TOP PROFILE SECTION -->
+        <div class="logo-container">
+            <img src="https://github.com/SillyHippy/website1/raw/main/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon1.svg" alt="Just Legal Solutions Logo" class="business-logo"> <!-- **LOGO URL UPDATED HERE!** -->
+        </div>
+        <div class="business-info">
+            <div class="business-name">Just Legal Solutions</div> <!-- Business Name -->
+        </div>
+      </div> <!-- End top-profile-section -->
+
+      <div class="info-section"> <!-- INFO SECTION - Name & Title BELOW -->
+        <h1>Joseph Iannazzi</h1>   <!-- User's Name -->
+          <div class="tag-section"> <!-- TAG SECTION - Moved under Name, Non-Clickable -->
+            <span class="tag-btn">Process Server</span>
+            <span class="tag-btn">Legal Support</span>
+        </div> <!-- End tag-section -->
+      </div> <!-- End info-section -->
+
+
+       <div class="button-section">
+        <div class="btn-container">
+            <a href="/contact-details.vcf" download class="btn">
+               <span class="btn-icon icon-contact"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/contact.svg" alt="Contact Icon"></span>
+                <span class="btn-text">Download my contact details</span>
+                 <span class="btn-arrow">→</span>
+            </a>
+            <a href="mailto:Info@JustLegalSolutions.org" class="btn">
+                 <span class="btn-icon icon-mail"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/mail.svg" alt="Mail Icon"></span>
+                <span class="btn-text">Email</span>
+                 <span class="btn-arrow">→</span>
+            </a>
+            <a href="tel:+15393676832" class="btn">
+               <span class="btn-icon icon-phone"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/phone.svg" alt="Phone Icon"></span>
+                <span class="btn-text">Call</span>
+                <span class="btn-arrow">→</span>
+            </a>
+            <a href="calendar.html" class="btn">
+                <span class="btn-icon icon-calendar"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/calendar-reminder-icon.svg" alt="Calendar Icon"></span>
+                <span class="btn-text">Add a Reminder</span>
+               <span class="btn-arrow">→</span>
+            </a>
+            <a href="https://justlegalsolutions.org/" class="btn">
+                <span class="btn-icon icon-website"><img src="https://github.com/SillyHippy/website1/raw/main/landingpage%20icons/website1.svg" alt="Website Icon"></span>
+                <span class="btn-text">Website</span>
+                <span class="btn-arrow">→</span>
+            </a>
+        </div> <!-- End btn-container -->
+       </div> <!-- End button-section -->
+
+
+    </div> <!-- End card -->
+</body>
+</html>

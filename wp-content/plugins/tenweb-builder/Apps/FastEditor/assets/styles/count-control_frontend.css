@@ -1,0 +1,78 @@
+.twbb-count-control-tool input[type=number]:not([type="button"]):not([type="submit"]) {
+    width: 30px;
+    height: 20px;
+    border: none;
+    box-sizing: border-box;
+    margin-right: 0px;
+    letter-spacing: 0px;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    font-family: "Evergrow-Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+
+
+    border-radius: 4px;
+    background: #EAEAEA;
+    padding: 1px 8px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+}
+.active .twbb-count-control-tool input[type=number]:not([type="button"]):not([type="submit"]){
+    background: #1F2124;
+    color:#fff;
+}
+
+
+.twbb-fe-counter-select-tool {
+    background-image: url("../images/height-tool_black.svg");
+}
+.twbb-count-control-tool input[type=number]::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.twbb-quantity {
+    position: relative;
+    vertical-align: middle;
+    display: flex;
+    align-items: center;
+}
+
+input[type=number]
+{
+    -moz-appearance: textfield;
+}
+
+.twbb-count-control-tool input[type=number]:focus {
+    outline: 0;
+    color:#FFFFFF;
+}
+
+.twbb-quantity-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.twbb-quantity-button {
+    cursor: pointer;
+    display: block;
+    width: 12px;
+    height: 9px;
+    background-size: 9px;
+}
+
+.twbb-fe-counter-select-tool[data-tool='starting_number'] .twbb-fet-tooltip,
+.twbb-fe-counter-select-tool[data-tool='ending_number'] .twbb-fet-tooltip {
+    left: -25px;
+}
+
+.twbb-fe-counter-select-tool .twbb-fet-tooltip {
+    left: 2px;
+}

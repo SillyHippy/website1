@@ -1,0 +1,616 @@
+= 1.7.11 =
+* Fixed: Minor Fixes.
+
+= 1.7.10 =
+* Fixed: RollBack some UI things.
+
+= 1.7.7 =
+* Fixed: Minor UI/UX fix.
+
+= 1.7.6 =
+* Added: Tour for 10Web Builder.
+* Fixed: Text Editor widget Add Media button.
+
+= 1.6.21 =
+* Added: Combined categories after regenerating Ecommerce template.
+* Added: Implement ChatBot in editor.
+* Added: Padding options for posts widget title, meta, description.
+* Added: Scroll to top option for posts widget pagination.
+* Added: 3:4 ration for gallery widget images.
+* Improved: Products widget improvements.
+
+= 1.5.12 =
+* Added: Option to choose theme from 10Web builder editor.
+* Added: AI generation in 10Web builder editor preview.
+* Added: Default Woocommerce Shipping Method.
+* Fixed: Minor bug fixes.
+* Fixed: Minor UI fixes.
+
+= 1.4.9 =
+* Added: New Design for Editor Top Bar.
+* Added: Create Terms import/export like posts.
+* Fixed: Minor fixes.
+
+= 1.3.326 =
+* Fixed: Form Widget bug fix.
+
+= 1.3.325 =
+* Improved: Product Images Widget.
+* Added: Compatibility with swiper lib version 8.45.
+* Fixed: Imported page preview link.
+* Fixed: Form Widget upload filed.
+
+= 1.3.324 =
+* Fixed: Minor bug in Cart Widget.
+
+= 1.3.323 =
+* Fixed: Upgrade button.
+
+= 1.3.322 =
+* Fixed: Issue on editing the page with Form widget in it.
+
+= 1.3.320 =
+* Added: Woocommerce Cart widget.
+* Added: Woocommerce Purchase Summary widget.
+* Added: Woocommerce My Account widget.
+* Added: Woocommerce Notices widget.
+* Update: All Woocommerce widgets.
+* Fixed: Minor bugs.
+
+= 1.3.319 =
+* Changed: Upgrade popup text.
+* Fixed: Form widget MailChimp integration.
+
+= 1.3.318 =
+* Changed: AI popup font.
+* Fixed: Call to action widget button default width.
+
+= 1.3.14 =
+* Changed: AI popup styles.
+
+= 1.3.13 =
+* Fixed: Minor.
+
+= 1.3.12 =
+* Added: Default header and footer Templates with AI recreation.
+
+= 1.3.11 =
+* Fixed: Template import and AI recreation in multisite.
+* Fixed: Minor bugfix in Products widget.
+
+= 1.3.10 =
+* Changed: Minor.
+
+= 1.3.9 =
+* Fixed: Add new page button styles.
+
+= 1.3.8 =
+* Added: Global Styles link to navigation menu in editor.
+* Changed: Default Toggle ON in nav menu widget.
+* Changed: Social Icon aligned right in Reviews widget.
+* Fixed: Minor bug fixes.
+
+= 1.3.7 =
+* Fixed: Form maker widget sent mail titles encoding.
+* Added: Possibility to add limited pages from editor for AI recreated menu's.
+
+= 1.3.6 =
+* Changed: FrontPage live customization mobile view.
+
+= 1.3.5 =
+* Fixed: Fix Form widget recaptcha field bug.
+
+= 1.3.4 =
+* Fixed: Minor fix.
+
+= 1.3.3 =
+* Fixed: Preview Pallet data.
+
+= 1.3.2 =
+* Fixed: Import functionality for connected websites.
+
+= 1.3.1 =
+* Fixed: Minor bug fix.
+
+= 1.3.0 =
+* Added: Portfolio widget.
+* Added: OTF file upload as Custom Font.
+* Added: FrontPage live customization.
+
+= 1.2.100 =
+* Fixed: Minor Bug Fix.
+
+= 1.2.99 =
+* Fixed: Header & Footer Import Part.
+
+= 1.2.98 =
+* Fixed: Containers Responsiveness issue.
+* Improved: Nav Menu Widget.
+
+= 1.2.97 =
+* Fixed: Containers Responsiveness issue.
+* Improved: Nav Menu Widget.
+
+= 1.2.96 =
+* Fixed: Uncrawlable link issue in Call to Action widget.
+
+= 1.2.95 =
+* Fixed: Submit button visibility in Form widget.
+* Improved: Sticky widget in containers.
+
+= 1.2.94 =
+* Fixed: Custom fonts import.
+
+= 1.2.93 =
+* Added: Progress Tracker widget.
+* Added: Reviews widget.
+* Added: Hotspot widget.
+* Added: Code Highlight widget.
+* Added: Video Playlist widget.
+* Changed: Default styles of widgets set from Site Settings.
+
+= 1.2.85 =
+* Added: 'AJAX Pagination' in Products widget.
+* Fixed: Minor Bug Fixes.
+* Fixed: Refactored some code fragments to provide the best experiance.
+
+= 1.2.84 =
+* Changed: Sort Inner Pages in Quick Navigation by modified date.
+* Added: 'Hide Product Images' option in Products widget.
+* Added: 'Hide Product Titles' option in Products widget.
+* Added: 'Show/Hide Product Description' option in Products widget.
+
+= 1.2.83 =
+* Fixed: Compatiblity with elementor 3.6.
+* Fixed: Sticky section issue.
+* Added: CLI command for tempalte import.
+
+= 1.2.82 =
+* Fixed: Compatiblity with elementor 3.6.
+
+= 1.2.81 =
+* Changed: Trial preview session parameter.
+
+= 1.2.80 =
+* Fixed: Minor Fix.
+
+= 1.2.79 =
+* Fixed: Minor Fix.
+
+= 1.2.78 =
+* Added: Banner for Starters.
+
+= 1.2.77 =
+* Improved: Product widget import when selected manually.
+
+= 1.2.76 =
+* Fixed: Keep images visible while meta information is not generated.
+
+= 1.2.75 =
+* Fixed: Minor Warning fixes.
+
+= 1.2.74 =
+* Fixed: Image sizes are not generated after import.
+
+= 1.2.73 =
+* Added: Hire Expert tooltip to editor header.
+* Changed: Redesign editor header.
+
+= 1.2.72 =
+* Fixed: Clear cache after template import / AI recreate.
+
+= 1.2.71 =
+* Fixed: Nav Menu import.
+
+= 1.2.70 =
+* Fixed: Nav Menu import.
+
+= 1.2.69 =
+* Fixed: Swiper conflict with elementor 3.5.
+
+= 1.2.68 =
+* Fixed: Bug on templates import.
+
+= 1.2.67 =
+* Fixed: CTA widget styles in preview.
+* Fixed: Header menu styles in edit mode.
+* Fixed: Overlay background option in Gallery widget.
+* Fixed: Condition count in 10WEB Templates menu.
+
+= 1.2.66 =
+* Added: Manage conditions from templates listing page.
+* Added: Horizontal and Vertical Gaps option for Gallery widget.
+* Added: Inline editing for builder templates from a page.
+* Added: White Labeling.
+* Added: Save Form submissions in DB.
+* Improved: Different border colors for sections and widgets.
+* Improved: New design for Conditions Popup.
+* Improved: Form widget.
+* Fixed: Input fields alignment in Form widget.
+
+= 1.2.65 =
+* Added: An option to indicate import process.
+
+= 1.2.64 =
+* Added: Facebook Button widget.
+* Added: Facebook Embed widget.
+* Added: Background effects.
+* Added: Button position option for CTA widget.
+* Fixed: Refactored some code fragments to provide the best security.
+* Fixed: Ribbon for CTA widget.
+* Fixed: Text color for Nav Menu widget.
+* Fixed: Nav Menu widget in responsive preview.
+* Fixed: Deprecated functions from Elementor.
+* Fixed: Form widget fields appearance with some third party themes.
+* Fixed: Error message position in Form widget.
+* Fixed: Minor issues in Pricing Table widget.
+* Fixed: Woocommerce Cart widget minor issue.
+* Fixed: Elementor Navigation conflict with Quick Lounch menu.
+
+= 1.2.63 =
+* Fixed: Communication with the latest version of Manager plugin.
+
+= 1.2.62 =
+* Added: 10Web icon to Elementor widgets by 10Web.
+* Improved: Slides widget.
+* Improved: Nav Menu widget.
+* Updated: Custom Fonts.
+* Updated: Custom CSS.
+* Fixed: Displaying conditions for draft pages.
+* Fixed: Global Custom HTML update from old versions.
+* Fixed: Display WP adminbar with third party themes.
+* Fixed: Edit templates tools from post edit page.
+
+= 1.2.61 =
+* Fixed: Recreation of sites with huge number of images.
+
+= 1.2.60 =
+* Fixed: Bug on Templates Library with PHP version 8.0.
+
+= 1.2.59 =
+* Fixed: Bug on Form widget integrations.
+
+= 1.2.58 =
+* Added: Item background option for Nav Menu widget.
+* Added: Shortcodes for Templates.
+* Changed: Menu names for AI created sites.
+* Improved: Decreased editor load time for Builder created pages.
+* Fixed: Replaced some deprecated functions.
+* Fixed: Product Short Description Widget preview.
+* Fixed: Stycky functionality.
+* Fixed: Duplicated error messages for File Upload field in Form widget.
+* Fixed: Incorrect icons in Post Info widget.
+* Fixed: Error message position in Form widget if labels are inline.
+* Fixed: Incorrect error message when a required field is empty after sanitation.
+
+= 1.2.57 =
+* Improved: Decreased template import time.
+
+= 1.2.56 =
+* Added: Table of Content Widget.
+* Added: Gallery Widget.
+* Added: Field type "Button" for Form Widget.
+* Added: Reset button for Form Widget.
+* Added: Layout option for gallery item (image/title/description).
+* Added: Gallery item background color option.
+* Added: Add gallery title and description options.
+* Fixed: Form title is displayed by default while it should be hidden.
+* Fixed: DB version for imported widgets (AI).
+* Fixed: Minor bugs.
+
+= 1.2.55 =
+* Fixed: CTA widget bug.
+* Fixed: Templates pop-up appearance.
+
+= 1.2.54 =
+* Added: Import meta information for attachments.
+
+= 1.2.53 =
+* Updated: Form widget.
+* Added: Form Title option.
+* Added: Label Position option.
+* Changed: Custom Header layout.
+* Updated: Call to Action widget.
+* Updated: Post Info widget.
+
+= 1.2.52 =
+* Fixed: Custom header with Elementor 3.2.0.
+
+= 1.2.51 =
+* Fixed: Minor bug.
+
+= 1.2.50 =
+* Added: Option to hide submit button in form widget.
+* Updated: Flip box widget.
+
+= 1.2.49 =
+* Fixed: Global Widget.
+
+= 1.2.48 =
+* Added: Facebook Comments widget.
+* Removed: Some depricated functions.
+* Improved: Templates import with big gif files.
+
+= 1.2.47 =
+* Fixed: Archive conditions for Product archives.
+* Fixed: Js errors.
+
+= 1.2.46 =
+* Added: Form widget.
+
+= 1.2.45 =
+* Fixed: Bug on Menu Cart.
+
+= 1.2.44 =
+* Fixed: Compatibility with Elementor 3.1.0.
+* Fixed: Woocommerce Menu Cart conflict with some themes.
+* Fixed: Minor issues.
+* Fixed: Horizontal padding for images in Posts widget.
+
+= 1.2.43 =
+* Added: Text under the image in slides widget.
+* Added: Multiple slides per view for slides widget.
+* Added: Add column count option to menu widget.
+* Added: Paralax effect for sections.
+* Fixed: Fix Nav Menu responsiveness.
+
+= 1.2.42 =
+* Fixed: Global Custom HTML.
+
+= 1.2.41 =
+* Added: Facebook Page widget.
+* Fixed: Saving font-size for Nav Menu widget.
+* Fixed: Bug on 'Product Short Description' when it contains a ' sign.
+* Changed: Tools section.
+
+= 1.2.40 =
+* Fixed: Edit with builder section.
+
+= 1.2.39 =
+* Added: Circle frame to Call to action widget.
+* Fixed: Conflict with Kadence theme.
+* Fixed: Full width menu on mobile.
+* Fixed: Minor issue on Slides widget.
+* Fixed: Display name in Author box widget.
+* Fixed: Responsive icons show up behind the motion effects.
+* Fixed: Notice on Media carousel widget.
+* Fixed: Hover animation in Login widget.
+* Fixed: Custom html in Global settings.
+
+= 1.2.38 =
+* Fixed: ZIP lib conflict.
+
+= 1.2.37 =
+* Changed: 10Web icon fonts.
+
+= 1.2.36 =
+* Changed: Minor style change.
+
+= 1.2.35 =
+* Changed: Minor change in trial popup.
+
+= 1.2.34 =
+* Changed: Minor change in trial popup.
+
+= 1.2.33 =
+* Changed: Trial popup texts.
+
+= 1.2.32 =
+* Improved: Import template also with disabled PHP ZIP extension.
+* Improved: Images import during template install.
+* Fixed: Blockquote Tweet button image.
+
+= 1.2.31 =
+* Fixed: Page editing.
+
+= 1.2.30 =
+* Fixed: Minor bug.
+
+= 1.2.29 =
+* Fixed: Minor bug.
+
+= 1.2.28 =
+* Added: Slides widget.
+* Added: Images sprite widget.
+
+= 1.2.27 =
+* Fixed: Minor bugs.
+
+= 1.2.26 =
+* Fixed: Custom css in preview.
+* Fixed: Minor bugs.
+* Added: Import custom fonts.
+
+= 1.2.25 =
+* Fixed: Minor bug.
+
+= 1.2.24 =
+* Fixed: Minor bug.
+
+= 1.2.23 =
+* Added: Upgrade button for trial users.
+* Fixed: Posts widget.
+
+= 1.2.22 =
+* Added: Edit with 10Web Builder button for Product page.
+* Fixed: Mobile values for button padding in Pricing table and Call to action widgets.
+* Fixed: Second button alignment for Call to action widget.
+
+= 1.2.21 =
+* Fixed: Import site functionality.
+
+= 1.2.20 =
+* Added: Custom fonts.
+* Added: Padding to Call to action widget Button.
+* Improved: Delete media on deleting last imported template.
+* Fixed: Pricing table widget Button padding.
+* Fixed: Price list widget Description font size.
+* Fixed: Mobile dropdown bug on Nav Menu widget.
+
+= 1.2.19 =
+* Added: Option to set image version in Products widget.
+* Added: Option to set spacing for info in Products widget.
+* Added: Possibility to add post metas with text widgets.
+* Added: Undo/redo functionality.
+* Added: Possibility to add Icon instead of image in Call to action widget.
+* Fixed: Scroll to top on changing between pages in Post archive widget.
+* Fixed: Search in archive template with Post archive widget in it.
+* Fixed: Testimonial widget height.
+* Fixed: Button spacing in Products widget.
+* Fixed: Custom fonts integration conflicts with plugin install/activate.
+* Fixed: Remove All ElementorPro variables, classes and namespaces from code (php and js).
+
+= 1.2.18 =
+* Fixed: Minor bugs on Pricing table and Call to action widgets.
+* Fixed: Posts widget.
+
+= 1.2.17 =
+* Fixed: Section scrolling effect.
+* Fixed: Posts archive widget.
+* Fixed: Testimonial widget height.
+
+= 1.2.16 =
+* Added: Option to delete the imported template.
+* Added: "Post Slider" widget.
+* Added: "Team" widget.
+* Added: "FAQ" widget.
+* Added: "Spider Calendar" widget.
+* Added: "Youtube" widget.
+* Added: Width option for buttons of "Call to Action" widget.
+* Improved: Website structure.
+* Improved: "Page Content" widget for pages without condition.
+* Fixed: "Post" widget for date archive.
+* Fixed: Missing plugin installation/activation.
+* Fixed: Missing "WordPress" widgets section in Elementor editor.
+* Fixed: Disable templates view.
+* Fixed: "Share Buttons" widget.
+* Fixed: "Edit with 10Web Builder" button for archive templates.
+* Fixed: Typography issue in "Woocommerce Product Pages" widget.
+* Fixed: "Sitemap" widget columns count.
+* Fixed: Functionality of Canvas page layout.
+
+= 1.2.15 =
+* Improved: Template import.
+
+= 1.2.14 =
+* Fixed: Posts archive widget.
+
+= 1.2.13 =
+* Changed: Logo.
+
+= 1.2.12 =
+* Fixed: Minor bugs.
+* Fixed: Typography tools issue on Woocommerce product pages widget.
+
+= 1.2.11 =
+* Added: Options to add Custom HTML in header and footer of specific pages or the website generally.
+* Added: Toolbox to edit with builder page.
+
+= 1.2.10 =
+* Fixed: Minor bug.
+
+= 1.2.9 =
+* Fixed: Do not include unused scripts to frontend.
+* Fixed: Minify testimonial carousel widget script.
+
+= 1.2.8 =
+* Changed: Edit with 10Web builder from frontend.
+* Added: Animated Headline widget.
+* Added: Media Carousel widget.
+* Added: Sitemap widget.
+* Added: Woocommerce meta widget.
+* Added: Woocommerce short description widget.
+* Added: Woocommerce breadcrumbs widget.
+* Added: Woocommerce upsells widget.
+* Added: Global widgets.
+* Fixed: Minify scripts bug.
+* Fixed: Conditions popup issues.
+* Fixed: Woocommerce data tabs style.
+* Fixed: Do not include woocommerce styles if there is no need.
+* Fixed: Compatibility with Elementor 2.6.0 version.
+
+= 1.2.7 =
+* Fixed: Import templates with plugin shortcodes.
+* Fixed: Show "Site builder widgets", "Woocommerce widgets" section only in templates edit page.
+
+= 1.2.6 =
+* Added: Animated Headline widget.
+* Added: Blockquote widget.
+* Added: Download templates from Amazon by url.
+* Added: Price List widget.
+* Added: WooCoomerce Product Stock widget.
+* Added: WooCommerce Product Additional Information widget.
+
+= 1.2.5 =
+* Fixed: Import of newly added site templates.
+* Fixed: Error with deactivated Elementor.
+* Added: WooCommerce widgets default values in preview.
+* Added: WooCommerce Product Title widget.
+* Added: WooCommerce Product Image widget.
+* Added: WooCommerce Product Price widget.
+* Added: WooCommerce Product Rating widget.
+* Added: WooCommerce Product Related widget.
+* Added: WooCommerce Product Content widget.
+* Added: WooCommerce Product Tabs widget.
+* Added: WooCommerce Add To cart widget.
+
+= 1.2.6 =
+* Fixed: Compatibility with Elementor Pro.
+* Fixed: Import site functionality.
+
+= 1.2.5 =
+* Fixed: Import of newly added site templates.
+* Fixed: Error with deactivated Elementor.
+
+= 1.2.4 =
+* Added: Widgets display conditions support.
+* Fixed: Templates conditions.
+
+= 1.2.3 =
+* Added: WooCommerce Pages widget.
+* Added: WooCommerce Products widget.
+* Added: WooCommerce Product categories widget.
+* Added: WooCommerce Breadcrumbs widget.
+* Added: WooCommerce Add To Cart widget.
+* Added: WooCommerce Menu Cart widget.
+* Fixed: Twitter share does not work when the shared text is too long.
+* Added: Scrolling effects.
+
+= 1.2.2 =
+* Changed: Page layout.
+
+= 1.2.1 =
+* Fixed: The "Original Price" text font size is too large.
+* Fixed: Testimonials > Style > Slides > Space Between doesn't work.
+* Changed: Page layout.
+* Fixed: Site import functionality.
+* Removed: Google+.
+
+= 1.2.0 =
+* Added: Page layout functionality.
+* Added: Website structure popup.
+* Added: Option to add custom css to the page.
+* Added: Post/Page/Archive Title widget.
+* Added: Breadcrumb widget.
+* Added: Navigation menu widget.
+* Added: Default styles for post comments widget.
+
+= 1.1.1 =
+* New: Reviews carousel widget.
+* New: Login widget.
+* New: Share buttons widget.
+* New: Site building widgets: author box, search form.
+* New: Support for 10Web Google Maps WD and Event Calendar WD plugins in Elementor.
+* New: 10Web templates section.
+* Fixed: UX of install and activation of 10Web plugins.
+* Improved: Display of header, footer, single and archive templates in preview mode.
+* Improved: Image alignment in posts widget.
+
+= 1.1.0 =
+* New: Templates for header, footer, single and archive
+* New: Templates display conditions
+* New: Site building widgets: site title, site logo, post title, post excerpt, post content, posts archive, featured image, post info, post comments, post navigation
+* New: Support for 10Web Instagram Feed and Facebook Feed plugins in Elementor
+
+= 1.0.0 =
+* Initial version.

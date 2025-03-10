@@ -1,0 +1,76 @@
+.elementor-widget-twbb_price-list .elementor-price-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+.elementor-widget-twbb_price-list .elementor-price-list li {
+    margin: 0; }
+
+.elementor-price-list li:not(:last-child) {
+  margin-bottom: 20px; }
+
+.elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-image {
+  max-width: 50%;
+  -webkit-flex-shrink: 0;
+      -ms-flex-negative: 0;
+          flex-shrink: 0;
+  padding-right: 25px; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-image img {
+    width: 100%; }
+
+.elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-text,
+.elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item,
+.elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-header {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item {
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item .elementor-price-list-text {
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item .elementor-price-list-header {
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    font-size: 19px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item .elementor-price-list-title {
+    max-width: 80%; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item p.elementor-price-list-description {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+    margin: 0; }
+  .elementor-widget-twbb_price-list .elementor-price-list .elementor-price-list-item .elementor-price-list-separator {
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-bottom-style: dotted;
+    border-bottom-width: 2px;
+    height: 0; }

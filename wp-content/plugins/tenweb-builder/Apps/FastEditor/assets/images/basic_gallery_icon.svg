@@ -1,0 +1,12 @@
+<svg id="Copy_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47765" data-name="Rectangle 47765" width="12" height="12" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Copy_Icon-2" data-name="Copy_Icon" clip-path="url(#clip-path)">
+    <rect id="Rectangle_54451" data-name="Rectangle 54451" width="2" height="8" transform="translate(1 2)" fill="#fff"/>
+    <rect id="Rectangle_54452" data-name="Rectangle 54452" width="2" height="8" transform="translate(5 2)" fill="#fff"/>
+    <rect id="Rectangle_54453" data-name="Rectangle 54453" width="2" height="8" transform="translate(9 2)" fill="#fff"/>
+  </g>
+</svg>
