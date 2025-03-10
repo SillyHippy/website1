@@ -1,0 +1,51 @@
+!!!Important. All replacements must be performed case sensitive and word matching.
+Never change lines placements.
+Add options with 'twbb_' prefix.
+
+1. Compare two versions before update. Some sections require common sense to be updated :).
+1. Compare two versions after update. Customizations needs to be moved.
+
+2. Copy appropriate files.
+3. Replace ' ElementorPro\' with ' Tenweb_Builder\ElementorPro\' with spaces in the beginning.
+4. Replace 'Plugin::elementor()' with '\Elementor\Plugin::instance()' remove 'use ElementorPro\Plugin;'
+5. Replace/remove 'Base_Widget' where used.
+5. Replace 'elementor_pro/' with 'elementor_tenweb/' in hooks and filters
+6. Replace 'elementor_pro_forms_send_form' with 'tenweb_builder_forms_send_form'
+7. Replace 'wp_ajax_elementor_pro_forms_send_form' with 'wp_ajax_tenweb_builder_forms_send_form'
+8. Replace 'wp_ajax_nopriv_elementor_pro_forms_send_form' with 'wp_ajax_nopriv_tenweb_builder_forms_send_form'
+9. Replace 'elementor/element/form' with 'elementor/element/twbb_form'
+10. Replace 'ELEMENTOR_PRO_VERSION' with 'TWBB_VERSION' for style/script enqueue.
+11. Replace 'ELEMENTOR_PRO_URL' with 'TWBB_URL . '/pro-features/'' for Form Submissions.
+11. Replace 'ELEMENTOR_PRO_PATH' with 'TWBB_DIR' for Form Submissions.
+12. Replace '../elementor/assets/' with '../../elementor/assets' for Form Submissions.
+13. Replace 'forms' with 'twbb_forms' in 'pro-features/modules/forms/module.php' and 'pro-features/modules/forms/submissions/data/forms-controller.php'
+
+11. Replace 'webpackChunkelementor_pro' with 'webpackChunkelementor_tenweb'
+12. Replace 'elementorProFrontend' with 'elementorTenwebFrontend'
+13. Replace 'form' with 'twbb_form' in 'elementorFrontend.elementsHandler.attachHandler'
+14. Replace 'form' with 'twbb_form' in 'containers[0].parent.parent.model.get('widgetType')'
+15. Replace 'elementor_pro_forms_send_form' with 'tenweb_builder_forms_send_form'
+16. Replace 'ElementorProFrontendConfig' with 'ElementorTenwebFrontendConfig'
+17. Replace 'elementorPro' with 'elementorTenweb' in js
+18. Replace 'ElementorPro' with 'ElementorTenweb' in js
+19. Replace 'panel/open_editor/widget/form' with 'panel/open_editor/widget/twbb_form'
+20. Global widget must be executed with condition (elementorTenwebEditorConfig.global_widget_is_active).
+21. Replace 'elementorProEditorConfig' with 'elementorTenwebEditorConfig'
+22. Replace 'elementorCommon.debug.addURLToWatch('elementor-pro/assets');' with 'elementorCommon.debug.addURLToWatch('tenweb-builder/pro-features/assets');'
+13. Remove 'templateData.isPro && !elementorPro.config.isActive' conditions.
+14. Replace 'form' with 'twbb_form' as needed in editor.js
+14. Replace 'forms' with 'twbb_forms' in js files
+14. Replace 'forms/index' with 'twbb_forms/index' in forms/submissions/data/controller.php files
+14. Add parameters to not minify form-submission-admin.js
+15. Replace 'ElementorProConfig' with 'ElementorTenwebConfig'
+16. Replace 'elementor_pro_typekit_validate_button' with 'tenweb_builder_typekit_validate_button'
+17. Replace 'elementor_pro_admin_fetch_fonts' with 'tenweb_builder_admin_fetch_fonts'
+18. Replace 'elementorProAdmin' with 'elementorTenwebAdmin'
+19. Replace 'ElementorProFrontend' with 'ElementorTenwebFrontend'
+20. Replace 'wp_ajax_elementor_pro_admin_fetch_fonts' with 'wp_ajax_tenweb_builder_admin_fetch_fonts'
+21. Replace 'elementor-pro-forms' with 'elementor-tenweb-forms' in js files
+
+24. Clean up js files. This will require some effort.
+25. Remove unused modules from files. Module ids will tip which can be removed.
+26. Remove unused handlers from 'var handlers' arrays.
+27. Remove unused modules from 'this.modules' arrays.
