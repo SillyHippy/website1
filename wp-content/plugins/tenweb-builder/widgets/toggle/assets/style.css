@@ -1,0 +1,50 @@
+.elementor-widget-toggle .elementor-toggle .elementor-tab-title .elementor-toggle-icon svg {
+    margin-inline-start: 0;
+}
+
+.elementor-widget-toggle .elementor-toggle .elementor-toggle-item.twbb-tab-active .elementor-tab-title {
+    border-bottom: none;
+}
+
+.twbb-icon-position .elementor-tab-title {
+    display: flex;
+}
+
+.twbb-icon-position-right-top .elementor-tab-title,
+.twbb-icon-position-right-center .elementor-tab-title,
+.twbb-icon-position-right-bottom .elementor-tab-title {
+    flex-direction: row-reverse;
+}
+
+.twbb-icon-position .elementor-toggle-title {
+    flex-grow: 1;
+}
+
+.twbb-icon-position .elementor-tab-title .elementor-toggle-icon {
+    width: inherit;
+    display: flex;
+}
+
+.twbb-icon-position-right-top .elementor-tab-title .elementor-toggle-icon {
+    align-items: flex-start;
+}
+
+.twbb-icon-position-left-top .elementor-tab-title .elementor-toggle-icon {
+    align-items: flex-start;
+}
+
+.twbb-icon-position-right-center .elementor-tab-title .elementor-toggle-icon {
+    align-items: center;
+}
+
+.twbb-icon-position-left-center .elementor-tab-title .elementor-toggle-icon {
+    align-items: center;
+}
+
+.twbb-icon-position-right-bottom .elementor-tab-title .elementor-toggle-icon {
+    align-items: flex-end;
+}
+
+.twbb-icon-position-left-bottom .elementor-tab-title .elementor-toggle-icon {
+    align-items: flex-end;
+}
