@@ -1,0 +1,13 @@
+<svg id="Copy_Icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="12" viewBox="0 0 12 12">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_47765" data-name="Rectangle 47765" width="12" height="12" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="Copy_Icon-2" data-name="Copy_Icon" clip-path="url(#clip-path)">
+    <g id="Group_172692" data-name="Group 172692">
+      <path id="upload_FILL0_wght400_GRAD0_opsz24" d="M161-792a.963.963,0,0,1-.706-.294A.963.963,0,0,1,160-793v-1.5h1v1.5h6v-1.5h1v1.5a.963.963,0,0,1-.294.706A.963.963,0,0,1,167-792Z" transform="translate(-158 802)" fill="#fff"/>
+      <path id="upload_FILL0_wght400_GRAD0_opsz24-2" data-name="upload_FILL0_wght400_GRAD0_opsz24" d="M2,0V4.075L.7,2.775,0,3.5,2.5,6,5,3.5l-.7-.725L3,4.075V0Z" transform="translate(8.5 8) rotate(180)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
