@@ -1,0 +1,39 @@
+{
+  "id": "han_blue",
+  "title": "Han blue",
+  "order": 2,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#3A5BCC"
+      },
+      {
+        "_id": "secondary",
+        "color": "#898989"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#3A5BCC26"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#89898926"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#3A5BCC"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#3A5BCCCC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#3A5BCC80"
+      }
+    ]
+  }
+}
