@@ -1,0 +1,15 @@
+.twbb-click-tool-container .twbb-click-tool {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    background-image: url("../images/upload_icon_black.svg");
+}
+
+.twbb-click-tool-container[data-control="elementor-repeater-add"] .twbb-click-tool,
+.elementor-widget-social-icons .twbb-click-tool,
+.elementor-widget-icon-list .twbb-click-tool {
+    background-image: url("../images/add_icon_black.svg");
+}
