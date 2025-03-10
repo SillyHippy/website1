@@ -1,46 +1,65 @@
 import os
-import shutil
 
-def delete_php_files(repo_path):
+def replace_logo_url_in_html(repo_path, old_logo_url, new_logo_url):
     """
-    Deletes all PHP files within a given repository path.
+    Searches all HTML files in a repository and replaces occurrences of the
+    old logo URL with the new logo URL.
 
     Args:
         repo_path: The path to the root directory of your GitHub repository.
+        old_logo_url: The URL pattern of the old logo to be replaced.
+        new_logo_url: The URL to replace the old logo URL with.
     """
 
-    php_files_deleted = 0
-    php_files_found = 0
+    files_modified = 0
+    files_searched = 0
 
-    print(f"Searching for and deleting PHP files within: {repo_path}")
+    print(f"Searching for and replacing logo URLs in HTML files within: {repo_path}")
+    print(f"  Replacing URL: '{old_logo_url}' with '{new_logo_url}'\n")
 
     for root, dirs, files in os.walk(repo_path):
         for file in files:
-            if file.lower().endswith(".php"):
+            if file.lower().endswith((".html", ".htm")):
                 filepath = os.path.join(root, file)
-                php_files_found += 1
+                files_searched += 1
+
                 try:
-                    os.remove(filepath)
-                    php_files_deleted += 1
-                    print(f"  Deleted: {filepath}")
+                    with open(filepath, 'r', encoding='utf-8') as f:
+                        html_content = f.read()
+
+                    original_content = html_content
+                    updated_content = html_content.replace(old_logo_url, new_logo_url)
+
+                    if updated_content != original_content:
+                        with open(filepath, 'w', encoding='utf-8') as f:
+                            f.write(updated_content)
+                        files_modified += 1
+                        print(f"  Modified: {filepath}")
+
                 except Exception as e:
-                    print(f"  Error deleting: {filepath} - {e}")
+                    print(f"  Error processing file: {filepath} - {e}")
 
     print(f"\nSummary:")
-    print(f"  PHP files found: {php_files_found}")
-    print(f"  PHP files deleted: {php_files_deleted}")
+    print(f"  HTML files searched: {files_searched}")
+    print(f"  HTML files modified: {files_modified}")
+    print(f"  Replaced URL: '{old_logo_url}' with '{new_logo_url}'")
+
 
 if __name__ == "__main__":
-    repo_path = "."  # Assumes the script is run from the repository root
+    repo_path = "."  # Assumes script is in repo root
+    old_logo_url = "wp-content/uploads/2025/02/cropped-cropped-cropped-cropped-ezgif-563de8ffd5926-e1738902542904.jpg"
+    new_logo_url = "/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/logo_NaQ7yBFS.webp"  # MAKE SURE THIS IS CORRECT!
 
-    print("WARNING: This script will DELETE all PHP files in the repository.")
+    print("WARNING: This script will REPLACE the old logo URL in your HTML files.")
+    print(f"  Old URL: {old_logo_url}")
+    print(f"  New URL: {new_logo_url}")
     confirmation = input("Are you sure you want to proceed? (yes/no): ").lower()
 
     if confirmation == "yes":
         if not os.path.isdir(repo_path):
             print("Error: Invalid repository path.")
         else:
-            delete_php_files(repo_path)
-            print("\nPHP file deletion process complete.")
+            replace_logo_url_in_html(repo_path, old_logo_url, new_logo_url)
+            print("\nLogo URL replacement process complete.")
     else:
-        print("PHP file deletion cancelled by user.")
+        print("Logo URL replacement cancelled by user.")
