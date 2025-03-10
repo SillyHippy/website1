@@ -1,61 +1,90 @@
 import os
+import re
 
-file_path = r"C:\Users\ianna\OneDrive\Desktop\GitHub\website1\wp-content\plugins\elementor\assets\js\editor.min.js"  # Raw string for Windows path
+html_file_path = "index.html"  # Path to your index.html file
+js_directory_to_scan = "."  # Directory to scan for Javascript files (e.g., ".", "js", "wp-content/themes/yourtheme/js")
+output_file_path = "unreferenced_js_files.txt"
+delete_files = True  # Set to True to ENABLE file deletion (after review!)
+delete_backup_files = False # Set to True to also delete backup files (.backup extension)
 
-def modify_javascript_file(filepath):
-    """
-    Modifies the editor.min.js file to disable favicon processing.
-
-    This script will:
-    1. Comment out the 'if(T.headFavicon...' line.
-    2. Change 'headFavicon: !0' to 'headFavicon: !1' in the Oe object.
-
-    WARNING: This modifies the file directly. Back up your file before running.
-    """
-
+def find_javascript_files_in_html(html_filepath):
+    """Parses HTML file and extracts Javascript file paths from <script src="..."> tags."""
+    js_files = set()
     try:
-        with open(filepath, 'r', encoding='utf-8') as f:
-            lines = f.readlines()
-
-        modified_lines = []
-        favicon_if_line_found = False
-        oe_headfavicon_line_found = False
-
-        for line in lines:
-            # 1. Comment out the if(T.headFavicon... line
-            if not favicon_if_line_found and line.strip().startswith('if(T.headFavicon&&("link"===C.tagName'):
-                modified_lines.append(f'// {line}')  # Comment out the line
-                favicon_if_line_found = True
-            # 2. Change headFavicon: !0 to headFavicon: !1 in Oe object
-            elif not oe_headfavicon_line_found and 'headFavicon:!0' in line:
-                modified_lines.append(line.replace('headFavicon:!0', 'headFavicon:!1'))
-                oe_headfavicon_line_found = True
-            else:
-                modified_lines.append(line)
-
-        if not favicon_if_line_found:
-            print("Warning: 'if(T.headFavicon...' line not found. It might already be modified or absent.")
-        if not oe_headfavicon_line_found:
-            print("Warning: 'headFavicon:!0' line in Oe object not found. It might already be modified or absent.")
-
-        with open(filepath, 'w', encoding='utf-8') as f:
-            f.writelines(modified_lines)
-
-        print(f"Successfully modified '{filepath}'. Favicon processing should be disabled.")
-
+        with open(html_filepath, 'r', encoding='utf-8') as f:
+            html_content = f.read()
+            script_tags = re.findall(r'<script.*?src=["\'](.*?\.js.*?)(?:[\?#].*)?["\'].*?</script>', html_content, re.IGNORECASE)
+            for src in script_tags:
+                js_files.add(os.path.normpath(src.split('?')[0].strip())) # Normalize paths
     except FileNotFoundError:
-        print(f"Error: File not found at '{filepath}'. Please check the file path.")
-    except Exception as e:
-        print(f"An error occurred: {e}")
-        print("File modification may have failed. Please check the file manually.")
+        print(f"Error: HTML file not found at '{html_filepath}'.")
+    return js_files
+
+def find_all_js_files_in_directory(directory):
+    """Recursively finds all .js files in a directory."""
+    all_js_files = set()
+    for root, _, files in os.walk(directory):
+        for file in files:
+            if file.lower().endswith(".js"):
+                filepath = os.path.join(root, file)
+                all_js_files.add(os.path.normpath(filepath)) # Normalize paths
+    return all_js_files
+
+def identify_unreferenced_js_files(html_js_files, all_js_files):
+    """Identifies Javascript files in directory that are not referenced in HTML."""
+    unreferenced_files = all_js_files - html_js_files
+    return unreferenced_files
+
+def delete_files_if_enabled(files_to_delete, delete_flag, file_type_desc="Javascript"):
+    """Deletes files if the delete_flag is set to True, otherwise just lists them."""
+    if not delete_flag:
+        print(f"\n{file_type_desc} files that WOULD BE deleted (deletion is DISABLED):")
+    else:
+        print(f"\nDeleting {file_type_desc} files:")
+
+    if not files_to_delete:
+        print("  No unreferenced files found.")
+        return
+
+    for filepath in files_to_delete:
+        print(f"  {filepath}")
+        if delete_flag:
+            try:
+                os.remove(filepath)
+                print(f"    Deleted.")
+            except Exception as e:
+                print(f"    Error deleting: {e}")
+
+    if not delete_flag:
+        print("\nTo ENABLE deletion, set 'delete_files = True' in the script.")
+
 
 if __name__ == "__main__":
-    backup_filepath = file_path + ".backup"
-    try:
-        import shutil
-        shutil.copy2(file_path, backup_filepath)
-        print(f"Backup created at: '{backup_filepath}'")
-    except Exception as backup_err:
-        print(f"Warning: Backup creation failed: {backup_err}. Please manually back up '{file_path}' before proceeding.")
+    print("WARNING: This script can DELETE files. BACKUP YOUR WEBSITE FIRST!\n")
 
-    modify_javascript_file(file_path)
+    html_referenced_js = find_javascript_files_in_html(html_file_path)
+    all_site_js_files = find_all_js_files_in_directory(js_directory_to_scan)
+    unreferenced_js = identify_unreferenced_js_files(html_referenced_js, all_site_js_files)
+
+    try:
+        with open(output_file_path, 'w', encoding='utf-8') as outfile:
+            outfile.write("Unreferenced Javascript Files (from index.html):\n")
+            outfile.write("--------------------------------------------\n\n")
+            if not unreferenced_js:
+                outfile.write("No unreferenced Javascript files found.\n")
+            else:
+                for filepath in sorted(list(unreferenced_js)):
+                    outfile.write(f"{filepath}\n")
+        print(f"List of unreferenced Javascript files written to: '{output_file_path}'")
+    except Exception as e:
+        print(f"Error writing to output file: {e}")
+
+
+    delete_files_if_enabled(unreferenced_js, delete_files, "Javascript")
+
+    if delete_backup_files:
+        backup_files_to_delete = set(f for f in all_site_js_files if f.lower().endswith(".js.backup"))
+        delete_files_if_enabled(backup_files_to_delete, delete_backup_files, "Backup Javascript")
+
+
+    print("\nScript execution finished.")
