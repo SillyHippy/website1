@@ -1,55 +1,61 @@
 import os
 
-def insert_favicon_links(repo_path):
+file_path = r"C:\Users\ianna\OneDrive\Desktop\GitHub\website1\wp-content\plugins\elementor\assets\js\editor.min.js"  # Raw string for Windows path
+
+def modify_javascript_file(filepath):
     """
-    Searches for <head> tags in HTML files and inserts favicon <link> tags right after.
+    Modifies the editor.min.js file to disable favicon processing.
 
-    Args:
-        repo_path: The path to the root directory of your repository.
+    This script will:
+    1. Comment out the 'if(T.headFavicon...' line.
+    2. Change 'headFavicon: !0' to 'headFavicon: !1' in the Oe object.
+
+    WARNING: This modifies the file directly. Back up your file before running.
     """
 
-    favicon_tags_to_insert = """
-<link rel="icon" type="image/png" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon-96x96.png" sizes="96x96" />
-<link rel="icon" type="image/svg+xml" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon.svg" />
-<link rel="shortcut icon" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/favicon.ico" />
-<link rel="apple-touch-icon" sizes="180x180" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/apple-touch-icon.png" />
-<link rel="manifest" href="/website1/oPKyDQlOdjnFtEbtOfVCRpiYRmCLmZut/site.webmanifest" />
-"""
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            lines = f.readlines()
 
-    for root, _, files in os.walk(repo_path):
-        for file in files:
-            if file.endswith(('.html', '.htm')):
-                filepath = os.path.join(root, file)
-                with open(filepath, 'r', encoding='utf-8') as f:
-                    content = f.read()
+        modified_lines = []
+        favicon_if_line_found = False
+        oe_headfavicon_line_found = False
 
-                head_tag_lower = content.lower() # For case-insensitive search
-                head_start_index = head_tag_lower.find('<head>')
+        for line in lines:
+            # 1. Comment out the if(T.headFavicon... line
+            if not favicon_if_line_found and line.strip().startswith('if(T.headFavicon&&("link"===C.tagName'):
+                modified_lines.append(f'// {line}')  # Comment out the line
+                favicon_if_line_found = True
+            # 2. Change headFavicon: !0 to headFavicon: !1 in Oe object
+            elif not oe_headfavicon_line_found and 'headFavicon:!0' in line:
+                modified_lines.append(line.replace('headFavicon:!0', 'headFavicon:!1'))
+                oe_headfavicon_line_found = True
+            else:
+                modified_lines.append(line)
 
-                if head_start_index != -1:
-                    # Find the end of the <head> tag to insert after it
-                    head_end_index = head_tag_lower.find('>', head_start_index) + 1
+        if not favicon_if_line_found:
+            print("Warning: 'if(T.headFavicon...' line not found. It might already be modified or absent.")
+        if not oe_headfavicon_line_found:
+            print("Warning: 'headFavicon:!0' line in Oe object not found. It might already be modified or absent.")
 
-                    if head_end_index > head_start_index:
-                        original_content = content
-                        content = content[:head_end_index] + favicon_tags_to_insert + content[head_end_index:]
+        with open(filepath, 'w', encoding='utf-8') as f:
+            f.writelines(modified_lines)
 
-                        if original_content != content:
-                            with open(filepath, 'w', encoding='utf-8') as f:
-                                f.write(content)
-                            print(f"Processed and modified (favicon links inserted): {filepath}")
-                        else:
-                            print(f"Processed (no changes needed): {filepath}")
-                    else:
-                        print(f"Warning: Could not find end of <head> tag in: {filepath}")
-                else:
-                    print(f"Warning: <head> tag not found in: {filepath}")
+        print(f"Successfully modified '{filepath}'. Favicon processing should be disabled.")
+
+    except FileNotFoundError:
+        print(f"Error: File not found at '{filepath}'. Please check the file path.")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        print("File modification may have failed. Please check the file manually.")
 
 if __name__ == "__main__":
-    repo_directory = input("Enter the path to your repository: ")
-    if os.path.isdir(repo_directory):
-        print(f"Starting to process HTML files in: {repo_directory} (inserting favicon links)")
-        insert_favicon_links(repo_directory)
-        print("Finished processing HTML files (favicon links insertion).")
-    else:
-        print("Invalid repository path. Please enter a valid directory path.")
+    backup_filepath = file_path + ".backup"
+    try:
+        import shutil
+        shutil.copy2(file_path, backup_filepath)
+        print(f"Backup created at: '{backup_filepath}'")
+    except Exception as backup_err:
+        print(f"Warning: Backup creation failed: {backup_err}. Please manually back up '{file_path}' before proceeding.")
+
+    modify_javascript_file(file_path)
