@@ -1,0 +1,30 @@
+.elementor-column .elementor-column-wrap .elementor-widget-wrap .elementor-widget .elementor-widget-container .elementor-inline-items {
+  align-items: center;
+}
+.elementor-widget.elementor-align-center .elementor-icon-list-item:after {
+  margin: auto;
+}
+.elementor-widget.elementor-align-center .elementor-inline-terms .elementor-icon-list-item:after {
+  margin: initial;
+}
+body[data-elementor-device-mode="desktop"] ul.elementor-icon-list-items.elementor-inline-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+body[data-elementor-device-mode="desktop"] ul.elementor-icon-list-items:not(.elementor-inline-items) {
+  display: block;
+}
+body[data-elementor-device-mode="tablet"] ul.elementor-icon-list-items.elementor-inline-tablet-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+body[data-elementor-device-mode="tablet"] ul.elementor-icon-list-items:not(.elementor-inline-tablet-items) {
+  display: block;
+}
+body[data-elementor-device-mode="mobile"] ul.elementor-icon-list-items.elementor-inline-mobile-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+body[data-elementor-device-mode="mobile"] ul.elementor-icon-list-items:not(.elementor-inline-mobile-items) {
+  display: block;
+}

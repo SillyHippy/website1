@@ -1,0 +1,70 @@
+.elementor-widget-twbb-product-related.elementor-wc-products ul.products li.product,
+.elementor-widget-twbb-product-related .related.products ul,
+div.product .elementor-widget-twbb-product-related .upsells.products ul.products li.product {
+  width: auto;
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-1 ul.products {
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-2 ul.products {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-3 ul.products {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-4 ul.products {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-5 ul.products {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-6 ul.products {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-7 ul.products {
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-8 ul.products {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-9 ul.products {
+  grid-template-columns: repeat(9, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-10 ul.products {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-11 ul.products {
+  grid-template-columns: repeat(11, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products.elementor-products-columns-12 ul.products {
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products ul.products {
+  display: grid;
+  margin: 0;
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products ul.products:after,
+.elementor-widget-twbb-product-related.elementor-wc-products ul.products:before {
+  content: none;
+  display: none;
+}
+
+.elementor-widget-twbb-product-related.elementor-wc-products .added_to_cart.wc-forward {
+  margin-left:10px;
+}

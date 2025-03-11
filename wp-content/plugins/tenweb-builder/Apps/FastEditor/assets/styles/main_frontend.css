@@ -1,0 +1,480 @@
+.twbb-global-settings-open .twbb-fast-editor-tools-container {
+    display: none !important;
+}
+
+.elementor-editor-preview .twbb-fast-editor-tools-container {
+    display: none !important;
+}
+.twbb-fast-editor-tools-container {
+    opacity: 0;
+    display: none;
+    position: absolute;
+    right: 0;
+    left: unset;
+    top: -50px;
+    z-index: 99999;
+    border-radius: 5px;
+    font-family: Open Sans, sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.elementor-element-editable.twbb-active-fast-editor-tools[data-element_type="container"] > .twbb-fast-editor-tools-container,
+.elementor-element-editable.twbb-active-fast-editor-tools[data-element_type="widget"] > .elementor-widget-container > .twbb-fast-editor-tools-container,
+.elementor-element-editable.twbb-active-fast-editor-tools[data-element_type="widget"] > .twbb-fast-editor-tools-container{
+    display: flex;
+    opacity: 1;
+    gap:8px;
+}
+
+
+.twbb-fe-tools {
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    border-radius: 3px;
+    color: #FFFFFF;
+    width: max-content;
+    cursor: pointer;
+    line-height: 0;
+    max-height: 32px;
+    align-items: flex-end;
+}
+.elementor-element.elementor-element-edit-mode.e-con:has(.twbb-fe-tools .twbb-fe-tool.active) {
+    z-index: 14;
+}
+.twbb-fe-tool .twbb-hide-in-hover {
+    display: none;
+}
+.elementor-element-editable:not([data-element_type="container"]) .twbb-fast-editor-tools-container .twbb-fe-tool .twbb-hide-in-hover {
+    display: inline;
+}
+
+.twbb-fe-tool img,
+.twbb-fe-onedit-tool img {
+    height: auto !important;
+    width: auto !important;
+    max-height: 20px !important;
+    max-width: 20px !important;
+}
+.twbb-fe-tool > span {
+    font-size: 12px;
+    line-height: 16px;
+    height: 16px;
+    letter-spacing: 0.08px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.twbb-fe-right-border {
+    border-right: 1px solid #EAEAEA;
+    padding-right: 12px;
+}
+.twbb-fe-right-border_after{
+    position: relative !important;
+    margin-right: 12px !important;
+}
+.twbb-fe-right-border_after:after{
+    content: "";
+    display: inline-block;
+    width: 1px;
+    height: 16px;
+    color: #0A0E0D;
+    background-color: #EAEAEA;
+    position: absolute;
+    right: -12px;
+}
+
+
+.elementor-element-editable .twbb-fe-tools .twbb-fe-onedit-tool {
+    display: flex;
+    background-size: unset;
+    justify-content: flex-end;
+}
+.elementor-element-editable .twbb-fe-tools .twbb-fe-onedit-tool.twbb-dropdown-select-tool-container{
+    justify-content: unset;
+}
+.elementor-element:hover > .elementor-widget-container > .twbb-fast-editor-tools-container {
+    /*should be less then z-index .twbb-fast-editor-tools-container*/
+    z-index: 9999 !important;
+}
+
+.elementor-widget-spacer .twbb-fe-counter-select-tool,
+.elementor-widget-google_maps .twbb-fe-counter-select-tool,
+.elementor-widget-counter .twbb-fe-counter-select-tool[data-tool="starting_number"] {
+    background-image: url("../images/height-tool_black.svg");
+}
+.twbb-fe-counter-select-tool[data-tool="slides_to_show"] {
+    background-image: url("../images/carousel_icon_black.svg");
+    width: 53px;
+}
+.twbb-fe-counter-select-tool[data-tool="gallery_columns"] {
+    background-image: url("../images/basic_gallery_icon_black.svg");
+    width: 53px;
+}
+.elementor-widget-counter .twbb-fe-counter-select-tool[data-tool="ending_number"] {
+    background-image: url("../images/line_black.svg");
+    width: 53px;
+}
+.elementor-widget-progress .twbb-fe-counter-select-tool[data-tool="percent"] {
+    background-image: url("../images/percent_icon_black.svg");
+}
+.elementor-element[data-element_type="container"] .twbb-fe-counter-select-tool[data-tool_type="width"],
+.elementor-element[data-element_type="container"] .twbb-fe-counter-select-tool[data-tool_type="boxed_width"] {
+    background-image: url("../images/width-tool_black.svg");
+    display: none;
+}
+
+.elementor-widget-counter .twbb-fe-counter-select-tool[data-tool="starting_number"] {
+    border-right: none;
+    margin-right: -10px;
+}
+
+
+.twbb-fet-tooltip {
+    display: none;
+    position: absolute;
+    content: 'Delete';
+    width: auto;
+    height: 24px;
+    background: #0B0D0D 0% 0% no-repeat padding-box;
+    border: 1px solid #333333;
+    border-radius: 3px;
+    top: -35px;
+    left: -60%;
+    text-align: center;
+    font: normal normal 600 10px / 22px Open Sans;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    padding: 0 8px;
+    box-sizing: border-box;
+    text-wrap: nowrap;
+}
+
+.twbb-more-tool-container .twbb-fet-tooltip {
+    right:-10px;
+    left: unset;
+}
+
+.twbb-duplicate-tool-container .twbb-fet-tooltip {
+    left: -25px;
+}
+
+.twbb-fe-tools > div:hover {
+    /*position: relative;*/
+    opacity: 1!important;
+    right: 0;
+}
+
+.twbb-fe-tools > div.twbb-color_picker-tool-container:hover > .twbb-fe-tool > .pickr,
+.twbb-fe-tools > div.twbb-color_picker-tool-container:hover > .twbb-fe-tool > .twbb-color_picker-tool,
+.twbb-fe-tools > div.twbb-fe-tool-write_with_ai:hover .twbb-ai-front-button,
+.twbb-fe-tools > div.twbb-fe-select-tool:hover > * {
+    opacity: 1!important;
+}
+
+@font-face {
+    font-family: 'Evergrow-Sans';
+    src:
+            url('../fonts/Evergrow Sans/Evergrow Sans TTF/EvergrowSans-Medium.ttf') format('truetype'),
+            url('../fonts/Evergrow Sans/Evergrow Sans WOFF/EvergrowSans-Medium.woff') format('woff');
+    font-display: swap;
+}
+.elementor-element:last-child::before{
+    visibility: hidden;
+    content: '';
+    display: inline-block;
+    font-family: 'Evergrow-Sans';
+    width: 0px;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+}
+.twbb-fast-edit-tools{
+    display: flex;
+}
+.twbb-fe-tool .twbb-more-tool {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background-color: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+    background-image: url("../images/settings_Icon.svg");
+    background-size: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor:pointer;
+}
+.twbb-fe-tool .twbb-more-tool.twbb-more-tool-active{
+    background-color: #000;
+    background-image: url("../images/Settings_Icon_white.svg") !important;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.twbb-fast-edit-tools:not(.twbb_ask_to_ai_opened .twbb-fast-edit-tools):not(.twbb_chat_opened .twbb-fast-edit-tools),
+.twbb_ask_to_ai_off .twbb-fe-tools:not(.twbb_chat_opened .twbb-fe-tools),
+body[data-elementor-device-mode="tablet"] .twbb-fast-edit-tools, body[data-elementor-device-mode="mobile"] .twbb-fast-edit-tools
+{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    max-height: 32px;
+}
+body:not([data-elementor-device-mode="tablet"]):not([data-elementor-device-mode="mobile"])
+.twbb_ask_to_ai_opened .twbb-fast-edit-tools *,
+body:not([data-elementor-device-mode="tablet"]):not([data-elementor-device-mode="mobile"])
+.twbb_chat_opened .twbb-fast-edit-tools *,
+body:not([data-elementor-device-mode="tablet"]):not([data-elementor-device-mode="mobile"])
+.twbb_chat_opened.twbb_ask_to_ai_off .twbb-fe-tools * {
+    display: none !important;
+}
+
+body[data-elementor-device-mode="desktop"] .twbb_ask_to_ai_opened .twbb-fast-edit-tools::before,
+.twbb_chat_opened .twbb-fast-edit-tools::before,
+.twbb_chat_opened.twbb_ask_to_ai_off .twbb-fe-tools::before
+{
+    font-family: 'Evergrow-Sans';
+    content: 'Fast edit';
+    color: #000;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 18px;
+    cursor:pointer;
+    padding: 7px 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.twbb_disabled_loading .twbb-fe-tools *{
+    pointer-events: none;
+    cursor: default;
+}
+.twbb_disabled_loading .twbb-fe-tools{
+    cursor: default;
+}
+.twbb_disabled_loading.twbb_ask_to_ai_opened .twbb-fast-edit-tools::before , .twbb_disabled_loading .twbb-more-tool-container{
+    color:rgb(0 0 0 / 30%);
+}
+.twbb_disabled_loading .twbb-more-tool{
+    background-image: url("../images/settings_Icon_inactive.svg");
+}
+
+.twbb_ask_to_ai_opened .twbb-fast-edit-tools:hover::before{
+    background: #000;
+    color: #FFF;
+}
+.twbb-fe-tool .twbb-more-tool:hover{
+    background-image: url("../images/Settings_Icon_white.svg") !important;
+    background-repeat: no-repeat !important;
+    background-color: #000;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+.twbb_ask_to_ai_opened:not(.twbb_chat_opened) .ask_to_ai_container .ask_to_ai_input_container{
+    display: inline-block;
+}
+.twbb_ask_to_ai_opened:not(.twbb_chat_opened) .ask_to_ai_container .twbb_ask_to_ai_button{
+    display: none;
+}
+
+.twbb_ask_to_ai_empty .ask_to_ai_container::before{
+    background-image: url("../images/ask_ai_icon_blue.svg");
+    content: '';
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    position: absolute;
+    z-index: 99999;
+    top: 10px;
+    left: 12px;
+}
+.twbb_disabled_loading .twbb_ask_to_ai_empty .ask_to_ai_container::before {
+    background-image: url("../images/ask_ai_icon.svg");
+}
+.ask_to_ai_container .ask_to_ai_input_container{
+    display: none;
+    position: relative;
+}
+.ask_to_ai_container .ask_to_ai_input_container .twbb_ask_to_ai_submit_button{
+    width: 28px;
+    height: 28px;
+    background-color: #3339F1;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 2px;
+    bottom: 2px;
+    cursor: pointer;
+    background-image: url("../images/twbb_ask_to_ai_button.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.ask_to_ai_container .ask_to_ai_input_container .twbb_ask_to_ai_submit_button:hover{
+    background-image: url("../images/twbb_ask_to_ai_button_hover.svg");
+}
+.ask_to_ai_container .ask_to_ai_input_container .twbb_ask_to_ai_submit_button.twbb_ai_loading {
+    background-image: url("../images/ask_ai_loading.svg");
+    background-color: unset;
+    animation: twbb_ai_loading 1s linear infinite;
+
+}
+@keyframes  twbb_ai_loading{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.ask_to_ai_input_container.ask_to_ai_disabled .twbb_ask_to_ai_submit_button:not(.twbb_ai_loading){
+    display: none;
+}
+.ask_to_ai_container .twbb_ask_to_ai_button{
+    display: inline-flex;
+    padding: 7px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+    color: #000;
+    font-family: "Evergrow-Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px;
+    height: 32px;
+    width:82px;
+}
+.ask_to_ai_container .twbb_ask_to_ai_button:hover{
+    color:#fff;
+    background-color: #000;
+}
+.ask_to_ai_container .twbb_ask_to_ai_button:hover .twbb_ask_to_ai_icon{
+    background-image: url("../images/ask_ai_icon_1.svg");
+}
+
+.twbb-fast-editor-tools-container:not(.twbb_ask_to_ai_opened) .ask_to_ai_container:before {
+    width: 0px !important;
+    height: 0px !important;
+}
+
+.ask_to_ai_container .twbb_ask_to_ai_button .twbb_ask_to_ai_icon{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-image: url("../images/ask_ai_icon_blue.svg");
+    background-size: contain;
+}
+.twbb-fe-tools .ask_to_ai_container .twbb_ask_to_ai{
+    width: 280px;
+    height: 32px;
+    padding: 7px 36px 7px 12px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+    outline: none;
+    position: relative;
+    color: #000;
+    font-family: "Evergrow-Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    resize: none;
+    overflow: hidden;
+    max-height: 86px !important;
+}
+.twbb-font-family-tool, .twbb-fe-tool, .twbb-dropdown-select-tool-container .twbb-fe-dropdown span, .twbb-fe-tools .twbb-fet-tooltip{
+    font-family: "Evergrow-Sans";
+    font-style: normal;
+    font-weight: 500;
+}
+.twbb-fe-tools .twbb-fast-edit-tools > div:not(.twbb-video-tool-container):hover .twbb-fet-tooltip {
+    display: block;
+    z-index: 99999999999999999999;
+}
+.twbb_ask_to_ai_actions{
+    position: absolute;
+    width: 100%;
+    display: none;
+    top: -36px;
+    flex-wrap: wrap;
+}
+.twbb_ask_to_ai_actions.twbb_ask_to_ai_actions_active{
+    display:flex;
+}
+
+.twbb_ask_to_ai_action{
+    border-radius: 20px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.22);
+    display: flex;
+    padding: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #000;
+    font-family: "Evergrow-Sans";
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 16px; /* 160% */
+}
+.twbb_ask_to_ai_action:hover{
+    color:#FFFFFF;
+    background-color: #000000;
+}
+.twbb_ask_to_ai_action:not(:last-child) {
+    margin-right: 6px;
+}
+.twbb-ai-generate-image-disabled{
+    display: none !important;
+}
+.twbb-fast-edit-tools .twbb-fe-tool, .twbb-fast-edit-tools .twbb-fe-onedit-tool{
+    position: relative;
+}
+
+.twbb_ask_to_ai_opened .twbb_ask_to_ai_empty:has(textarea:focus) .twbb_ask_to_ai_actions {
+    display:flex;
+}
+.ask_to_ai_container:has(.twbb_ask_to_ai:focus)::before{
+    display: none !important;
+}
+.twbb_ask_to_ai:focus{
+    padding-left: 12px !important;
+}
+.twbb_ask_to_ai_empty .ask_to_ai_container .twbb_ask_to_ai:not(:focus) {
+    padding-left: 32px !important;
+}
+.twbb_ask_to_ai_actions:hover{
+    display:flex;
+}
+.twbb_disabled_loading .twbb_ask_to_ai_actions{
+    display: none !important;
+}
+body[data-elementor-device-mode="desktop"] .twbb-fast-editor-tools-container.twbb_zoom{
+    zoom: 1.4;
+}
+body[data-elementor-device-mode="desktop"] .twbb-fast-editor-tools-container.twbb_smart_scale_active:not(.twbb_zoom){
+    zoom: 1.2;
+}
+
+body[data-elementor-device-mode="tablet"] .twbb-ai-front, body[data-elementor-device-mode="mobile"] .twbb-ai-front{
+    display: none !important;
+}
+body[data-elementor-device-mode="mobile"] .twbb-fast-editor-tools-container{
+    zoom: 77% !important;
+}
+

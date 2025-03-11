@@ -1,0 +1,238 @@
+.twbb-fe-select-tool {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    text-align: left;
+    color: #000;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.1px;
+}
+.twbb-fe-select-tool.twbb-font_size-tool-container{
+    width: 53px;
+}
+.twbb_Container .twbb-fe-select-tool,.twbb_Widget_Progress .twbb-fe-select-tool{
+    width: 56px;
+}
+.twbb_TextPath .twbb-fe-select-tool{
+    width: 77px;
+}
+.twbb-fe-tools .twbb-fe-select-tool.twbb-font-family-tool-container{
+    width:37px; /*ToDo*/
+    justify-content: normal;
+    border-radius: 4px;
+    padding: 4px;
+}
+.twbb-fe-tools .twbb-fe-select-tool.twbb-font_style-tool-container{
+    width:52px; /*ToDo*/
+    justify-content: normal;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.twbb-font_size-tool-container,
+.twbb-fe-counter-select-tool {
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position: left center;
+    padding-right: 0px;
+}
+
+.twbb-fe-select-tool::before {
+    position: absolute;
+    right: 0px;
+    top: 5px;
+    background-image: url("../images/fe_arrow.svg");
+    background-size: 12px;
+    content: '';
+    width: 14px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.twbb-font-family-tool-container.active, .twbb-font_style-tool-container.active, .twbb-dropdown-select-tool-container.active,
+.twbb-font-family-tool-container:hover, .twbb-font_style-tool-container:hover, .twbb-dropdown-select-tool-container:hover
+{
+    background-color: #000;
+}
+.twbb-font-family-tool-container:hover::before, .twbb-font_style-tool-container:hover::before, .twbb-dropdown-select-tool-container:hover::before
+{
+    background-image: url("../images/fe_arrow_white_1.svg");
+}
+.twbb-font-family-tool-container.active:before, .twbb-font_style-tool-container.active:before, .twbb-dropdown-select-tool-container.active:before{
+    background-image: url("../images/fe_arrow_white.svg");
+}
+.twbb-font_size-tool-container.twbb-fe-select-tool::before{
+    display: none;
+}
+.twbb-fe-select-tool-active {
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: "Evergrow-Sans";
+    font-size: 12px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.twbb-fe-select-tool-active::after{
+    content:'';
+    display: inline-block;
+    width: 10px;
+    height: 8px;
+    background-image: url("../images/select_check.svg");
+    position: absolute;
+    background-size: cover;
+    right: 0px;
+    top: calc(50% - 6px);
+}
+
+/*.active.twbb-fe-select-tool::before {*/
+/*    transform: rotate(180deg);*/
+/*}*/
+
+.twbb-fe-select-tool .twbb-fe-dropdown {
+    transition: 0.3s;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    left: -10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+    border-radius: 15px;
+    box-shadow: inherit;
+    background: inherit;
+    -webkit-transform-origin: top;
+    transform-origin: top;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 0;
+    display: none;
+}
+.twbb-fe-dropdown.twbb-select-tool-search-input:not([type="button"]):not([type="submit"]) {
+    z-index: 999;
+}
+.twbb-fe-select-tool .twbb-fe-dropdown input:not([type="button"]):not([type="submit"]) {
+    margin: 12px 12px 1px 12px;
+    padding: 6px 16px 6px 20px;
+    border: none;
+    color: #000;
+    text-overflow: ellipsis;
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    border-radius: 6px;
+    background: #F5F5F6;
+    /*
+    this is written to close all cases
+     */
+    width: 214px;
+    width: fit-content;
+    width: -webkit-fill-available;
+    line-height: 18px;
+}
+.twbb-select-tool-search-input::before{
+    content:"";
+    background-image: url("../images/search_icon.svg");
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    bottom: 9px;
+    left: 17px;
+}
+.twbb-select-tool-search-input{
+    background-color: #FFF;
+}
+
+.twbb-fe-select-tool .twbb-fe-dropdown input:focus-visible {
+    outline: white ridge 1px;
+}
+
+.twbb-fe-select-tool .twbb-fe-dropdown li {
+    padding: 4px 12px;
+    font-size: 12px;
+    line-height: 18px;
+    overflow: hidden;
+}
+.twbb-fe-select-tool .twbb-fe-dropdown li.twbb-select-no-results {
+    display: none;
+    opacity: 0.5;
+}
+.twbb-fe-select-tool .twbb-fe-dropdown li:last-child {
+    border-bottom: none;
+}
+
+.twbb-fe-select-tool .twbb-fe-dropdown li:hover {
+    opacity: 0.5;
+}
+
+.twbb-fe-select-tool.active .twbb-fe-dropdown {
+    opacity: 1;
+    display: block;
+    border-radius: 3px;
+    overflow: auto;
+    max-height: 130px;
+    min-width:80px;
+    background-image: none;
+    background-color: #fff;
+}
+.twbb-fe-select-tool.active .twbb-count_control{
+    background-color: #000;
+}
+.twbb-fe-select-tool.active .twbb-fe-selected-display:not(.twbb-video-tool), .twbb-fe-select-tool:hover .twbb-fe-selected-display:not(.twbb-video-tool){
+    color:#fff;
+}
+.twbb_Widget_Video .twbb-fe-tools .twbb-video-tool-container .twbb-video-tool-content-row{
+    max-height: unset;
+    width: unset;
+    top: 40px;
+}
+.twbb-fe-select-tool.active .twbb-fe-dropdown.twbb-font-family-list {
+    max-height: 190px;
+}
+.twbb-fe-select-tool.active .twbb-fe-dropdown:not(.twbb-select-tool-search-input) {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.32);
+}
+
+/* width */
+.twbb-fe-dropdown::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+.twbb-fe-dropdown::-webkit-scrollbar-track {
+
+}
+
+/* Handle */
+.twbb-fe-dropdown::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background: #EAEAEA;
+}
+
+/* Handle on hover */
+.twbb-fe-dropdown::-webkit-scrollbar-thumb:hover {
+    background: #EAEAEA;
+}
+.twbb-font_size-tool-container.twbb-fe-select-tool.active .twbb-fe-dropdown {
+    width: 80px;
+}
+.twbb-fe-onedit-tool:has(input.twbb-count_control):before {
+    display:none;
+}
+.twbb-fe-onedit-tool:has(input.twbb-count_control){
+    padding-right: 0px;
+}
+.twbb_Widget_Social_Icons .twbb-fast-edit-tools .twbb-fe-dropdown{
+    width: 124px !important;
+}

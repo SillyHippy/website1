@@ -1,0 +1,39 @@
+{
+  "id": "red_berry",
+  "title": "Red berry",
+  "order": 5,
+  "kit": {
+    "system_colors": [
+      {
+        "_id": "accent",
+        "color": "#5F1928"
+      },
+      {
+        "_id": "secondary",
+        "color": "#DE87C2"
+      }
+    ],
+    "custom_colors": [
+      {
+        "_id": "twbb_bg_1",
+        "color": "#5F192826"
+      },
+      {
+        "_id": "twbb_bg_2",
+        "color": "#DE87C226"
+      },
+      {
+        "_id": "twbb_link",
+        "color": "#5F1928"
+      },
+      {
+        "_id": "twbb_accent_hover",
+        "color": "#5F1928CC"
+      },
+      {
+        "_id": "twbb_link_hover",
+        "color": "#5F192880"
+      }
+    ]
+  }
+}

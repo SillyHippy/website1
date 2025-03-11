@@ -1,0 +1,74 @@
+.elementor-183 .elementor-element.elementor-element-5e4ad60 {
+    background-image: url("/wp-content/uploads/2025/02/tenweb_media_SXELHG56J.webp") !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+@media screen and (max-height:1024px) {
+    .e-con.e-parent:nth-of-type(n+3) {
+        background-image: none !important; /* Use 'none' instead of 'inherit' */
+    }
+}
+/* General Styling for #Courier Section */
+#Courier {
+    background-image: url('/wp-content/uploads/2025/02/tenweb_media_SNJADTVKS.webp') !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    
+    min-height: auto !important; /* Allows dynamic height */
+    height: auto !important; /* Prevents unnecessary full-screen scaling */
+    width: 100% !important;
+    
+    display: flex !important;
+    align-items: flex-start !important; /* Aligns content to the top */
+    justify-content: center !important;
+    
+    padding: 60px 20px !important; /* Reduced padding for better scaling */
+    color: white !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+/* Background Adjustment for Medium Screens (Tablets & Small Laptops) */
+@media screen and (max-width: 1024px) {
+    #Courier {
+        background-size: contain !important; /* Prevents cropping */
+        background-position: center top !important;
+        min-height: auto !important;
+        padding: 50px 20px !important;
+    }
+}
+
+/* Ensure Proper Display on Mobile Screens */
+@media screen and (max-width: 768px) {
+    #Courier {
+        background-size: auto 100% !important; /* Ensures the image fits better */
+        background-attachment: scroll !important;
+        min-height: auto !important;
+        padding: 40px 15px !important;
+    }
+}
+
+/* Optimize Background for Extra Small Screens */
+@media screen and (max-width: 480px) {
+    #Courier {
+        background-size: cover !important;
+        min-height: auto !important;
+        padding: 30px 10px !important;
+    }
+}
+
+/* Remove Background on Small Screens if Needed */
+@media screen and (max-height: 1024px) {
+    .e-con.e-parent:nth-of-type(n+3) {
+        background-image: none !important; /* Prevents display issues */
+    }
+}
+
+/* Ensure Visibility */
+#Courier {
+    background-attachment: scroll !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+}

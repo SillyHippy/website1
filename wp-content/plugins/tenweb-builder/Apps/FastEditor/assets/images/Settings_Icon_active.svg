@@ -1,0 +1,29 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Settings_Icon 1" clip-path="url(#clip0_3174_9095)">
+<g id="Settings_Icon">
+<g id="Clip path group">
+<mask id="mask0_3174_9095" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="-1" y="-1" width="21" height="21">
+<g id="clip-path">
+<path id="Rectangle 47758" d="M-0.00146294 19.999L19.9985 19.999L19.9985 -0.000974655L-0.00146294 -0.000974655L-0.00146294 19.999Z" fill="white"/>
+</g>
+</mask>
+<g mask="url(#mask0_3174_9095)">
+<g id="Settings_Icon_2">
+<g id="Group 93606">
+<path id="Ellipse 12599" d="M9.99773 8.40171C9.12733 8.40171 8.42173 9.10731 8.42173 9.97771C8.42173 10.8481 9.12733 11.5537 9.99773 11.5537C10.8681 11.5537 11.5737 10.8481 11.5737 9.97771C11.5737 9.10731 10.8681 8.40171 9.99773 8.40171Z" fill="white"/>
+<g id="Group 93605">
+<path id="Ellipse 12600" d="M15.089 8.40171C14.2186 8.40171 13.513 9.10731 13.513 9.97771C13.513 10.8481 14.2186 11.5537 15.089 11.5537C15.9594 11.5537 16.665 10.8481 16.665 9.97771C16.665 9.10731 15.9594 8.40171 15.089 8.40171Z" fill="white"/>
+<path id="Ellipse 12601" d="M4.9074 8.40171C4.037 8.40171 3.3314 9.10731 3.3314 9.97771C3.3314 10.8481 4.037 11.5537 4.9074 11.5537C5.7778 11.5537 6.4834 10.8481 6.4834 9.97771C6.4834 9.10731 5.7778 8.40171 4.9074 8.40171Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_3174_9095">
+<rect width="20" height="20" fill="white" transform="translate(-0.000976562 -0.000976562)"/>
+</clipPath>
+</defs>
+</svg>

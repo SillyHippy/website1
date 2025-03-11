@@ -1,0 +1,12 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Copy_Icon">
+<g id="Copy_Icon_2">
+<mask id="mask0_3506_4323" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path id="Rectangle 47765" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3506_4323)">
+<path id="view_carousel_FILL0_wght400_GRAD0_opsz24" fill-rule="evenodd" clip-rule="evenodd" d="M1.77734 4.88932H4.26622V11.1116H1.77734V4.88932ZM4.88867 3.64453H11.1109V12.3556H4.88867V3.64453ZM6.13281 4.88932V11.1116V4.88932ZM11.7331 4.88932H14.222V11.1116H11.7331V4.88932ZM6.13281 4.88932V11.1116H9.86615V4.88932H6.13281Z" fill="black"/>
+</g>
+</g>
+</g>
+</svg>
