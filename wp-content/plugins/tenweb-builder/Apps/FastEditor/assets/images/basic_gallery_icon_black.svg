@@ -1,0 +1,14 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Copy_Icon">
+<g id="Copy_Icon_2">
+<mask id="mask0_3506_4200" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path id="Rectangle 47765" fill-rule="evenodd" clip-rule="evenodd" d="M0 0H16V16H0V0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3506_4200)">
+<path id="Rectangle 54451" fill-rule="evenodd" clip-rule="evenodd" d="M1.33325 2.66699H3.99992V13.3337H1.33325V2.66699Z" fill="black"/>
+<path id="Rectangle 54452" fill-rule="evenodd" clip-rule="evenodd" d="M6.66675 2.66699H9.33341V13.3337H6.66675V2.66699Z" fill="black"/>
+<path id="Rectangle 54453" fill-rule="evenodd" clip-rule="evenodd" d="M12 2.66699H14.6667V13.3337H12V2.66699Z" fill="black"/>
+</g>
+</g>
+</g>
+</svg>

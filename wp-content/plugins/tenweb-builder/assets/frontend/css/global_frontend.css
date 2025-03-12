@@ -1,0 +1,120 @@
+.e-container {
+    padding-right: max(calc((100% - var(--content-width)) / 2 + var(--padding-right)), var(--padding-right)) !important;
+    padding-left: max(calc((100% - var(--content-width)) / 2 + var(--padding-left)), var(--padding-left)) !important;
+}
+.elementor-element[data-widget_type="icon.default"] {
+    line-height: 0;
+}
+
+body .elementor-progress-wrapper{
+    height: auto;
+}
+.theme-tenweb-website-builder-theme .pswp__caption {
+    display: none;
+}
+
+.woocommerce #content div[data-elementor-type=twbb_single].product div.images,
+.woocommerce div[data-elementor-type=twbb_single].product div.images,
+.woocommerce-page #content div[data-elementor-type=twbb_single].product div.images,
+.woocommerce-page div[data-elementor-type=twbb_single].product div.images {
+   width: 100%
+}
+
+
+.twbb-nav-menu a:hover,
+a.elementor-button:hover{
+    text-decoration: none;
+}
+
+/* Fix for heading widgets font-family to work. */
+.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+/* Fix for nav-menu widget dropdown item font-family to work. */
+.elementor-widget-twbb-nav-menu .twbb-nav-menu__container ul li a {
+    font-family: inherit !important;
+}
+
+.elementor-content-not-found {
+    text-align: center;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.elementor-content-not-found-container {
+    max-width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 25px;
+}
+.elementor-content-not-found {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.empty-content-default-view {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    padding-top: 47%;
+}
+.elementor-widget-tenweb-posts .empty-content-default-view {
+    background-image: url("../../../assets/editor/images/posts_widget_empty_view.svg");
+}
+.elementor-widget-twbb_woocommerce-products .empty-content-default-view {
+    background-image: url("../../../assets/editor/images/products_widget_empty_view.svg");
+}
+.elementor-widget-twbb_woocommerce-categories .empty-content-default-view {
+    background-image: url("../../../assets/editor/images/products_categories_widget_empty_view.svg");
+}
+.empty-content-description {
+    margin-top: 30px;
+}
+/*body:not([data-elementor-device-mode="mobile"]) .empty-content-description {*/
+/*    position: absolute;*/
+/*}*/
+body[data-elementor-device-mode="tablet"] .empty-posts-default-view.empty-default-3,
+body[data-elementor-device-mode="tablet"] .elementor-content-not-found .mobile-desc,
+body[data-elementor-device-mode="desktop"] .elementor-content-not-found .mobile-desc {
+    display: none;
+}
+body[data-elementor-device-mode="tablet"] .empty-content-default-view {
+    padding-top: 70%;
+}
+body[data-elementor-device-mode="mobile"] .empty-content-default-view {
+    padding-top: 100%;
+}
+body[data-elementor-device-mode="mobile"] .elementor-content-not-found .desktop-desc {
+    display: none;
+}
+body[data-elementor-device-mode="mobile"] .elementor-content-not-found-container {
+    flex-direction: column;
+    margin-bottom: 200px;
+}
+.twbb_no_content_text {
+    font-family: Open Sans, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #A1A2A7;
+}
+.elementor-content-not-found {
+    margin: 50px 0;
+}
+.elementor-posts-not-found .twbb_no_content_text {
+    margin: 5px 0;
+}
+.elementor-posts-not-found .twbb_no_content-desc {
+    font-weight: 400;
+}
+.elementor-posts-not-found  .twbb_no_content-title  {
+    font-weight: 600;
+    margin-bottom: 10px;
+}

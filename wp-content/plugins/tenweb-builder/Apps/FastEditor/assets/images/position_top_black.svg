@@ -1,0 +1,15 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Up align_Icon">
+<g id="Copy_Icon">
+<mask id="mask0_3506_4255" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
+<path id="Rectangle 47765" fill-rule="evenodd" clip-rule="evenodd" d="M0 0L16 0V16H0L0 0Z" fill="white"/>
+</mask>
+<g mask="url(#mask0_3506_4255)">
+<g id="Group 172573">
+<path id="Path 171980" fill-rule="evenodd" clip-rule="evenodd" d="M8.35737 5.33162C8.21671 5.27152 8.0577 5.27136 7.91716 5.3312C7.8471 5.36114 7.78417 5.40552 7.7325 5.46146L5.80223 7.39173C5.57732 7.61664 5.57767 7.98163 5.803 8.20696C6.02833 8.43229 6.39332 8.43264 6.61823 8.20773L7.563 7.26296L7.56111 12.5185C7.56369 12.8357 7.82053 13.0925 8.13775 13.0951C8.29033 13.0941 8.43644 13.0339 8.5452 12.927C8.65343 12.8192 8.71396 12.6725 8.71329 12.5196L8.70702 7.25046L9.65358 8.19701C9.87891 8.42234 10.2439 8.42269 10.4688 8.19778C10.6937 7.97288 10.6934 7.60789 10.468 7.38256L8.53412 5.44865C8.48345 5.39841 8.4234 5.35865 8.35738 5.33163L8.35737 5.33162Z" fill="black"/>
+<path id="Line 5393" d="M12.488 2.66602L3.55469 2.66602" stroke="black" stroke-linecap="round"/>
+</g>
+</g>
+</g>
+</g>
+</svg>

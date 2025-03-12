@@ -1,0 +1,194 @@
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products {
+    grid-template-columns: repeat(4, 1fr)
+}
+
+@media (max-width:1024px) {
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products {
+        grid-template-columns: repeat(3, 1fr)
+    }
+}
+
+@media (max-width:767px) {
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-1 ul.products {
+    grid-template-columns: repeat(1, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-2 ul.products {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-3 ul.products {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-4 ul.products {
+    grid-template-columns: repeat(4, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-5 ul.products {
+    grid-template-columns: repeat(5, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-6 ul.products {
+    grid-template-columns: repeat(6, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-7 ul.products {
+    grid-template-columns: repeat(7, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-8 ul.products {
+    grid-template-columns: repeat(8, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-9 ul.products {
+    grid-template-columns: repeat(9, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-10 ul.products {
+    grid-template-columns: repeat(10, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-11 ul.products {
+    grid-template-columns: repeat(11, 1fr)
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-12 ul.products {
+    grid-template-columns: repeat(12, 1fr)
+}
+
+@media (max-width:1024px) {
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-1 ul.products {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-2 ul.products {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-3 ul.products {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-4 ul.products {
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-5 ul.products {
+        grid-template-columns: repeat(5, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-6 ul.products {
+        grid-template-columns: repeat(6, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-7 ul.products {
+        grid-template-columns: repeat(7, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-8 ul.products {
+        grid-template-columns: repeat(8, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-9 ul.products {
+        grid-template-columns: repeat(9, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-10 ul.products {
+        grid-template-columns: repeat(10, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-11 ul.products {
+        grid-template-columns: repeat(11, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-tablet-12 ul.products {
+        grid-template-columns: repeat(12, 1fr)
+    }
+}
+
+@media (max-width:767px) {
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-1 ul.products {
+        grid-template-columns: repeat(1, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-2 ul.products {
+        grid-template-columns: repeat(2, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-3 ul.products {
+        grid-template-columns: repeat(3, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-4 ul.products {
+        grid-template-columns: repeat(4, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-5 ul.products {
+        grid-template-columns: repeat(5, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-6 ul.products {
+        grid-template-columns: repeat(6, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-7 ul.products {
+        grid-template-columns: repeat(7, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-8 ul.products {
+        grid-template-columns: repeat(8, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-9 ul.products {
+        grid-template-columns: repeat(9, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-10 ul.products {
+        grid-template-columns: repeat(10, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-11 ul.products {
+        grid-template-columns: repeat(11, 1fr)
+    }
+    .elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products.elementor-products-columns-mobile-12 ul.products {
+        grid-template-columns: repeat(12, 1fr)
+    }
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products {
+    list-style-type: none;
+    display: grid;
+    margin: 0;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products:after,
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products:before {
+    content: none;
+    display: none
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products li.product {
+    width: auto;
+    padding: 0;
+    margin: 0;
+    float: none
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products li.product .onsale {
+    padding: 0;
+    display: none
+}
+
+.elementor-widget-twbb_woocommerce-product-upsell.elementor-wc-products ul.products li.product a.woocommerce-loop-product__link {
+    display: block;
+    position: relative
+}
+
+.elementor-wc-products:not(.show-heading-yes):not(.products-heading-show) .products>h2 {
+    display: none
+}
+
+.elementor-wc-products nav.woocommerce-pagination {
+    margin-top: 40px
+}
+
+.elementor-wc-products:not(.elementor-show-pagination-border-yes) nav.woocommerce-pagination ul {
+    border: 0 none
+}
+
+.elementor-wc-products:not(.elementor-show-pagination-border-yes) nav.woocommerce-pagination ul li {
+    border-right: 0 none;
+    border-left: 0 none
+}
+
+.elementor-wc-products ul.products li.product span.onsale {
+	padding: 0;
+    display: none;
+}

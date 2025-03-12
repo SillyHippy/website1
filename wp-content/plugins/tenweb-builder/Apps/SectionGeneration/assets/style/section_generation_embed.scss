@@ -1,0 +1,364 @@
+/* all sizes provided in this doc should be calculated taking into account */
+/* that this is iframe which is scaled 0.1875 times  so multiply every px with 1920/360=5.3 */
+//$scaled_value: 5.3;
+//$half_scaled_value: 2.7;
+
+/* that this is iframe which is scaled 0.1875 times  so multiply every px with 1440/360=5.3 */
+$scaled_value: 4;
+$half_scaled_value: 2;
+
+
+$assetPath :"../images";
+
+.elementor-editor-active .elementor-add-section-area-button.elementor-add-twbb-section-generation-button {
+  border-radius: 20px;
+  padding: 9px 31px 9px 15px;
+  background-color: #000000;
+  width: 120px;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  font-family: "Open Sans", Sans-serif;
+  background-image: url(#{$assetPath}/sg_ai_logo.png);
+  background-repeat: no-repeat;
+  background-position: center right 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 80%;
+  }
+
+  &:disabled {
+    background-color: #000000;
+    color: #ffffff;
+    opacity: 50%;
+  }
+}
+html.twbb:not(.elementor-html) {
+  height: 100%;
+  overflow-y: scroll;
+}
+body.twbb_template_preview_page {
+  background-color: #1F2124;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  /* width */
+  &::-webkit-scrollbar {
+    width: $scaled_value * 2px;
+  }
+
+  /* Track */
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #1F2124;
+    border-radius: $scaled_value * 10px;
+  }
+
+  /* Handle */
+  &::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: $scaled_value * 10px;
+  }
+
+  /* Handle on hover */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #1F2124;
+  }
+  & > div.elementor {
+    display: flex;
+    flex-direction: column;
+    gap: $scaled_value * 20px;
+  }
+  &.twbb-some-section-in-process .twbb-sg-each-section:hover {
+    &:not(.twbb-the-sections-generation-in-process) .twbb-sg-messages .twbb-sg-process-generation {
+      display: flex;
+      padding: $scaled_value * 10px $scaled_value * 16px;
+      background-color: #000000;
+      border-radius: $scaled_value * 6px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $scaled_value * 4px;
+      z-index: 9999;
+      .in-process-generation {
+        font-size: $scaled_value * 10px;
+        font-weight: 400;
+        line-height: $scaled_value * 16px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
+  }
+  .twbb-sg-recommended-ecommerce-label {
+    display: none;
+  }
+  &:not(.twbb-some-section-in-process) {
+    .twbb-sg-each-section {
+      &.twbb-sg-compatible-ecommerce .twbb-sg-recommended-ecommerce-label {
+        display: block;
+        position: absolute;
+        background-color: #3339F1;
+        top: $scaled_value * 10px;
+        right: $scaled_value * 10px;
+        padding: $scaled_value * 4px $scaled_value * 8px $scaled_value * 4px $scaled_value * 18px;
+        background-image: url("#{$assetPath}/basket.svg");
+        background-repeat: no-repeat;
+        background-position: $scaled_value * 6px 50%;
+        border-radius: $scaled_value * 3px;
+        background-size: $scaled_value * 8px;
+        font-size: $scaled_value * 8px;
+        line-height: $scaled_value * 12px;
+        font-weight: 600;
+        font-family: "Open Sans", Sans-serif;
+        color: #FFFFFF;
+        z-index: 999;
+      }
+      &.twbb-sg-compatible-ecommerce:hover .twbb-sg-recommended-ecommerce-label {
+          display: none;
+      }
+      &:hover {
+        &.twbb-sg-hovered:not(.twbb-the-sections-generation-in-process) .twbb-sg-messages .twbb-sg-add-section {
+          .twbb-sg-just-add-button {
+            display: block;
+          }
+        }
+
+        &:not(.twbb-the-sections-generation-in-process) .twbb-sg-messages .twbb-sg-add-section {
+          display: flex;
+          justify-content: center;
+          gap: $scaled_value * 10px;
+
+          .twbb-sg-just-add-button {
+            display: none;
+            font-size: $scaled_value * 10px;
+            line-height: $scaled_value * 16px;
+            color: #ffffff;
+            background-color: #000000;
+            padding: $scaled_value * 6px $scaled_value * 10px;
+            border-radius: $scaled_value * 6px;
+            text-align: center;
+            font-family: "Open Sans", Sans-serif;
+          }
+
+          .twbb-sg-add-section-button {
+            padding: $scaled_value * 6px $scaled_value * 15px;
+            font-size: $scaled_value * 10px;
+            font-weight: 600;
+            line-height: $scaled_value * 18px;
+            text-align: center;
+            border-radius: $scaled_value * 6px;
+            cursor: pointer;
+          }
+
+          .twbb-sg-add-with-generated-content__button {
+            color: #ffffff;
+            background-color: #3339F1;
+          }
+
+          .twbb-sg-add-with-dummy-content__button {
+            color: #000000;
+            background-color: #ffffff;
+          }
+        }
+      }
+    }
+    &.twbb-sg-with-description .twbb-sg-each-section {
+      &:not([id*="ai-generated-sections"]) {
+        .twbb-sg-not-in-process-generation__one_button {
+          display: none !important;
+        }
+      }
+      &[id*="ai-generated-sections"] {
+        &:hover {
+          cursor: pointer;
+        }
+        .twbb-sg-not-in-process-generation__two_buttons {
+          display: none !important;
+        }
+      }
+
+    }
+    &:not(.twbb-sg-with-description) {
+      .twbb-sg-each-section:hover {
+        cursor: pointer;
+      }
+      .twbb-sg-not-in-process-generation__two_buttons {
+        display: none !important;
+      }
+    }
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.twbb-sg-loading {
+  position: absolute;
+  top: calc( 50% - $half_scaled_value * 60px);
+  left: calc( 50% - $half_scaled_value * 174px);
+  z-index: 100;
+  display: none;
+  font-size: $scaled_value * 12px;
+  font-weight: 400;
+  line-height: $scaled_value * 18px;
+  font-family: "Open Sans", Sans-serif;
+  color: #ffffff;
+  .twbb-sg-loading-spinner {
+    width: $scaled_value * 18px;
+    height: $scaled_value * 18px;
+    margin-bottom: $scaled_value * 4px;
+    background-size: $scaled_value * 18px;
+    animation: rotation 1s infinite linear;
+    background-image: url(#{$assetPath}/loader.svg);
+  }
+}
+
+.twbb-sg-add {
+  position: absolute;
+  z-index: 100;
+  display: none;
+  font-size: $scaled_value * 10px;
+  line-height: $scaled_value * 16px;
+  color: #ffffff;
+  background-color: #000000;
+  padding: $scaled_value * 6px $scaled_value * 10px;
+  border-radius: $scaled_value * 6px;
+  text-align: center;
+  font-family: "Open Sans", Sans-serif;
+  /* z-index should be bigger then twbb-sg-overlay */
+  z-index: 9999;
+}
+
+.twbb-sg-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 9998;
+}
+//fill overlay in hover and when messages are shown
+.elementor-element.twbb-sg-each-section:not(.twbb-the-sections-generation-in-process):hover .twbb-sg-overlay,
+.elementor-element.twbb-sg-each-section.twbb-the-sections-generation-in-process .twbb-sg-overlay, {
+  background-color: #000000;
+  opacity: 40%;
+  backdrop-filter: blur(1px);
+}
+.twbb-sg-messages {
+  z-index: 9999;
+  .twbb-sg-add-section, .twbb-sg-process-generation, .twbb-sg-loading {
+    display: none;
+  }
+}
+
+.twbb-sg-preview-overlay {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 999999999;
+}
+
+.elementor-element.twbb-sg-each-section {
+  border: $scaled_value * 1px solid #1F2124;
+  border-radius: $scaled_value * 6px;
+  background: #ffffff;
+  gap: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  .twbb_full_h {
+    min-height: 720px !important;
+    .swiper-slide {
+      max-height: 720px;
+    }
+  }
+  /*
+  this code is just for sections preview to make the full view visible in smaller height
+   */
+  .twbb-category-image-wrapper {
+    max-height: 30vh;
+  }
+  &.twbb-visible:hover,
+  &[id*="ai-generated-sections"]:hover {
+    border: $scaled_value * 1px solid #3339F1;
+    position: relative;
+    .twbb-sg-messages {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Open Sans", Sans-serif;
+    }
+  }
+  &.twbb-the-sections-generation-in-process {
+    //position: relative;
+    .twbb-sg-messages .twbb-sg-loading {
+      display: flex;
+      padding: $scaled_value * 10px $scaled_value * 16px;
+      background-color: #000000;
+      border-radius: $scaled_value * 6px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: $scaled_value * 4px;
+      z-index: 9999;
+    }
+  }
+  >div.elementor-element[data-element_type='container'] {
+    border-radius: 20px;
+    &.e-con:before {
+      border-radius: 20px;
+    }
+  }
+}
+
+/*
+sections visibility decision
+ */
+.elementor-element.twbb-sg-each-section.twbb-sg-compatible-ecommerce {
+  &.twbb-visible {
+    opacity: 1;
+    position: relative;
+    top: unset;
+    z-index:1;
+  }
+}
+.elementor-element.twbb-sg-each-section.twbb-sg-compatible-basic:not(.twbb-sg-compatible-ecommerce) {
+  &.twbb-visible {
+    opacity: 1;
+    position: relative;
+    top: unset;
+    z-index:1;
+  }
+}
+.twbb_sg_preview-template-default {
+  .woocommerce-store-notice.demo_store {
+    display: none !important;
+  }
+  .elementor-element.twbb-sg-each-section[id*="ai-generated-sections"] {
+    opacity: 1;
+    position: relative;
+    z-index:1;
+  }
+}

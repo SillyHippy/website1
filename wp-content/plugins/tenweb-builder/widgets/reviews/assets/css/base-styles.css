@@ -1,0 +1,99 @@
+swiper-pagination-bullets {
+    color: #fff;
+    cursor: default; }
+
+.swiper-slide {
+    will-change: transform;
+    border-style: solid;
+    border-width: 0;
+    -webkit-transition-duration: .5s;
+    -o-transition-duration: .5s;
+    transition-duration: .5s;
+    -webkit-transition-property: border, background, -webkit-transform;
+    transition-property: border, background, -webkit-transform;
+    -o-transition-property: border, background, transform;
+    transition-property: border, background, transform;
+    transition-property: border, background, transform, -webkit-transform;
+    overflow: hidden; }
+.swiper-slide:not(:hover) .e-overlay-animation-fade {
+    opacity: 0; }
+.swiper-slide:not(:hover) .e-overlay-animation-slide-up {
+    -webkit-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    transform: translateY(100%); }
+.swiper-slide:not(:hover) .e-overlay-animation-slide-down {
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%); }
+.swiper-slide:not(:hover) .e-overlay-animation-slide-right {
+    -webkit-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    transform: translateX(-100%); }
+.swiper-slide:not(:hover) .e-overlay-animation-slide-left {
+    -webkit-transform: translateX(100%);
+    -ms-transform: translateX(100%);
+    transform: translateX(100%); }
+.swiper-slide:not(:hover) .e-overlay-animation-zoom-in {
+    -webkit-transform: scale(0.5);
+    -ms-transform: scale(0.5);
+    transform: scale(0.5);
+    opacity: 0; }
+.swiper-slide a {
+    display: inline; }
+.swiper-slide a.elementor-button {
+    display: inline-block; }
+
+.elementor-widget-testimonial-carousel .elementor-arrows-yes .elementor-main-swiper,
+.elementor-widget-twbb_reviews .elementor-arrows-yes .elementor-main-swiper {
+    width: calc( 95% - 40px); }
+
+.elementor-widget-testimonial-carousel .elementor-main-swiper,
+.elementor-widget-twbb_reviews .elementor-main-swiper {
+    width: 95%; }
+
+.elementor-widget-testimonial-carousel .swiper-wrapper,
+.elementor-widget-twbb_reviews .swiper-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch; }
+
+.elementor-widget-testimonial-carousel .swiper-slide,
+.elementor-widget-twbb_reviews .swiper-slide {
+    height: auto; }
+
+.elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .swiper-container, .elementor-widget-testimonial-carousel.elementor-pagination-type-fraction .swiper-container,
+.elementor-widget-twbb_reviews.elementor-pagination-type-bullets .swiper-container,
+.elementor-widget-twbb_reviews.elementor-pagination-type-fraction .swiper-container {
+    padding-bottom: 40px; }
+
+.elementor-widget-testimonial-carousel .elementor-swiper-button-prev,
+.elementor-widget-testimonial-carousel .swiper-container-rtl .elementor-swiper-button-next,
+.elementor-widget-twbb_reviews .elementor-swiper-button-prev,
+.elementor-widget-twbb_reviews .swiper-container-rtl .elementor-swiper-button-next {
+    left: 0;
+    right: unset; }
+
+.elementor-widget-testimonial-carousel .elementor-swiper-button-next,
+.elementor-widget-testimonial-carousel .swiper-container-rtl .elementor-swiper-button-prev,
+.elementor-widget-twbb_reviews .elementor-swiper-button-next,
+.elementor-widget-twbb_reviews .swiper-container-rtl .elementor-swiper-button-prev {
+    right: 0;
+    left: unset; }
+
+.elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .elementor-swiper-button-next, .elementor-widget-testimonial-carousel.elementor-pagination-type-bullets .elementor-swiper-button-prev,
+.elementor-widget-twbb_reviews.elementor-pagination-type-bullets .elementor-swiper-button-next,
+.elementor-widget-twbb_reviews.elementor-pagination-type-bullets .elementor-swiper-button-prev {
+    top: calc( 50% - ( 40px / 2 )); }
+
+.elementor-widget-media-carousel .elementor-swiper-button-prev,
+.elementor-widget-media-carousel .swiper-container-rtl .elementor-swiper-button-next {
+    left: 10px;
+    right: unset; }
+
+.elementor-widget-media-carousel .elementor-swiper-button-next,
+.elementor-widget-media-carousel .swiper-container-rtl .elementor-swiper-button-prev {
+    right: 10px;
+    left: unset; }

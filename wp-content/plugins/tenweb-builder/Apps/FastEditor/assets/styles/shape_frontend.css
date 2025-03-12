@@ -1,0 +1,18 @@
+.twbb-shape-tool-container .twbb-shape-tool {
+    background-image: url(../images/shape_icon_black.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 16px;
+}
+
+.twbb-shape-tool-container.twbb-fe-select-tool {
+    width: 30px;
+}
+
+.twbb-shape-tool-container.twbb-fe-select-tool::before {
+    display: none;
+}
+
+.twbb-shape-tool-container .twbb-fe-dropdown {
+    width: 85px;
+}
