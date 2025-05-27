@@ -72,18 +72,18 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
     window.open(whatsappUrl, '_blank');
   };
 
-  // Removed Facebook sharing function
-
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-end justify-center z-50">
-      <div ref={modalRef} className="bg-white rounded-t-lg p-6 w-full max-w-[400px]">
-        <h2 className="text-xl font-bold mb-4">Share Joseph Iannazzi's Digital Business Card</h2>
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div ref={modalRef} className="bg-[#1B2738] rounded-[24px] p-6 max-w-[420px] w-full shadow-[0_20px_50px_rgba(0,0,0,0.8)] border border-[#2A3653]">
+        <h2 className="text-[22px] font-semibold text-white mb-4">
+          Share Joseph Iannazzi's Digital Business Card
+        </h2>
         <div className="space-y-3">
-          {/* Copy Card Link - Full button clickable */}
+          {/* Copy Card Link */}
           <div 
-            className="flex items-center justify-between p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
+            className="flex items-center justify-between p-3 bg-[#2A3B58] rounded-[12px] text-[#CBD5E1] hover:bg-[#263448] transition-colors cursor-pointer"
             onClick={handleCopyLink}
           >
             <div className="flex items-center">
@@ -95,9 +95,9 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
             </div>
           </div>
           
-          {/* Share via Text - Full button clickable */}
+          {/* Share via Text */}
           <div 
-            className="flex items-center justify-between p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
+            className="flex items-center justify-between p-3 bg-[#2A3B58] rounded-[12px] text-[#CBD5E1] hover:bg-[#263448] transition-colors cursor-pointer"
             onClick={handleTextShare}
           >
             <div className="flex items-center">
@@ -109,9 +109,9 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
             </div>
           </div>
           
-          {/* Share via Email - Full button clickable */}
+          {/* Share via Email */}
           <div 
-            className="flex items-center justify-between p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
+            className="flex items-center justify-between p-3 bg-[#2A3B58] rounded-[12px] text-[#CBD5E1] hover:bg-[#263448] transition-colors cursor-pointer"
             onClick={handleEmailShare}
           >
             <div className="flex items-center">
@@ -123,9 +123,9 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
             </div>
           </div>
           
-          {/* Share via WhatsApp - Full button clickable */}
+          {/* Share via WhatsApp */}
           <div 
-            className="flex items-center justify-between p-3 bg-gray-100 rounded-lg hover:bg-gray-200 transition-colors cursor-pointer"
+            className="flex items-center justify-between p-3 bg-[#2A3B58] rounded-[12px] text-[#CBD5E1] hover:bg-[#263448] transition-colors cursor-pointer"
             onClick={handleWhatsAppShare}
           >
             <div className="flex items-center">
@@ -139,7 +139,7 @@ export default function ShareModal({ isOpen, onClose }: ShareModalProps) {
         </div>
         <button 
           onClick={onClose} 
-          className="mt-4 w-full bg-blue-500 text-white py-2 rounded-lg hover:bg-blue-600 transition-colors"
+          className="mt-6 w-full bg-[#2A3B58] text-[#CBD5E1] h-[48px] rounded-[12px] hover:bg-[#263448] transition-colors font-medium"
         >
           Close
         </button>

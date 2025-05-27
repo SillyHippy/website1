@@ -65,6 +65,9 @@ export function Navbar() {
             >
               Courier Services
             </a>
+            <Link href="/services" className="text-gray-700 hover:text-gray-900">
+              Business Solutions
+            </Link>
             <Link href="/payments" className="text-gray-700 hover:text-gray-900">
               Payments
             </Link>
@@ -143,6 +146,13 @@ export function Navbar() {
             >
               Courier Services
             </a>
+            <Link
+              href="/services"
+              className="px-6 py-3 text-gray-700 hover:bg-gray-100"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Business Solutions
+            </Link>
             <Link
               href="/payments"
               className="px-6 py-3 text-gray-700 hover:bg-gray-100"
